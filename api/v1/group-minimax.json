@@ -2,6 +2,43 @@
   "group": "MiniMax",
   "color": "#0891b2",
   "lastUpdated": "2026-05-22",
-  "total": 0,
-  "models": []
+  "total": 3,
+  "models": [
+    {
+      "name": "MiniMax-M2.7",
+      "input": 2.1,
+      "cachedInput": 0.42,
+      "output": 8.4,
+      "contextWindow": 192000,
+      "currency": "CNY",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "缓存读取¥0.42/缓存写入¥2.625",
+      "source": "官方"
+    },
+    {
+      "name": "MiniMax-M2.7-highspeed",
+      "input": 4.2,
+      "cachedInput": 0.42,
+      "output": 16.8,
+      "contextWindow": 192000,
+      "currency": "CNY",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "高速版，缓存写入¥2.625",
+      "source": "官方"
+    },
+    {
+      "name": "MiniMax-M2.5",
+      "input": 2.1,
+      "cachedInput": 0.21,
+      "output": 8.4,
+      "contextWindow": 192000,
+      "currency": "CNY",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "缓存读取¥0.21/缓存写入¥2.625",
+      "source": "官方"
+    }
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "lastUpdated": "2026-05-22",
-  "total": 18,
+  "total": 19,
   "providers": [
     {
       "provider": "OpenAI",
@@ -219,6 +219,53 @@
       ]
     },
     {
+      "provider": "月之暗面 (Kimi)",
+      "providerUrl": "https://platform.kimi.com/docs/pricing/chat-k26",
+      "color": "#7c3aed",
+      "group": "月之暗面",
+      "modelCount": 1,
+      "models": [
+        {
+          "name": "kimi-k2.6",
+          "source": "官方"
+        }
+      ]
+    },
+    {
+      "provider": "MiniMax",
+      "providerUrl": "https://platform.minimaxi.com/docs/guides/pricing-paygo",
+      "color": "#0891b2",
+      "group": "MiniMax",
+      "modelCount": 3,
+      "models": [
+        {
+          "name": "MiniMax-M2.7",
+          "source": "官方"
+        },
+        {
+          "name": "MiniMax-M2.7-highspeed",
+          "source": "官方"
+        },
+        {
+          "name": "MiniMax-M2.5",
+          "source": "官方"
+        }
+      ]
+    },
+    {
+      "provider": "小米 (MiMo)",
+      "providerUrl": "https://help.aliyun.com/zh/model-studio/models",
+      "color": "#f97316",
+      "group": "小米",
+      "modelCount": 1,
+      "models": [
+        {
+          "name": "mimo-v2.5-pro",
+          "source": "官方"
+        }
+      ]
+    },
+    {
       "provider": "硅基流动 (SiliconFlow)",
       "providerUrl": "https://siliconflow.cn/pricing",
       "color": "#06b6d4",
@@ -231,22 +278,6 @@
       "providerUrl": "https://open.bigmodel.cn/pricing",
       "color": "#1d4ed8",
       "group": "智谱AI",
-      "modelCount": 0,
-      "models": []
-    },
-    {
-      "provider": "月之暗面 (Kimi)",
-      "providerUrl": "https://kimi.moonshot.cn/",
-      "color": "#7c3aed",
-      "group": "月之暗面",
-      "modelCount": 0,
-      "models": []
-    },
-    {
-      "provider": "MiniMax",
-      "providerUrl": "https://platform.minimaxi.com/",
-      "color": "#0891b2",
-      "group": "MiniMax",
       "modelCount": 0,
       "models": []
     },

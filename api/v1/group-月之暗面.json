@@ -2,6 +2,19 @@
   "group": "月之暗面",
   "color": "#7c3aed",
   "lastUpdated": "2026-05-22",
-  "total": 0,
-  "models": []
+  "total": 1,
+  "models": [
+    {
+      "name": "kimi-k2.6",
+      "input": 6.5,
+      "cachedInput": 1.1,
+      "output": 27,
+      "contextWindow": 262144,
+      "currency": "CNY",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "多模态，256K上下文，缓存命中¥1.10",
+      "source": "官方"
+    }
+  ]
 }

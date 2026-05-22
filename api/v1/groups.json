@@ -1,6 +1,6 @@
 {
   "lastUpdated": "2026-05-22",
-  "total": 12,
+  "total": 13,
   "groups": [
     {
       "provider": "OpenAI",
@@ -159,6 +159,50 @@
       ]
     },
     {
+      "provider": "月之暗面",
+      "group": "月之暗面",
+      "color": "#7c3aed",
+      "modelCount": 1,
+      "models": [
+        {
+          "name": "kimi-k2.6",
+          "source": "官方"
+        }
+      ]
+    },
+    {
+      "provider": "MiniMax",
+      "group": "MiniMax",
+      "color": "#0891b2",
+      "modelCount": 3,
+      "models": [
+        {
+          "name": "MiniMax-M2.7",
+          "source": "官方"
+        },
+        {
+          "name": "MiniMax-M2.7-highspeed",
+          "source": "官方"
+        },
+        {
+          "name": "MiniMax-M2.5",
+          "source": "官方"
+        }
+      ]
+    },
+    {
+      "provider": "小米",
+      "group": "小米",
+      "color": "#f97316",
+      "modelCount": 1,
+      "models": [
+        {
+          "name": "mimo-v2.5-pro",
+          "source": "官方"
+        }
+      ]
+    },
+    {
       "provider": "硅基流动",
       "group": "硅基流动",
       "color": "#06b6d4",
@@ -169,20 +213,6 @@
       "provider": "智谱AI",
       "group": "智谱AI",
       "color": "#1d4ed8",
-      "modelCount": 0,
-      "models": []
-    },
-    {
-      "provider": "月之暗面",
-      "group": "月之暗面",
-      "color": "#7c3aed",
-      "modelCount": 0,
-      "models": []
-    },
-    {
-      "provider": "MiniMax",
-      "group": "MiniMax",
-      "color": "#0891b2",
       "modelCount": 0,
       "models": []
     },

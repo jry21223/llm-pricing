@@ -26,14 +26,21 @@ function flattenModels() {
   return models;
 }
 
-// 1. /api/v1/models — all models
+// 1. /api/v1/models — all models grouped by provider
 const allModels = flattenModels();
+const grouped = pricing.providers.map(p => ({
+  provider: p.provider,
+  providerUrl: p.providerUrl,
+  color: p.color,
+  models: p.models
+})).filter(g => g.models.length > 0);
+
 fs.writeFileSync(path.join(apiDir, 'models.json'), JSON.stringify({
   lastUpdated: pricing.lastUpdated,
   total: allModels.length,
-  models: allModels
+  providers: grouped
 }, null, 2));
-console.log(`✅ /api/v1/models.json — ${allModels.length} models`);
+console.log(`✅ /api/v1/models.json — ${grouped.length} providers with ${allModels.length} models (grouped)`);
 
 // 2. /api/v1/providers — provider list
 fs.writeFileSync(path.join(apiDir, 'providers.json'), JSON.stringify({

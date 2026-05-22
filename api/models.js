@@ -85,7 +85,7 @@ module.exports = async (req, res) => {
       return res.json({ query: names, total: matched.length, models: matched });
     }
 
-    // GET /api/models — with optional filters
+    // GET /api/models — with optional filters, grouped by provider
     if (pathname === '/api/models' || pathname === '/api/models/') {
       let all = flattenModels(pricing.providers);
       
@@ -112,10 +112,28 @@ module.exports = async (req, res) => {
       else if (q.sort === 'output') all.sort((a, b) => (a.output||Infinity) - (b.output||Infinity));
       else if (q.sort === 'context') all.sort((a, b) => (b.contextWindow||0) - (a.contextWindow||0));
       
+      // Group by provider
+      const grouped = [];
+      const providerMap = new Map();
+      for (const m of all) {
+        if (!providerMap.has(m.provider)) {
+          const p = pricing.providers.find(p => p.provider === m.provider);
+          providerMap.set(m.provider, {
+            provider: m.provider,
+            providerUrl: m.providerUrl,
+            color: p ? p.color : '#888',
+            models: []
+          });
+          grouped.push(providerMap.get(m.provider));
+        }
+        const { provider, providerUrl, ...model } = m;
+        providerMap.get(m.provider).models.push(model);
+      }
+      
       return res.json({
         lastUpdated: pricing.lastUpdated,
         total: all.length,
-        models: all
+        providers: grouped
       });
     }
 

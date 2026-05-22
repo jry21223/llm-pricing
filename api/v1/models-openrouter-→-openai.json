@@ -1,0 +1,19 @@
+{
+  "provider": "OpenRouter → OpenAI",
+  "providerUrl": "https://openrouter.ai/pricing",
+  "lastUpdated": "2026-05-22",
+  "total": 1,
+  "models": [
+    {
+      "name": "GPT-5.5",
+      "input": 5,
+      "output": 30,
+      "contextWindow": 1050000,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "source": "OpenRouter",
+      "note": "中转价，与官方同价"
+    }
+  ]
+}

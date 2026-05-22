@@ -1,8 +1,8 @@
 {
-  "provider": "阿里云 (通义千问)",
-  "providerUrl": "https://help.aliyun.com/zh/model-studio/model-pricing",
+  "group": "阿里云",
+  "color": "#ff6a00",
   "lastUpdated": "2026-05-22",
-  "total": 6,
+  "total": 7,
   "models": [
     {
       "name": "qwen3.7-max",
@@ -12,7 +12,8 @@
       "currency": "CNY",
       "unit": "/1M tokens",
       "lastUpdated": "2026-05-22",
-      "note": "旗舰推理，≤1M"
+      "note": "旗舰推理，≤1M",
+      "source": "官方"
     },
     {
       "name": "qwen3.6-plus",
@@ -22,7 +23,8 @@
       "currency": "CNY",
       "unit": "/1M tokens",
       "lastUpdated": "2026-05-22",
-      "note": "≤256K"
+      "note": "≤256K",
+      "source": "官方"
     },
     {
       "name": "qwen3.6-flash",
@@ -32,7 +34,8 @@
       "currency": "CNY",
       "unit": "/1M tokens",
       "lastUpdated": "2026-05-22",
-      "note": "≤256K"
+      "note": "≤256K",
+      "source": "官方"
     },
     {
       "name": "qwen3.5-plus",
@@ -42,7 +45,8 @@
       "currency": "CNY",
       "unit": "/1M tokens",
       "lastUpdated": "2026-05-22",
-      "note": "≤128K"
+      "note": "≤128K",
+      "source": "官方"
     },
     {
       "name": "qwen3.5-flash",
@@ -52,7 +56,8 @@
       "currency": "CNY",
       "unit": "/1M tokens",
       "lastUpdated": "2026-05-22",
-      "note": "超低价"
+      "note": "超低价",
+      "source": "官方"
     },
     {
       "name": "qwen-turbo",
@@ -62,7 +67,19 @@
       "currency": "CNY",
       "unit": "/1M tokens",
       "lastUpdated": "2026-05-22",
-      "note": "最轻量"
+      "note": "最轻量",
+      "source": "官方"
+    },
+    {
+      "name": "qwen3.7-max",
+      "input": 2.5,
+      "output": 7.5,
+      "contextWindow": 1000000,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "source": "OpenRouter",
+      "note": "美元计价，通过OpenRouter调用"
     }
   ]
 }

@@ -1,0 +1,30 @@
+{
+  "provider": "OpenRouter → DeepSeek",
+  "providerUrl": "https://openrouter.ai/pricing",
+  "lastUpdated": "2026-05-22",
+  "total": 2,
+  "models": [
+    {
+      "name": "deepseek-v4-flash",
+      "input": 0.112,
+      "output": 0.224,
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "source": "OpenRouter",
+      "note": "比官方低20%"
+    },
+    {
+      "name": "deepseek-v4-pro",
+      "input": 0.435,
+      "output": 0.87,
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "source": "OpenRouter",
+      "note": "75%折扣价"
+    }
+  ]
+}

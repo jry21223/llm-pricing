@@ -1,0 +1,19 @@
+{
+  "provider": "OpenRouter → xAI",
+  "providerUrl": "https://openrouter.ai/pricing",
+  "lastUpdated": "2026-05-22",
+  "total": 1,
+  "models": [
+    {
+      "name": "Grok 4.3",
+      "input": 1.25,
+      "output": 2.5,
+      "contextWindow": 1000000,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "source": "OpenRouter",
+      "note": "与官方同价"
+    }
+  ]
+}

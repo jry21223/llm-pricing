@@ -53,12 +53,13 @@
       <table class="pricing-table" id="pricingTable">
         <thead>
           <tr>
-            <th data-col="provider" onclick="sortBy('provider')">厂商 <span class="sort-icon">↕</span></th>
+            <th data-col="group" onclick="sortBy('group')">厂商 <span class="sort-icon">↕</span></th>
             <th data-col="name" onclick="sortBy('name')">模型 <span class="sort-icon">↕</span></th>
             <th data-col="input" onclick="sortBy('input')">Input (每百万Token) <span class="sort-icon">↕</span></th>
             <th data-col="cachedInput" onclick="sortBy('cachedInput')">缓存命中 <span class="sort-icon">↕</span></th>
             <th data-col="output" onclick="sortBy('output')">Output (每百万Token) <span class="sort-icon">↕</span></th>
             <th data-col="context" onclick="sortBy('context')">上下文 <span class="sort-icon">↕</span></th>
+            <th data-col="source" onclick="sortBy('source')">来源 <span class="sort-icon">↕</span></th>
           </tr>
         </thead>
         <tbody id="tableBody">

@@ -1,0 +1,19 @@
+{
+  "provider": "OpenRouter → Google",
+  "providerUrl": "https://openrouter.ai/pricing",
+  "lastUpdated": "2026-05-22",
+  "total": 1,
+  "models": [
+    {
+      "name": "Gemini 3.5 Flash",
+      "input": 1.5,
+      "output": 9,
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "source": "OpenRouter",
+      "note": "与官方同价"
+    }
+  ]
+}

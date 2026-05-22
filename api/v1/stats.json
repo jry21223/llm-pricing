@@ -1,97 +1,180 @@
 {
   "lastUpdated": "2026-05-22",
-  "totalProviders": 13,
   "totalModels": 27,
-  "modelsWithPricing": 27,
   "cheapestInput": [
     {
-      "provider": "OpenRouter (中转聚合)",
-      "model": "DeepSeek V4 Flash (OpenRouter)",
+      "name": "deepseek-v4-flash",
       "input": 0.112,
-      "currency": "USD"
+      "output": 0.224,
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "source": "OpenRouter",
+      "note": "比官方低20%"
     },
     {
-      "provider": "DeepSeek",
-      "model": "deepseek-v4-flash",
+      "name": "deepseek-v4-flash",
       "input": 0.14,
-      "currency": "USD"
+      "cachedInput": 0.0028,
+      "output": 0.28,
+      "contextWindow": 1000000,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "缓存命中仅 $0.0028/M",
+      "source": "官方"
     },
     {
-      "provider": "OpenAI",
-      "model": "GPT-5.4 nano",
+      "name": "GPT-5.4 nano",
       "input": 0.2,
-      "currency": "USD"
+      "output": 1.25,
+      "contextWindow": 400000,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "超轻量模型",
+      "source": "官方"
     },
     {
-      "provider": "阿里云 (通义千问)",
-      "model": "qwen3.5-flash",
+      "name": "qwen3.5-flash",
       "input": 0.2,
-      "currency": "CNY"
+      "output": 2,
+      "contextWindow": 1000000,
+      "currency": "CNY",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "超低价",
+      "source": "官方"
     },
     {
-      "provider": "Google (Gemini)",
-      "model": "Gemini 3.1 Flash Lite",
+      "name": "Gemini 3.1 Flash Lite",
       "input": 0.25,
-      "currency": "USD"
+      "cachedInput": 0.025,
+      "output": 1.5,
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "超轻量多模态",
+      "source": "官方"
     }
   ],
   "cheapestOutput": [
     {
-      "provider": "OpenRouter (中转聚合)",
-      "model": "DeepSeek V4 Flash (OpenRouter)",
+      "name": "deepseek-v4-flash",
+      "input": 0.112,
       "output": 0.224,
-      "currency": "USD"
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "source": "OpenRouter",
+      "note": "比官方低20%"
     },
     {
-      "provider": "DeepSeek",
-      "model": "deepseek-v4-flash",
+      "name": "deepseek-v4-flash",
+      "input": 0.14,
+      "cachedInput": 0.0028,
       "output": 0.28,
-      "currency": "USD"
+      "contextWindow": 1000000,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "缓存命中仅 $0.0028/M",
+      "source": "官方"
     },
     {
-      "provider": "OpenRouter (中转聚合)",
-      "model": "DeepSeek V4 Pro (OpenRouter)",
+      "name": "deepseek-v4-pro",
+      "input": 0.435,
       "output": 0.87,
-      "currency": "USD"
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "source": "OpenRouter",
+      "note": "75%折扣价"
     },
     {
-      "provider": "OpenAI",
-      "model": "GPT-5.4 nano",
+      "name": "GPT-5.4 nano",
+      "input": 0.2,
       "output": 1.25,
-      "currency": "USD"
+      "contextWindow": 400000,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "超轻量模型",
+      "source": "官方"
     },
     {
-      "provider": "Google (Gemini)",
-      "model": "Gemini 3.1 Flash Lite",
+      "name": "Gemini 3.1 Flash Lite",
+      "input": 0.25,
+      "cachedInput": 0.025,
       "output": 1.5,
-      "currency": "USD"
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "超轻量多模态",
+      "source": "官方"
     }
   ],
   "largestContext": [
     {
-      "provider": "OpenRouter (中转聚合)",
-      "model": "GPT-5.5 (OpenRouter)",
-      "contextWindow": 1050000
+      "name": "GPT-5.5 Pro",
+      "input": 30,
+      "output": 180,
+      "contextWindow": 1050000,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "最大上下文高端版",
+      "source": "官方"
     },
     {
-      "provider": "OpenAI",
-      "model": "GPT-5.5 Pro",
-      "contextWindow": 1050000
+      "name": "GPT-5.5",
+      "input": 5,
+      "output": 30,
+      "contextWindow": 1050000,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "source": "OpenRouter",
+      "note": "中转价，与官方同价"
     },
     {
-      "provider": "OpenRouter (中转聚合)",
-      "model": "DeepSeek V4 Flash (OpenRouter)",
-      "contextWindow": 1048576
+      "name": "deepseek-v4-flash",
+      "input": 0.112,
+      "output": 0.224,
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "source": "OpenRouter",
+      "note": "比官方低20%"
     },
     {
-      "provider": "Google (Gemini)",
-      "model": "Gemini 3.1 Flash Lite",
-      "contextWindow": 1048576
+      "name": "deepseek-v4-pro",
+      "input": 0.435,
+      "output": 0.87,
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "source": "OpenRouter",
+      "note": "75%折扣价"
     },
     {
-      "provider": "OpenRouter (中转聚合)",
-      "model": "DeepSeek V4 Pro (OpenRouter)",
-      "contextWindow": 1048576
+      "name": "Gemini 3.5 Flash",
+      "input": 1.5,
+      "cachedInput": 0.15,
+      "output": 9,
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "多模态，1M上下文",
+      "source": "官方"
     }
   ]
 }

@@ -112,28 +112,26 @@ module.exports = async (req, res) => {
       else if (q.sort === 'output') all.sort((a, b) => (a.output||Infinity) - (b.output||Infinity));
       else if (q.sort === 'context') all.sort((a, b) => (b.contextWindow||0) - (a.contextWindow||0));
       
-      // Group by provider
-      const grouped = [];
-      const providerMap = new Map();
+      // Group by base model group
+      const groupMap = new Map();
       for (const m of all) {
-        if (!providerMap.has(m.provider)) {
-          const p = pricing.providers.find(p => p.provider === m.provider);
-          providerMap.set(m.provider, {
-            provider: m.provider,
-            providerUrl: m.providerUrl,
+        const g = m.group || m.provider;
+        if (!groupMap.has(g)) {
+          const p = pricing.providers.find(p => (p.group || p.provider) === g);
+          groupMap.set(g, {
+            provider: g,
             color: p ? p.color : '#888',
             models: []
           });
-          grouped.push(providerMap.get(m.provider));
         }
-        const { provider, providerUrl, ...model } = m;
-        providerMap.get(m.provider).models.push(model);
+        groupMap.get(g).models.push(m);
       }
+      const grouped = Array.from(groupMap.values());
       
       return res.json({
         lastUpdated: pricing.lastUpdated,
         total: all.length,
-        providers: grouped
+        groups: grouped
       });
     }
 

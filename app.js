@@ -14,6 +14,7 @@ const i18n = {
     colCached: '缓存命中',
     colOutput: 'Output (每百万Token)',
     colContext: '上下文',
+    colSource: '来源',
     sectionTitle: '厂商概览',
     emptyData: '暂无数据',
     loading: '加载中...',
@@ -22,6 +23,7 @@ const i18n = {
     models: '个模型',
     footerNote: '数据仅供参考，准确价格请以各厂商官网为准。',
     noResult: '没有找到匹配的模型',
+    official: '官方',
   },
   en: {
     title: 'LLM API pricing per 1M tokens, auto-updated daily',
@@ -33,6 +35,7 @@ const i18n = {
     colCached: 'Cached Input',
     colOutput: 'Output (/1M tokens)',
     colContext: 'Context',
+    colSource: 'Source',
     sectionTitle: 'Providers Overview',
     emptyData: 'No data',
     loading: 'Loading...',
@@ -41,6 +44,7 @@ const i18n = {
     models: 'models',
     footerNote: 'Prices are for reference only. Check official sites for accurate pricing.',
     noResult: 'No matching models found',
+    official: 'Official',
   }
 };
 
@@ -57,35 +61,73 @@ async function loadData() {
     renderTable();
     renderCards();
   } catch (e) {
-    document.getElementById('dataStatus').textContent = `❌ 数据加载失败: ${e.message}`;
+    document.getElementById('dataStatus').textContent = `❌ ${e.message}`;
     document.getElementById('tableBody').innerHTML = 
-      `<tr><td colspan="6" class="loading-cell">❌ ${e.message}</td></tr>`;
+      `<tr><td colspan="7" class="loading-cell">❌ ${e.message}</td></tr>`;
   }
 }
 
-// ===== Filtering =====
-function filterModels() {
-  renderTable();
-}
-
-function getFilteredModels() {
-  const q = (document.getElementById('searchInput').value || '').toLowerCase().trim();
-  const results = [];
+// ===== Grouping Logic =====
+function getGroupedModels() {
+  // Build groups: group together providers sharing the same `group` field
+  const groups = new Map();
   
   for (const p of pricingData.providers) {
-    for (const m of p.models) {
-      const match = !q || 
-        m.name.toLowerCase().includes(q) || 
-        p.provider.toLowerCase().includes(q);
-      if (match) {
-        results.push({ provider: p, model: m });
+    const g = p.group || p.provider;
+    if (!groups.has(g)) {
+      groups.set(g, {
+        group: g,
+        color: p.color,
+        sourceProviders: []
+      });
+    }
+    const grp = groups.get(g);
+    grp.sourceProviders.push({
+      provider: p.provider,
+      providerUrl: p.providerUrl,
+      source: p.models[0]?.source === 'OpenRouter' ? 'OpenRouter' : (p.models[0]?.source || '官方'),
+      models: p.models || []
+    });
+  }
+  
+  return Array.from(groups.values());
+}
+
+function getAllFlattened() {
+  const result = [];
+  for (const g of getGroupedModels()) {
+    for (const sp of g.sourceProviders) {
+      for (const m of sp.models) {
+        result.push({
+          group: g.group,
+          groupColor: g.color,
+          provider: sp.provider,
+          providerUrl: sp.providerUrl,
+          source: sp.source,
+          ...m
+        });
       }
     }
   }
-  return results;
+  return result;
 }
 
-// ===== Sorting =====
+// ===== Filtering & Sorting =====
+function filterModels() { renderTable(); }
+
+function getFilteredModels() {
+  const q = (document.getElementById('searchInput').value || '').toLowerCase().trim();
+  const all = getAllFlattened();
+  
+  if (!q) return all;
+  
+  return all.filter(m => 
+    m.name.toLowerCase().includes(q) || 
+    m.provider.toLowerCase().includes(q) ||
+    m.group.toLowerCase().includes(q)
+  );
+}
+
 function sortBy(col) {
   if (currentSort.col === col) {
     currentSort.dir = currentSort.dir === 'asc' ? 'desc' : 'asc';
@@ -93,12 +135,10 @@ function sortBy(col) {
     currentSort.col = col;
     currentSort.dir = 'asc';
   }
-  document.getElementById('sortSelect').value = 
-    col + '-' + currentSort.dir;
+  document.getElementById('sortSelect').value = col + '-' + currentSort.dir;
   renderTable();
 }
 
-// Handle sort select change
 document.addEventListener('DOMContentLoaded', () => {
   const sel = document.getElementById('sortSelect');
   if (sel) {
@@ -117,29 +157,33 @@ function sortModels(models, col, dir) {
   return [...models].sort((a, b) => {
     let va, vb;
     switch (col) {
-      case 'provider':
-        va = a.provider.provider;
-        vb = b.provider.provider;
+      case 'group':
+        va = a.group || '';
+        vb = b.group || '';
+        return va.localeCompare(vb) * m;
+      case 'source':
+        va = a.source || '';
+        vb = b.source || '';
         return va.localeCompare(vb) * m;
       case 'name':
-        va = a.model.name;
-        vb = b.model.name;
+        va = a.name || '';
+        vb = b.name || '';
         return va.localeCompare(vb) * m;
       case 'input':
-        va = a.model.input ?? Infinity;
-        vb = b.model.input ?? Infinity;
+        va = a.input ?? Infinity;
+        vb = b.input ?? Infinity;
         return (va - vb) * m;
       case 'cachedInput':
-        va = a.model.cachedInput ?? Infinity;
-        vb = b.model.cachedInput ?? Infinity;
+        va = a.cachedInput ?? Infinity;
+        vb = b.cachedInput ?? Infinity;
         return (va - vb) * m;
       case 'output':
-        va = a.model.output ?? Infinity;
-        vb = b.model.output ?? Infinity;
+        va = a.output ?? Infinity;
+        vb = b.output ?? Infinity;
         return (va - vb) * m;
       case 'context':
-        va = a.model.contextWindow ?? Infinity;
-        vb = b.model.contextWindow ?? Infinity;
+        va = a.contextWindow ?? Infinity;
+        vb = b.contextWindow ?? Infinity;
         return (va - vb) * m;
       default:
         return 0;
@@ -163,67 +207,6 @@ function fmtContext(v) {
   return `${v}`;
 }
 
-function renderTable() {
-  const tbody = document.getElementById('tableBody');
-  const filtered = getFilteredModels();
-  const sorted = sortModels(filtered, currentSort.col, currentSort.dir);
-  
-  // Update sort icons
-  document.querySelectorAll('#pricingTable th').forEach(th => {
-    th.classList.remove('sort-active');
-  });
-  const activeTh = document.querySelector(`#pricingTable th[data-col="${currentSort.col}"]`);
-  if (activeTh) activeTh.classList.add('sort-active');
-
-  if (sorted.length === 0) {
-    tbody.innerHTML = `<tr><td colspan="6" class="loading-cell">🔍 ${i18n[currentLang].noResult}</td></tr>`;
-    return;
-  }
-
-  tbody.innerHTML = sorted.map(item => {
-    const p = item.provider;
-    const m = item.model;
-    const color = p.color || '#888';
-    
-    const inputStr = fmtPrice(m.input, m.currency);
-    const cachedStr = fmtPrice(m.cachedInput, m.currency);
-    const outputStr = fmtPrice(m.output, m.currency);
-    const ctxStr = fmtContext(m.contextWindow);
-    
-    const hasPrice = m.input !== undefined && m.input !== null;
-    
-    if (!hasPrice) {
-      return `<tr>
-        <td>
-          <div class="provider-cell">
-            <span class="provider-dot" style="background:${color}"></span>
-            <span class="provider-name">${escHtml(p.provider)}</span>
-          </div>
-        </td>
-        <td><span class="model-name">${escHtml(m.name)}</span></td>
-        <td colspan="4"><span class="price-empty">📌 ${i18n[currentLang].toBeFetched}</span></td>
-      </tr>`;
-    }
-    
-    return `<tr>
-      <td>
-        <div class="provider-cell">
-          <span class="provider-dot" style="background:${color}"></span>
-          <span class="provider-name">${escHtml(p.provider)}</span>
-        </div>
-      </td>
-      <td>
-        <div class="model-name">${escHtml(m.name)}</div>
-        ${m.note ? `<div class="model-note">${escHtml(m.note)}</div>` : ''}
-      </td>
-      <td><span class="price-value usd">${inputStr || '—'}</span></td>
-      <td><span class="price-value usd">${cachedStr || '—'}</span></td>
-      <td><span class="price-value usd">${outputStr || '—'}</span></td>
-      <td><span class="context-value">${ctxStr}</span></td>
-    </tr>`;
-  }).join('');
-}
-
 function escHtml(s) {
   if (!s) return '';
   const d = document.createElement('div');
@@ -231,25 +214,100 @@ function escHtml(s) {
   return d.innerHTML;
 }
 
+function renderTable() {
+  const tbody = document.getElementById('tableBody');
+  const filtered = getFilteredModels();
+  const sorted = sortModels(filtered, currentSort.col, currentSort.dir);
+  
+  document.querySelectorAll('#pricingTable th').forEach(th => th.classList.remove('sort-active'));
+  const activeTh = document.querySelector(`#pricingTable th[data-col="${currentSort.col}"]`);
+  if (activeTh) activeTh.classList.add('sort-active');
+
+  if (sorted.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="7" class="loading-cell">🔍 ${i18n[currentLang].noResult}</td></tr>`;
+    return;
+  }
+
+  // Group rows visually: track when group changes
+  let lastGroup = null;
+  let html = '';
+  
+  for (const m of sorted) {
+    const isOfficial = m.source === '官方' || !m.source;
+    const color = m.groupColor || '#888';
+    
+    // Group header row
+    if (m.group !== lastGroup) {
+      lastGroup = m.group;
+      html += `<tr class="group-header">
+        <td colspan="7">
+          <span class="group-dot" style="background:${color}"></span>
+          <span class="group-name">${escHtml(m.group)}</span>
+        </td>
+      </tr>`;
+    }
+    
+    // Skip models without pricing data
+    if (m.input === undefined || m.input === null) {
+      // Show a "pending" row only once per provider
+      // Skip to avoid clutter
+      continue;
+    }
+    
+    const inputStr = fmtPrice(m.input, m.currency);
+    const cachedStr = fmtPrice(m.cachedInput, m.currency);
+    const outputStr = fmtPrice(m.output, m.currency);
+    const ctxStr = fmtContext(m.contextWindow);
+    const sourceLabel = isOfficial ? i18n[currentLang].official : m.source;
+    
+    html += `<tr class="model-row ${isOfficial ? 'official-row' : 'reseller-row'}">
+      <td>
+        <div class="provider-cell">
+          <span class="provider-source-badge ${isOfficial ? 'badge-official' : 'badge-reseller'}">${escHtml(sourceLabel)}</span>
+          <span class="provider-name-sub">${escHtml(isOfficial ? '' : m.provider)}</span>
+        </div>
+      </td>
+      <td>
+        <div class="model-name">${escHtml(m.name)}</div>
+        ${m.note ? `<div class="model-note">${escHtml(m.note)}</div>` : ''}
+      </td>
+      <td><span class="price-value ${m.currency === 'CNY' ? 'cny' : 'usd'}">${inputStr || '—'}</span></td>
+      <td><span class="price-value ${m.currency === 'CNY' ? 'cny' : 'usd'}">${cachedStr || '—'}</span></td>
+      <td><span class="price-value ${m.currency === 'CNY' ? 'cny' : 'usd'}">${outputStr || '—'}</span></td>
+      <td><span class="context-value">${ctxStr}</span></td>
+      <td>
+        ${!isOfficial ? `<span class="source-label">${escHtml(sourceLabel)}</span>` : ''}
+      </td>
+    </tr>`;
+  }
+
+  tbody.innerHTML = html;
+}
+
 function renderCards() {
   const container = document.getElementById('providerCards');
+  const groups = getGroupedModels();
   
-  container.innerHTML = pricingData.providers.map(p => {
-    const hasModels = p.models.length > 0;
-    const hasPrice = p.models.some(m => m.input !== undefined && m.input !== null);
-    const prices = p.models.filter(m => m.input !== undefined).map(m => m.input);
+  container.innerHTML = groups.map(g => {
+    const allModels = g.sourceProviders.flatMap(sp => sp.models);
+    const hasModels = allModels.length > 0;
+    const hasPrice = allModels.some(m => m.input !== undefined && m.input !== null);
+    const prices = allModels.filter(m => m.input !== undefined).map(m => m.input);
     const minPrice = prices.length ? Math.min(...prices) : null;
     const maxPrice = prices.length ? Math.max(...prices) : null;
+    const sources = [...new Set(g.sourceProviders.map(sp => sp.source || '官方'))].join(', ');
+    
+    const name = g.group || '';
     
     return `<div class="provider-card">
       <div class="provider-card-header">
-        <span class="card-dot" style="background:${p.color}"></span>
-        <span class="provider-card-name">${escHtml(p.provider)}</span>
-        <a href="${escHtml(p.providerUrl)}" target="_blank" class="provider-card-link" rel="noopener">官网 ↗</a>
+        <span class="card-dot" style="background:${g.color}"></span>
+        <span class="provider-card-name">${escHtml(name)}</span>
       </div>
       <div class="provider-card-stats">
         ${hasModels 
-          ? `<span>${p.models.length} ${i18n[currentLang].models}</span>` +
+          ? `<span>${allModels.length} ${i18n[currentLang].models}</span>
+             <span>来源: ${sources}</span>` +
             (hasPrice && minPrice !== null
               ? `<span>价格区间: $${minPrice.toFixed(3)} ~ $${maxPrice.toFixed(3)}</span>`
               : `<span>📌 ${i18n[currentLang].toBeFetched}</span>`)
@@ -274,10 +332,9 @@ function applyLang() {
   document.getElementById('sortLabel').textContent = t.sortLabel;
   document.getElementById('sectionTitle').textContent = t.sectionTitle;
   
-  // Update table headers
   const ths = document.querySelectorAll('#pricingTable th');
-  const cols = ['provider', 'name', 'input', 'cached', 'output', 'context'];
-  const labels = [t.colProvider, t.colModel, t.colInput, t.colCached, t.colOutput, t.colContext];
+  const cols = ['group', 'name', 'input', 'cached', 'output', 'context', 'source'];
+  const labels = [t.colProvider, t.colModel, t.colInput, t.colCached, t.colOutput, t.colContext, t.colSource];
   ths.forEach((th, i) => {
     if (i < labels.length) {
       const iconSpan = th.querySelector('.sort-icon');

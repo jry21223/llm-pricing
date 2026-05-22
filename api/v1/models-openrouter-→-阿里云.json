@@ -1,0 +1,19 @@
+{
+  "provider": "OpenRouter → 阿里云",
+  "providerUrl": "https://openrouter.ai/pricing",
+  "lastUpdated": "2026-05-22",
+  "total": 1,
+  "models": [
+    {
+      "name": "qwen3.7-max",
+      "input": 2.5,
+      "output": 7.5,
+      "contextWindow": 1000000,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "source": "OpenRouter",
+      "note": "美元计价，通过OpenRouter调用"
+    }
+  ]
+}

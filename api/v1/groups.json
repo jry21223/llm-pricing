@@ -1,13 +1,12 @@
 {
   "lastUpdated": "2026-05-22",
-  "total": 18,
-  "providers": [
+  "total": 12,
+  "groups": [
     {
       "provider": "OpenAI",
-      "providerUrl": "https://openai.com/api/pricing/",
-      "color": "#10a37f",
       "group": "OpenAI",
-      "modelCount": 5,
+      "color": "#10a37f",
+      "modelCount": 6,
       "models": [
         {
           "name": "GPT-5.5",
@@ -28,16 +27,7 @@
         {
           "name": "GPT-5.5 Pro",
           "source": "官方"
-        }
-      ]
-    },
-    {
-      "provider": "OpenRouter → OpenAI",
-      "providerUrl": "https://openrouter.ai/pricing",
-      "color": "#10a37f",
-      "group": "OpenAI",
-      "modelCount": 1,
-      "models": [
+        },
         {
           "name": "GPT-5.5",
           "source": "OpenRouter"
@@ -46,10 +36,9 @@
     },
     {
       "provider": "DeepSeek",
-      "providerUrl": "https://api-docs.deepseek.com/quick_start/pricing",
-      "color": "#4f46e5",
       "group": "DeepSeek",
-      "modelCount": 2,
+      "color": "#4f46e5",
+      "modelCount": 4,
       "models": [
         {
           "name": "deepseek-v4-flash",
@@ -58,16 +47,7 @@
         {
           "name": "deepseek-v4-pro",
           "source": "官方"
-        }
-      ]
-    },
-    {
-      "provider": "OpenRouter → DeepSeek",
-      "providerUrl": "https://openrouter.ai/pricing",
-      "color": "#4f46e5",
-      "group": "DeepSeek",
-      "modelCount": 2,
-      "models": [
+        },
         {
           "name": "deepseek-v4-flash",
           "source": "OpenRouter"
@@ -79,11 +59,10 @@
       ]
     },
     {
-      "provider": "Anthropic (Claude)",
-      "providerUrl": "https://www.anthropic.com/pricing",
-      "color": "#d97706",
+      "provider": "Anthropic",
       "group": "Anthropic",
-      "modelCount": 3,
+      "color": "#d97706",
+      "modelCount": 4,
       "models": [
         {
           "name": "Claude Opus 4.7",
@@ -96,16 +75,7 @@
         {
           "name": "Claude Haiku 4.5",
           "source": "官方"
-        }
-      ]
-    },
-    {
-      "provider": "OpenRouter → Anthropic",
-      "providerUrl": "https://openrouter.ai/pricing",
-      "color": "#d97706",
-      "group": "Anthropic",
-      "modelCount": 1,
-      "models": [
+        },
         {
           "name": "Claude Opus 4.7",
           "source": "OpenRouter"
@@ -113,11 +83,10 @@
       ]
     },
     {
-      "provider": "阿里云 (通义千问)",
-      "providerUrl": "https://help.aliyun.com/zh/model-studio/model-pricing",
-      "color": "#ff6a00",
+      "provider": "阿里云",
       "group": "阿里云",
-      "modelCount": 6,
+      "color": "#ff6a00",
+      "modelCount": 7,
       "models": [
         {
           "name": "qwen3.7-max",
@@ -142,16 +111,7 @@
         {
           "name": "qwen-turbo",
           "source": "官方"
-        }
-      ]
-    },
-    {
-      "provider": "OpenRouter → 阿里云",
-      "providerUrl": "https://openrouter.ai/pricing",
-      "color": "#ff6a00",
-      "group": "阿里云",
-      "modelCount": 1,
-      "models": [
+        },
         {
           "name": "qwen3.7-max",
           "source": "OpenRouter"
@@ -159,11 +119,10 @@
       ]
     },
     {
-      "provider": "Google (Gemini)",
-      "providerUrl": "https://ai.google.dev/pricing",
-      "color": "#4285f4",
+      "provider": "Google",
       "group": "Google",
-      "modelCount": 2,
+      "color": "#4285f4",
+      "modelCount": 3,
       "models": [
         {
           "name": "Gemini 3.5 Flash",
@@ -172,16 +131,7 @@
         {
           "name": "Gemini 3.1 Flash Lite",
           "source": "官方"
-        }
-      ]
-    },
-    {
-      "provider": "OpenRouter → Google",
-      "providerUrl": "https://openrouter.ai/pricing",
-      "color": "#4285f4",
-      "group": "Google",
-      "modelCount": 1,
-      "models": [
+        },
         {
           "name": "Gemini 3.5 Flash",
           "source": "OpenRouter"
@@ -189,11 +139,10 @@
       ]
     },
     {
-      "provider": "xAI (Grok)",
-      "providerUrl": "https://console.x.ai/",
-      "color": "#1a1a2e",
+      "provider": "xAI",
       "group": "xAI",
-      "modelCount": 2,
+      "color": "#1a1a2e",
+      "modelCount": 3,
       "models": [
         {
           "name": "Grok 4.3",
@@ -202,16 +151,7 @@
         {
           "name": "Grok Build 0.1",
           "source": "官方"
-        }
-      ]
-    },
-    {
-      "provider": "OpenRouter → xAI",
-      "providerUrl": "https://openrouter.ai/pricing",
-      "color": "#1a1a2e",
-      "group": "xAI",
-      "modelCount": 1,
-      "models": [
+        },
         {
           "name": "Grok 4.3",
           "source": "OpenRouter"
@@ -219,50 +159,44 @@
       ]
     },
     {
-      "provider": "硅基流动 (SiliconFlow)",
-      "providerUrl": "https://siliconflow.cn/pricing",
-      "color": "#06b6d4",
+      "provider": "硅基流动",
       "group": "硅基流动",
+      "color": "#06b6d4",
       "modelCount": 0,
       "models": []
     },
     {
-      "provider": "智谱AI (GLM)",
-      "providerUrl": "https://open.bigmodel.cn/pricing",
-      "color": "#1d4ed8",
+      "provider": "智谱AI",
       "group": "智谱AI",
+      "color": "#1d4ed8",
       "modelCount": 0,
       "models": []
     },
     {
-      "provider": "月之暗面 (Kimi)",
-      "providerUrl": "https://kimi.moonshot.cn/",
-      "color": "#7c3aed",
+      "provider": "月之暗面",
       "group": "月之暗面",
+      "color": "#7c3aed",
       "modelCount": 0,
       "models": []
     },
     {
       "provider": "MiniMax",
-      "providerUrl": "https://platform.minimaxi.com/",
-      "color": "#0891b2",
       "group": "MiniMax",
+      "color": "#0891b2",
       "modelCount": 0,
       "models": []
     },
     {
-      "provider": "百度 (文心一言)",
-      "providerUrl": "https://yiyan.baidu.com/",
-      "color": "#2563eb",
+      "provider": "百度",
       "group": "百度",
+      "color": "#2563eb",
       "modelCount": 0,
       "models": []
     },
     {
-      "provider": "字节跳动 (豆包)",
-      "providerUrl": "https://www.volcengine.com/product/doubao",
-      "color": "#e11d48",
+      "provider": "字节跳动",
       "group": "字节跳动",
+      "color": "#e11d48",
       "modelCount": 0,
       "models": []
     }

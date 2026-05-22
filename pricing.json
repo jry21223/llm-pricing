@@ -15,7 +15,7 @@
           "currency": "USD",
           "unit": "/1M tokens",
           "lastUpdated": "2026-05-22",
-          "note": "旗舰模型，代码和专业工作"
+          "note": "旗舰模型"
         },
         {
           "name": "GPT-5.4",
@@ -37,47 +37,27 @@
           "currency": "USD",
           "unit": "/1M tokens",
           "lastUpdated": "2026-05-22",
-          "note": "最强小模型，支持代码/计算机使用/子代理"
-        }
-      ]
-    },
-    {
-      "provider": "Anthropic (Claude)",
-      "providerUrl": "https://www.anthropic.com/pricing",
-      "color": "#d97706",
-      "models": [
-        {
-          "name": "Claude Opus 4.7",
-          "input": 15.00,
-          "cachedInput": 1.50,
-          "output": 75.00,
-          "contextWindow": 200000,
-          "currency": "USD",
-          "unit": "/1M tokens",
-          "lastUpdated": "2026-05-22",
-          "note": "旗舰模型，代码和专业工作"
+          "note": "最强小模型"
         },
         {
-          "name": "Claude Sonnet 4.6",
-          "input": 3.00,
-          "cachedInput": 0.30,
-          "output": 15.00,
-          "contextWindow": 200000,
+          "name": "GPT-5.4 nano",
+          "input": 0.20,
+          "output": 1.25,
+          "contextWindow": 400000,
           "currency": "USD",
           "unit": "/1M tokens",
           "lastUpdated": "2026-05-22",
-          "note": "高性价比编码与推理模型"
+          "note": "超轻量模型"
         },
         {
-          "name": "Claude Haiku 4.5",
-          "input": 0.80,
-          "cachedInput": 0.08,
-          "output": 4.00,
-          "contextWindow": 200000,
+          "name": "GPT-5.5 Pro",
+          "input": 30.00,
+          "output": 180.00,
+          "contextWindow": 1050000,
           "currency": "USD",
           "unit": "/1M tokens",
           "lastUpdated": "2026-05-22",
-          "note": "轻量快速，最低成本选项"
+          "note": "最大上下文高端版"
         }
       ]
     },
@@ -106,7 +86,47 @@
           "currency": "USD",
           "unit": "/1M tokens",
           "lastUpdated": "2026-05-22",
-          "note": "原价，当前75%折扣中，折扣后 input=$0.435, cached=$0.003625, output=$0.87（截止2026-05-31）"
+          "note": "原价，当前75%折扣：input=$0.435, output=$0.87（至2026-05-31）"
+        }
+      ]
+    },
+    {
+      "provider": "Anthropic (Claude)",
+      "providerUrl": "https://www.anthropic.com/pricing",
+      "color": "#d97706",
+      "models": [
+        {
+          "name": "Claude Opus 4.7",
+          "input": 5.00,
+          "cachedInput": 0.50,
+          "output": 25.00,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "旗舰模型，1M上下文"
+        },
+        {
+          "name": "Claude Sonnet 4.6",
+          "input": 3.00,
+          "cachedInput": 0.30,
+          "output": 15.00,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "高性价比编码+推理"
+        },
+        {
+          "name": "Claude Haiku 4.5",
+          "input": 1.00,
+          "cachedInput": 0.10,
+          "output": 5.00,
+          "contextWindow": 200000,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "轻量快速版本"
         }
       ]
     },
@@ -123,7 +143,7 @@
           "currency": "CNY",
           "unit": "/1M tokens",
           "lastUpdated": "2026-05-22",
-          "note": "旗舰推理模型，0<Token≤1M，支持Batch半价、缓存折扣"
+          "note": "旗舰推理，支持Batch半价/缓存折扣"
         },
         {
           "name": "qwen3.6-plus",
@@ -133,7 +153,7 @@
           "currency": "CNY",
           "unit": "/1M tokens",
           "lastUpdated": "2026-05-22",
-          "note": "能力与成本均衡，0<Token≤256K，256K-1M输入¥8/输出¥48"
+          "note": "能力与成本均衡，≤256K"
         },
         {
           "name": "qwen3.6-flash",
@@ -143,7 +163,7 @@
           "currency": "CNY",
           "unit": "/1M tokens",
           "lastUpdated": "2026-05-22",
-          "note": "高性价比，0<Token≤256K，支持Batch半价、缓存折扣"
+          "note": "高性价比，≤256K"
         },
         {
           "name": "qwen3.5-plus",
@@ -153,7 +173,7 @@
           "currency": "CNY",
           "unit": "/1M tokens",
           "lastUpdated": "2026-05-22",
-          "note": "0<Token≤128K，128K-256K输入¥2/输出¥12"
+          "note": "≤128K"
         },
         {
           "name": "qwen3.5-flash",
@@ -163,7 +183,7 @@
           "currency": "CNY",
           "unit": "/1M tokens",
           "lastUpdated": "2026-05-22",
-          "note": "超低价格，0<Token≤128K，支持Batch半价、缓存折扣"
+          "note": "超低价，≤128K"
         },
         {
           "name": "qwen-turbo",
@@ -173,9 +193,150 @@
           "currency": "CNY",
           "unit": "/1M tokens",
           "lastUpdated": "2026-05-22",
-          "note": "最轻量模型，支持思考模式"
+          "note": "最轻量模型"
         }
       ]
+    },
+    {
+      "provider": "Google (Gemini)",
+      "providerUrl": "https://ai.google.dev/pricing",
+      "color": "#4285f4",
+      "models": [
+        {
+          "name": "Gemini 3.5 Flash",
+          "input": 1.5,
+          "cachedInput": 0.15,
+          "output": 9,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "多模态，1M上下文"
+        },
+        {
+          "name": "Gemini 3.1 Flash Lite",
+          "input": 0.25,
+          "cachedInput": 0.025,
+          "output": 1.5,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "超轻量多模态"
+        }
+      ]
+    },
+    {
+      "provider": "xAI (Grok)",
+      "providerUrl": "https://console.x.ai/",
+      "color": "#1a1a2e",
+      "models": [
+        {
+          "name": "Grok 4.3",
+          "input": 1.25,
+          "cachedInput": 0.20,
+          "output": 2.5,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "推理模型，1M上下文"
+        },
+        {
+          "name": "Grok Build 0.1",
+          "input": 1.0,
+          "cachedInput": 0.20,
+          "output": 2.0,
+          "contextWindow": 256000,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "编码专用模型"
+        }
+      ]
+    },
+    {
+      "provider": "OpenRouter (中转聚合)",
+      "providerUrl": "https://openrouter.ai/pricing",
+      "color": "#8b5cf6",
+      "models": [
+        {
+          "name": "GPT-5.5 (OpenRouter)",
+          "input": 5.0,
+          "output": 30.0,
+          "contextWindow": 1050000,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "与官方同价"
+        },
+        {
+          "name": "Claude Opus 4.7 (OpenRouter)",
+          "input": 5.0,
+          "output": 25.0,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "与官方同价"
+        },
+        {
+          "name": "DeepSeek V4 Flash (OpenRouter)",
+          "input": 0.112,
+          "output": 0.224,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "比官方低20%"
+        },
+        {
+          "name": "DeepSeek V4 Pro (OpenRouter)",
+          "input": 0.435,
+          "output": 0.87,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "75%折扣价"
+        },
+        {
+          "name": "Qwen3.7-Max (OpenRouter)",
+          "input": 2.5,
+          "output": 7.5,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "通过OpenRouter调用"
+        },
+        {
+          "name": "Gemini 3.5 Flash (OpenRouter)",
+          "input": 1.5,
+          "output": 9,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "与官方同价"
+        },
+        {
+          "name": "Grok 4.3 (OpenRouter)",
+          "input": 1.25,
+          "output": 2.5,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "与官方同价"
+        }
+      ]
+    },
+    {
+      "provider": "硅基流动 (SiliconFlow)",
+      "providerUrl": "https://siliconflow.cn/pricing",
+      "color": "#06b6d4",
+      "models": []
     },
     {
       "provider": "智谱AI (GLM)",

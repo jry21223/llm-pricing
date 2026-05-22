@@ -2,6 +2,29 @@
   "group": "百度",
   "color": "#2563eb",
   "lastUpdated": "2026-05-22",
-  "total": 0,
-  "models": []
+  "total": 2,
+  "models": [
+    {
+      "name": "CoBuddy (千帆)",
+      "input": 0,
+      "output": 0,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "source": "OpenRouter",
+      "note": "免费！百度编码助手模型，通过OpenRouter调用"
+    },
+    {
+      "name": "ERNIE 4.0",
+      "input": null,
+      "output": null,
+      "contextWindow": null,
+      "currency": "CNY",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "待抓取（SPA页面）",
+      "source": "官方"
+    }
+  ]
 }

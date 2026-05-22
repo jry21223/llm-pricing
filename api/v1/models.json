@@ -1,6 +1,6 @@
 {
   "lastUpdated": "2026-05-22",
-  "total": 38,
+  "total": 41,
   "groups": [
     {
       "provider": "OpenAI",
@@ -508,6 +508,53 @@
           "unit": "/1M tokens",
           "lastUpdated": "2026-05-22",
           "note": "高性价比",
+          "source": "官方"
+        }
+      ]
+    },
+    {
+      "provider": "百度",
+      "group": "百度",
+      "color": "#2563eb",
+      "models": [
+        {
+          "name": "CoBuddy (千帆)",
+          "input": 0,
+          "output": 0,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "source": "OpenRouter",
+          "note": "免费！百度编码助手模型，通过OpenRouter调用"
+        },
+        {
+          "name": "ERNIE 4.0",
+          "input": null,
+          "output": null,
+          "contextWindow": null,
+          "currency": "CNY",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "待抓取（SPA页面）",
+          "source": "官方"
+        }
+      ]
+    },
+    {
+      "provider": "字节跳动",
+      "group": "字节跳动",
+      "color": "#e11d48",
+      "models": [
+        {
+          "name": "Doubao-1.5-pro",
+          "input": null,
+          "output": null,
+          "contextWindow": null,
+          "currency": "CNY",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "待抓取（火山方舟SPA）",
           "source": "官方"
         }
       ]

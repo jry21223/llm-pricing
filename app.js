@@ -379,12 +379,47 @@ function renderPlans() {
   }).join('');
 }
 
-// Extend loadData to also render plans
+// ===== Free Models =====
+function renderFreeModels() {
+  const container = document.getElementById('freeContainer');
+  const free = pricingData.freeModels;
+  if (!free || free.length === 0) {
+    container.innerHTML = '<div class="free-empty">暂无免费模型数据</div>';
+    return;
+  }
+  container.innerHTML = free.map(m => `<div class="free-card">
+    <div class="free-model-name">${escHtml(m.model)}</div>
+    <div class="free-provider">${escHtml(m.provider)} · <span class="free-source-badge">${escHtml(m.source)}</span></div>
+    <div class="free-detail">${escHtml(m.note)}${m.contextWindow ? ' · ' + fmtContext(m.contextWindow) : ''}</div>
+  </div>`).join('');
+}
+
+// ===== Channels =====
+function renderChannels() {
+  const container = document.getElementById('channelContainer');
+  const chs = pricingData.channels;
+  if (!chs || chs.length === 0) {
+    container.innerHTML = '<div class="free-empty">暂无渠道数据</div>';
+    return;
+  }
+  container.innerHTML = chs.map(ch => `<div class="channel-card">
+    <div class="channel-card-header">
+      <span class="channel-name">${escHtml(ch.name)}</span>
+      <span class="channel-type">${escHtml(ch.type)}</span>
+    </div>
+    <div class="channel-features">${escHtml(ch.features)}</div>
+    <div class="channel-pricing">${escHtml(ch.pricing)}</div>
+  </div>`).join('');
+}
+
+// Extend loadData to render all sections
 const _origLoadData = loadData;
 loadData = async function() {
   await _origLoadData();
-  if (pricingData && pricingData.subscriptionPlans) {
-    renderPlans();
+  if (pricingData) {
+    if (pricingData.subscriptionPlans) renderPlans();
+    if (pricingData.freeModels) renderFreeModels();
+    if (pricingData.channels) renderChannels();
   }
 };
 

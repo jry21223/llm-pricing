@@ -1,0 +1,76 @@
+{
+  "lastUpdated": "2026-05-22",
+  "total": 10,
+  "channels": [
+    {
+      "name": "OpenRouter",
+      "url": "https://openrouter.ai/pricing",
+      "type": "中转/聚合",
+      "features": "支持60+平台，免费模型池，统一OpenAI格式API",
+      "pricing": "大多与官方同价或略低"
+    },
+    {
+      "name": "硅基流动 (SiliconFlow)",
+      "url": "https://siliconflow.cn/pricing",
+      "type": "中转/聚合",
+      "features": "国内平台，支持主流模型，部分模型低价",
+      "pricing": "待补充"
+    },
+    {
+      "name": "Together AI",
+      "url": "https://together.ai/pricing",
+      "type": "推理平台",
+      "features": "专注开源模型推理，高性能",
+      "pricing": "开源模型，低于闭源"
+    },
+    {
+      "name": "Groq",
+      "url": "https://groq.com/pricing",
+      "type": "推理平台",
+      "features": "极速推理，LPU架构，部分模型免费",
+      "pricing": "免费/低价"
+    },
+    {
+      "name": "阿里云百炼",
+      "url": "https://bailian.console.aliyun.com/",
+      "type": "云平台",
+      "features": "千问全系列 + 三方模型，Coding Plan/Token Plan",
+      "pricing": "Coding Plan ¥200/月起"
+    },
+    {
+      "name": "DeepSeek 官方",
+      "url": "https://api-docs.deepseek.com",
+      "type": "官方API",
+      "features": "价格最低，缓存命中仅$0.0028/M",
+      "pricing": "Flash $0.14/$0.28, 75%折扣中"
+    },
+    {
+      "name": "OpenClaw Coding Plan",
+      "url": "https://docs.openclaw.ai",
+      "type": "AI编程工具",
+      "features": "通过阿里云百炼Coding Plan接入模型",
+      "pricing": "¥200/月，支持GLM5/K2.5/M2.5等"
+    },
+    {
+      "name": "百度千帆",
+      "url": "https://console.bce.baidu.com/qianfan/",
+      "type": "云平台",
+      "features": "ERNIE系列 + 开源模型",
+      "pricing": "免费CoBuddy + 按量计费"
+    },
+    {
+      "name": "腾讯混元",
+      "url": "https://console.cloud.tencent.com/hunyuan",
+      "type": "云平台",
+      "features": "腾讯混元大模型",
+      "pricing": "待补充"
+    },
+    {
+      "name": "阶跃星辰 (StepFun)",
+      "url": "https://platform.stepfun.com/",
+      "type": "官方API",
+      "features": "Step系列模型",
+      "pricing": "待补充"
+    }
+  ]
+}

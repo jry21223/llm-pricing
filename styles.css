@@ -502,6 +502,112 @@ th.sort-active .sort-icon { opacity: 1; color: var(--primary); }
   font-style: italic;
 }
 
+/* === Free Models === */
+.free-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.free-card {
+  background: linear-gradient(135deg, #fefce8, #fef9c3);
+  border: 1px solid #fde047;
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s;
+}
+.free-card:hover { transform: translateY(-2px); }
+
+.free-model-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #854d0e;
+}
+
+.free-provider {
+  font-size: 0.75rem;
+  color: #a16207;
+}
+
+.free-detail {
+  margin-top: 6px;
+  font-size: 0.78rem;
+  color: #713f12;
+}
+
+.free-source-badge {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  background: #fef08a;
+  color: #854d0e;
+}
+
+.free-empty {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: 20px;
+  font-style: italic;
+}
+
+/* === Channels === */
+.channel-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 14px;
+}
+
+.channel-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.channel-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+.channel-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.channel-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.channel-type {
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  background: #e0e7ff;
+  color: #4338ca;
+}
+
+.channel-features {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+.channel-pricing {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
 @media (max-width: 768px) {
   .plan-container { grid-template-columns: 1fr; }
 }

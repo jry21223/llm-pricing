@@ -2,6 +2,18 @@
   "group": "字节跳动",
   "color": "#e11d48",
   "lastUpdated": "2026-05-22",
-  "total": 0,
-  "models": []
+  "total": 1,
+  "models": [
+    {
+      "name": "Doubao-1.5-pro",
+      "input": null,
+      "output": null,
+      "contextWindow": null,
+      "currency": "CNY",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "待抓取（火山方舟SPA）",
+      "source": "官方"
+    }
+  ]
 }

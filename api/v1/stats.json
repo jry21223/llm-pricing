@@ -1,7 +1,18 @@
 {
   "lastUpdated": "2026-05-22",
-  "totalModels": 38,
+  "totalModels": 39,
   "cheapestInput": [
+    {
+      "name": "CoBuddy (千帆)",
+      "input": 0,
+      "output": 0,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "source": "OpenRouter",
+      "note": "免费！百度编码助手模型，通过OpenRouter调用"
+    },
     {
       "name": "GLM-4.7 Flash",
       "input": 0.06,
@@ -47,22 +58,22 @@
       "unit": "/1M tokens",
       "lastUpdated": "2026-05-22",
       "note": "缓存命中仅 $0.0028/M",
-      "source": "官方"
-    },
-    {
-      "name": "GPT-5.4 nano",
-      "input": 0.2,
-      "output": 1.25,
-      "contextWindow": 400000,
-      "currency": "USD",
-      "unit": "/1M tokens",
-      "lastUpdated": "2026-05-22",
-      "note": "超轻量模型",
       "source": "官方"
     }
   ],
   "cheapestOutput": [
     {
+      "name": "CoBuddy (千帆)",
+      "input": 0,
+      "output": 0,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "source": "OpenRouter",
+      "note": "免费！百度编码助手模型，通过OpenRouter调用"
+    },
+    {
       "name": "deepseek-v4-flash",
       "input": 0.112,
       "output": 0.224,
@@ -108,17 +119,6 @@
       "lastUpdated": "2026-05-22",
       "note": "高性价比",
       "source": "官方"
-    },
-    {
-      "name": "deepseek-v4-pro",
-      "input": 0.435,
-      "output": 0.87,
-      "contextWindow": 1048576,
-      "currency": "USD",
-      "unit": "/1M tokens",
-      "lastUpdated": "2026-05-22",
-      "source": "OpenRouter",
-      "note": "75%折扣价"
     }
   ],
   "largestContext": [

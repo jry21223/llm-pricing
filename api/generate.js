@@ -73,7 +73,25 @@ if (pricing.subscriptionPlans) {
   console.log(`✅ plans.json — ${pricing.subscriptionPlans.length} plans`);
 }
 
-// 6. /api/v1/stats.json
+// 6. /api/v1/free.json — free models
+if (pricing.freeModels) {
+  fs.writeFileSync(path.join(apiDir, 'free.json'), JSON.stringify({
+    lastUpdated: pricing.lastUpdated, total: pricing.freeModels.length,
+    models: pricing.freeModels
+  }, null, 2));
+  console.log(`✅ free.json — ${pricing.freeModels.length} free models`);
+}
+
+// 7. /api/v1/channels.json — aggregation platforms
+if (pricing.channels) {
+  fs.writeFileSync(path.join(apiDir, 'channels.json'), JSON.stringify({
+    lastUpdated: pricing.lastUpdated, total: pricing.channels.length,
+    channels: pricing.channels
+  }, null, 2));
+  console.log(`✅ channels.json — ${pricing.channels.length} channels`);
+}
+
+// 8. /api/v1/stats.json
 const withPrices = allModels.filter(m => m.input != null);
 const sortedInput = [...withPrices].sort((a, b) => a.input - b.input).slice(0, 5);
 const sortedOutput = [...withPrices].sort((a, b) => a.output - b.output).slice(0, 5);

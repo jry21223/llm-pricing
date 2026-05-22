@@ -245,15 +245,29 @@
       "provider": "百度",
       "group": "百度",
       "color": "#2563eb",
-      "modelCount": 0,
-      "models": []
+      "modelCount": 2,
+      "models": [
+        {
+          "name": "CoBuddy (千帆)",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "ERNIE 4.0",
+          "source": "官方"
+        }
+      ]
     },
     {
       "provider": "字节跳动",
       "group": "字节跳动",
       "color": "#e11d48",
-      "modelCount": 0,
-      "models": []
+      "modelCount": 1,
+      "models": [
+        {
+          "name": "Doubao-1.5-pro",
+          "source": "官方"
+        }
+      ]
     }
   ]
 }

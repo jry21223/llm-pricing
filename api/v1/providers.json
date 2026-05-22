@@ -308,18 +308,23 @@
     },
     {
       "provider": "百度 (文心一言)",
-      "providerUrl": "https://yiyan.baidu.com/",
+      "providerUrl": "https://console.bce.baidu.com/qianfan/",
       "color": "#2563eb",
       "group": "百度",
-      "modelCount": 0,
-      "models": []
+      "modelCount": 2,
+      "models": [
+        {
+          "name": "CoBuddy (千帆)",
+          "source": "OpenRouter"
+        }
+      ]
     },
     {
       "provider": "字节跳动 (豆包)",
       "providerUrl": "https://www.volcengine.com/product/doubao",
       "color": "#e11d48",
       "group": "字节跳动",
-      "modelCount": 0,
+      "modelCount": 1,
       "models": []
     }
   ]

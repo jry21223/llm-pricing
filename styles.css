@@ -502,6 +502,69 @@ th.sort-active .sort-icon { opacity: 1; color: var(--primary); }
   font-style: italic;
 }
 
+/* === Token Plan table === */
+.token-container {
+  overflow-x: auto;
+}
+
+.token-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.token-table th {
+  background: #0f172a;
+  color: white;
+  padding: 12px 14px;
+  text-align: left;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.token-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.token-table tbody tr:hover {
+  background: #f1f5f9;
+}
+
+.token-table .provider-header {
+  background: #f1f5f9;
+  font-weight: 700;
+}
+
+.token-table .provider-header td {
+  padding: 8px 14px;
+}
+
+.token-price {
+  font-weight: 700;
+  font-family: "SF Mono", monospace;
+  font-size: 1rem;
+  color: #059669;
+  white-space: nowrap;
+}
+
+.token-period {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.section-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
 /* === Free Models === */
 .free-container {
   display: grid;

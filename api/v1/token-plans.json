@@ -1,0 +1,126 @@
+{
+  "lastUpdated": "2026-05-22",
+  "total": 10,
+  "plans": [
+    {
+      "provider": "阿里云 (百炼)",
+      "planType": "Token Plan 标准坐席",
+      "price": 198,
+      "currency": "CNY",
+      "period": "坐席/月",
+      "models": "qwen3.7-max, deepseek-v4-pro, kimi-k2.6, glm-5.1 等",
+      "limits": "25,000 Credits/坐席/月",
+      "note": "支持团队管理",
+      "category": "enterprise",
+      "lastUpdated": "2026-05-22"
+    },
+    {
+      "provider": "阿里云 (百炼)",
+      "planType": "Token Plan 高级坐席",
+      "price": 698,
+      "currency": "CNY",
+      "period": "坐席/月",
+      "models": "同上",
+      "limits": "100,000 Credits/坐席/月",
+      "note": "日常高频使用",
+      "category": "enterprise",
+      "lastUpdated": "2026-05-22"
+    },
+    {
+      "provider": "阿里云 (百炼)",
+      "planType": "Token Plan 尊享坐席",
+      "price": 1398,
+      "currency": "CNY",
+      "period": "坐席/月",
+      "models": "同上",
+      "limits": "250,000 Credits/坐席/月",
+      "note": "核心开发者",
+      "category": "enterprise",
+      "lastUpdated": "2026-05-22"
+    },
+    {
+      "provider": "MiniMax",
+      "planType": "Token Plan Starter",
+      "price": 29,
+      "currency": "CNY",
+      "period": "月",
+      "models": "MiniMax-M2.5",
+      "limits": "入门额度",
+      "note": "入门级",
+      "category": "coding",
+      "lastUpdated": "2026-05-22"
+    },
+    {
+      "provider": "MiniMax",
+      "planType": "Token Plan Plus",
+      "price": 49,
+      "currency": "CNY",
+      "period": "月",
+      "models": "MiniMax-M2.7",
+      "limits": "中等额度",
+      "note": "专业开发者",
+      "category": "coding",
+      "lastUpdated": "2026-05-22"
+    },
+    {
+      "provider": "MiniMax",
+      "planType": "Token Plan Max",
+      "price": 119,
+      "currency": "CNY",
+      "period": "月",
+      "models": "所有模型",
+      "limits": "高额度",
+      "note": "高级开发者",
+      "category": "coding",
+      "lastUpdated": "2026-05-22"
+    },
+    {
+      "provider": "腾讯（混元）",
+      "planType": "Token Plan Lite",
+      "price": 39,
+      "currency": "CNY",
+      "period": "月",
+      "models": "混元系列 Lite",
+      "limits": "基础额度",
+      "note": "入门",
+      "category": "coding",
+      "lastUpdated": "2026-05-22"
+    },
+    {
+      "provider": "腾讯（混元）",
+      "planType": "Token Plan Pro",
+      "price": 299,
+      "currency": "CNY",
+      "period": "月",
+      "models": "混元系列 Pro",
+      "limits": "高频使用",
+      "note": "高频开发者",
+      "category": "coding",
+      "lastUpdated": "2026-05-22"
+    },
+    {
+      "provider": "小米 (MiMo)",
+      "planType": "MiMo Token Plan Lite",
+      "price": 39,
+      "currency": "CNY",
+      "period": "月",
+      "models": "mimo-v2.5-pro",
+      "limits": "基础额度",
+      "note": "入门级",
+      "category": "coding",
+      "lastUpdated": "2026-05-22"
+    },
+    {
+      "provider": "小米 (MiMo)",
+      "planType": "MiMo Token Plan Pro",
+      "price": 329,
+      "currency": "CNY",
+      "period": "月",
+      "models": "mimo-v2.5-pro",
+      "limits": "高额度",
+      "note": "专业开发者",
+      "category": "coding",
+      "lastUpdated": "2026-05-22"
+    }
+  ]
+}

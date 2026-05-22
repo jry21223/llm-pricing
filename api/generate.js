@@ -73,7 +73,19 @@ if (pricing.subscriptionPlans) {
   console.log(`✅ plans.json — ${pricing.subscriptionPlans.length} plans`);
 }
 
-// 6. /api/v1/deals.json — active promotions
+// 6. /api/v1/token-plans.json — dedicated Token Plan endpoint
+if (pricing.subscriptionPlans) {
+  const tokenPlans = pricing.subscriptionPlans.filter(p => 
+    p.planType.toLowerCase().includes('token')
+  );
+  fs.writeFileSync(path.join(apiDir, 'token-plans.json'), JSON.stringify({
+    lastUpdated: pricing.lastUpdated, total: tokenPlans.length,
+    plans: tokenPlans
+  }, null, 2));
+  console.log(`✅ token-plans.json — ${tokenPlans.length} plans`);
+}
+
+// 7. /api/v1/deals.json — active promotions
 if (pricing.activeDeals) {
   fs.writeFileSync(path.join(apiDir, 'deals.json'), JSON.stringify({
     lastUpdated: pricing.lastUpdated, total: pricing.activeDeals.length,

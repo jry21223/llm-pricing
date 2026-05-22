@@ -379,6 +379,45 @@ function renderPlans() {
   }).join('');
 }
 
+// ===== Token Plan Table =====
+function renderTokenPlans() {
+  const container = document.getElementById('tokenContainer');
+  const all = pricingData.subscriptionPlans;
+  const plans = (all || []).filter(p => p.planType.toLowerCase().includes('token'));
+  
+  if (plans.length === 0) {
+    container.innerHTML = '<div class="plan-pending">暂无 Token Plan 数据</div>';
+    return;
+  }
+  
+  // Group by provider
+  const groups = {};
+  for (const p of plans) {
+    if (!groups[p.provider]) groups[p.provider] = [];
+    groups[p.provider].push(p);
+  }
+  
+  let html = '<table class="token-table"><thead><tr>' +
+    '<th>厂商</th><th>套餐</th><th>价格</th><th>额度</th><th>说明</th>' +
+    '</tr></thead><tbody>';
+  
+  for (const [provider, items] of Object.entries(groups)) {
+    html += `<tr class="provider-header"><td colspan="5">${escHtml(provider)}</td></tr>`;
+    for (const p of items) {
+      html += `<tr>
+        <td></td>
+        <td><strong>${escHtml(p.planType)}</strong></td>
+        <td><span class="token-price">¥${p.price}</span> <span class="token-period">/${escHtml(p.period)}</span></td>
+        <td>${escHtml(p.limits)}</td>
+        <td>${escHtml(p.note)}</td>
+      </tr>`;
+    }
+  }
+  
+  html += '</tbody></table>';
+  container.innerHTML = html;
+}
+
 // ===== Active Deals =====
 function renderDeals() {
   const container = document.getElementById('dealsContainer');
@@ -439,7 +478,10 @@ loadData = async function() {
   await _origLoadData();
   if (pricingData) {
     if (pricingData.activeDeals) renderDeals();
-    if (pricingData.subscriptionPlans) renderPlans();
+    if (pricingData.subscriptionPlans) {
+      renderPlans();
+      renderTokenPlans();
+    }
     if (pricingData.freeModels) renderFreeModels();
     if (pricingData.channels) renderChannels();
   }

@@ -73,7 +73,16 @@ if (pricing.subscriptionPlans) {
   console.log(`✅ plans.json — ${pricing.subscriptionPlans.length} plans`);
 }
 
-// 6. /api/v1/free.json — free models
+// 6. /api/v1/deals.json — active promotions
+if (pricing.activeDeals) {
+  fs.writeFileSync(path.join(apiDir, 'deals.json'), JSON.stringify({
+    lastUpdated: pricing.lastUpdated, total: pricing.activeDeals.length,
+    deals: pricing.activeDeals
+  }, null, 2));
+  console.log(`✅ deals.json — ${pricing.activeDeals.length} deals`);
+}
+
+// 7. /api/v1/free.json — free models
 if (pricing.freeModels) {
   fs.writeFileSync(path.join(apiDir, 'free.json'), JSON.stringify({
     lastUpdated: pricing.lastUpdated, total: pricing.freeModels.length,

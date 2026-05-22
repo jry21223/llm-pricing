@@ -553,6 +553,73 @@ th.sort-active .sort-icon { opacity: 1; color: var(--primary); }
   font-style: italic;
 }
 
+/* === Active Deals === */
+.deals-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 12px;
+}
+
+.deal-card {
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s;
+  border: 1px solid;
+}
+.deal-card:hover { transform: translateY(-2px); }
+
+.deal-type-discount { background: linear-gradient(135deg, #fef2f2, #fee2e2); border-color: #fca5a5; }
+.deal-type-free { background: linear-gradient(135deg, #f0fdf4, #dcfce7); border-color: #86efac; }
+.deal-type-new_user { background: linear-gradient(135deg, #eff6ff, #dbeafe); border-color: #93c5fd; }
+.deal-type-credit_bonus { background: linear-gradient(135deg, #fdf4ff, #fae8ff); border-color: #d8b4fe; }
+
+.deal-vendor {
+  font-size: 0.7rem;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.deal-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.deal-discount-badge {
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  background: #ef4444;
+  color: white;
+  margin-bottom: 6px;
+}
+
+.deal-free-badge {
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  background: #22c55e;
+  color: white;
+}
+
+.deal-detail {
+  font-size: 0.78rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.deal-expires {
+  margin-top: 6px;
+  font-size: 0.7rem;
+  color: #888;
+  font-style: italic;
+}
+
 /* === Channels === */
 .channel-container {
   display: grid;

@@ -379,6 +379,27 @@ function renderPlans() {
   }).join('');
 }
 
+// ===== Active Deals =====
+function renderDeals() {
+  const container = document.getElementById('dealsContainer');
+  const deals = pricingData.activeDeals;
+  if (!deals || deals.length === 0) {
+    container.innerHTML = '<div class="free-empty">暂无促销活动</div>';
+    return;
+  }
+  container.innerHTML = deals.map(d => {
+    const type = d.type || 'discount';
+    const isFree = d.type === 'free' || d.price === 0;
+    return `<div class="deal-card deal-type-${type}">
+      <div class="deal-vendor">${escHtml(d.vendor)}</div>
+      <div class="deal-name">${escHtml(d.deal)}</div>
+      ${isFree ? '<span class="deal-free-badge">🎉 免费</span>' : (d.discount ? `<span class="deal-discount-badge">-${d.discount}</span>` : '')}
+      <div class="deal-detail">${d.current ? escHtml('现价: ' + d.current) : ''}${d.note ? ' · ' + escHtml(d.note) : ''}</div>
+      ${d.expires && d.expires !== 'None' && d.expires !== '长期' ? `<div class="deal-expires">⏰ 截止: ${escHtml(d.expires)}</div>` : ''}
+    </div>`;
+  }).join('');
+}
+
 // ===== Free Models =====
 function renderFreeModels() {
   const container = document.getElementById('freeContainer');
@@ -417,6 +438,7 @@ const _origLoadData = loadData;
 loadData = async function() {
   await _origLoadData();
   if (pricingData) {
+    if (pricingData.activeDeals) renderDeals();
     if (pricingData.subscriptionPlans) renderPlans();
     if (pricingData.freeModels) renderFreeModels();
     if (pricingData.channels) renderChannels();

@@ -1,0 +1,86 @@
+{
+  "lastUpdated": "2026-05-22",
+  "total": 8,
+  "deals": [
+    {
+      "deal": "DeepSeek V4 Pro 75%折扣",
+      "vendor": "DeepSeek",
+      "type": "discount",
+      "discount": "75%",
+      "original": "$1.74/$3.48",
+      "current": "$0.435/$0.87",
+      "expires": "2026-05-31",
+      "note": "Input/Output 均75%折扣"
+    },
+    {
+      "deal": "New User Free Quota",
+      "vendor": "阿里云百炼",
+      "type": "new_user",
+      "discount": "免费",
+      "original": "",
+      "current": "100万Token免费",
+      "expires": "开通后90天",
+      "note": "各100万Token免费额度"
+    },
+    {
+      "deal": "GLM-4.7 Flash 免费",
+      "vendor": "智谱AI",
+      "type": "free",
+      "discount": "100%",
+      "original": "",
+      "current": "完全免费",
+      "expires": "长期",
+      "note": "通过OpenRouter(Z.ai)免费使用"
+    },
+    {
+      "deal": "DeepSeek V4 Flash 免费",
+      "vendor": "DeepSeek",
+      "type": "free",
+      "discount": "100%",
+      "original": "$0.14/$0.28",
+      "current": "完全免费",
+      "expires": "长期",
+      "note": "通过OpenRouter免费使用"
+    },
+    {
+      "deal": "GLM Coding Plan Lite",
+      "vendor": "智谱AI",
+      "type": "discount",
+      "discount": "-",
+      "original": "¥49/月",
+      "current": "¥49/月",
+      "expires": "None",
+      "note": "入门级Coding套餐"
+    },
+    {
+      "deal": "Ark Coding Plan Pro",
+      "vendor": "字节跳动(豆包)",
+      "type": "discount",
+      "discount": "-",
+      "original": "¥200/月",
+      "current": "¥200/月",
+      "expires": "None",
+      "note": "火山方舟AI编码套餐"
+    },
+    {
+      "deal": "Qwen3 Coder 免费",
+      "vendor": "阿里云",
+      "type": "free",
+      "discount": "100%",
+      "original": "",
+      "current": "完全免费",
+      "expires": "长期",
+      "note": "480B参数编码模型，1M上下文，通过OpenRouter"
+    },
+    {
+      "deal": "NVIDIA Nemotron 3 Super 免费",
+      "vendor": "NVIDIA",
+      "type": "free",
+      "discount": "100%",
+      "original": "",
+      "current": "完全免费",
+      "expires": "长期",
+      "note": "1M上下文，通过OpenRouter"
+    }
+  ]
+}

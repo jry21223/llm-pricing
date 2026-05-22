@@ -1,7 +1,19 @@
 {
   "lastUpdated": "2026-05-22",
-  "totalModels": 32,
+  "totalModels": 38,
   "cheapestInput": [
+    {
+      "name": "GLM-4.7 Flash",
+      "input": 0.06,
+      "cachedInput": 0.01,
+      "output": 0.4,
+      "contextWindow": 200000,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "免费模型，轻量高速",
+      "source": "官方"
+    },
     {
       "name": "deepseek-v4-flash",
       "input": 0.112,
@@ -12,6 +24,18 @@
       "lastUpdated": "2026-05-22",
       "source": "OpenRouter",
       "note": "比官方低20%"
+    },
+    {
+      "name": "GLM-4.5 Air",
+      "input": 0.13,
+      "cachedInput": 0.025,
+      "output": 0.85,
+      "contextWindow": 130000,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "高性价比",
+      "source": "官方"
     },
     {
       "name": "deepseek-v4-flash",
@@ -34,29 +58,6 @@
       "unit": "/1M tokens",
       "lastUpdated": "2026-05-22",
       "note": "超轻量模型",
-      "source": "官方"
-    },
-    {
-      "name": "qwen3.5-flash",
-      "input": 0.2,
-      "output": 2,
-      "contextWindow": 1000000,
-      "currency": "CNY",
-      "unit": "/1M tokens",
-      "lastUpdated": "2026-05-22",
-      "note": "超低价",
-      "source": "官方"
-    },
-    {
-      "name": "Gemini 3.1 Flash Lite",
-      "input": 0.25,
-      "cachedInput": 0.025,
-      "output": 1.5,
-      "contextWindow": 1048576,
-      "currency": "USD",
-      "unit": "/1M tokens",
-      "lastUpdated": "2026-05-22",
-      "note": "超轻量多模态",
       "source": "官方"
     }
   ],
@@ -85,6 +86,30 @@
       "source": "官方"
     },
     {
+      "name": "GLM-4.7 Flash",
+      "input": 0.06,
+      "cachedInput": 0.01,
+      "output": 0.4,
+      "contextWindow": 200000,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "免费模型，轻量高速",
+      "source": "官方"
+    },
+    {
+      "name": "GLM-4.5 Air",
+      "input": 0.13,
+      "cachedInput": 0.025,
+      "output": 0.85,
+      "contextWindow": 130000,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "高性价比",
+      "source": "官方"
+    },
+    {
       "name": "deepseek-v4-pro",
       "input": 0.435,
       "output": 0.87,
@@ -94,29 +119,6 @@
       "lastUpdated": "2026-05-22",
       "source": "OpenRouter",
       "note": "75%折扣价"
-    },
-    {
-      "name": "GPT-5.4 nano",
-      "input": 0.2,
-      "output": 1.25,
-      "contextWindow": 400000,
-      "currency": "USD",
-      "unit": "/1M tokens",
-      "lastUpdated": "2026-05-22",
-      "note": "超轻量模型",
-      "source": "官方"
-    },
-    {
-      "name": "Gemini 3.1 Flash Lite",
-      "input": 0.25,
-      "cachedInput": 0.025,
-      "output": 1.5,
-      "contextWindow": 1048576,
-      "currency": "USD",
-      "unit": "/1M tokens",
-      "lastUpdated": "2026-05-22",
-      "note": "超轻量多模态",
-      "source": "官方"
     }
   ],
   "largestContext": [

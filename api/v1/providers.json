@@ -278,8 +278,33 @@
       "providerUrl": "https://open.bigmodel.cn/pricing",
       "color": "#1d4ed8",
       "group": "智谱AI",
-      "modelCount": 0,
-      "models": []
+      "modelCount": 6,
+      "models": [
+        {
+          "name": "GLM-5.1",
+          "source": "官方"
+        },
+        {
+          "name": "GLM-5",
+          "source": "官方"
+        },
+        {
+          "name": "GLM-5 Turbo",
+          "source": "官方"
+        },
+        {
+          "name": "GLM-4.7",
+          "source": "官方"
+        },
+        {
+          "name": "GLM-4.7 Flash",
+          "source": "官方"
+        },
+        {
+          "name": "GLM-4.5 Air",
+          "source": "官方"
+        }
+      ]
     },
     {
       "provider": "百度 (文心一言)",

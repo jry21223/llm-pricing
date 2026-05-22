@@ -1,0 +1,72 @@
+{
+  "lastUpdated": "2026-05-22",
+  "total": 6,
+  "plans": [
+    {
+      "provider": "阿里云 (百炼)",
+      "planType": "Coding Plan Pro",
+      "price": 200,
+      "currency": "CNY",
+      "period": "月",
+      "models": "qwen3.6-plus, kimi-k2.5, glm-5, MiniMax-M2.5, qwen3-coder-plus 等",
+      "limits": "每月90,000次请求 / 每5小时6,000次",
+      "note": "兼容 Claude Code、OpenClaw 等主流AI编程工具",
+      "lastUpdated": "2026-05-22"
+    },
+    {
+      "provider": "阿里云 (百炼)",
+      "planType": "Token Plan 标准坐席",
+      "price": 198,
+      "currency": "CNY",
+      "period": "坐席/月",
+      "models": "qwen3.7-max, qwen3.6-plus, deepseek-v4-pro, kimi-k2.6, glm-5.1, MiniMax-M2.5 等",
+      "limits": "25,000 Credits/坐席/月",
+      "note": "多模型按Credits统一计量，支持团队管理",
+      "lastUpdated": "2026-05-22"
+    },
+    {
+      "provider": "阿里云 (百炼)",
+      "planType": "Token Plan 高级坐席",
+      "price": 698,
+      "currency": "CNY",
+      "period": "坐席/月",
+      "models": "同上",
+      "limits": "100,000 Credits/坐席/月",
+      "note": "日常高频使用AI编程或办公的团队成员",
+      "lastUpdated": "2026-05-22"
+    },
+    {
+      "provider": "阿里云 (百炼)",
+      "planType": "Token Plan 尊享坐席",
+      "price": 1398,
+      "currency": "CNY",
+      "period": "坐席/月",
+      "models": "同上",
+      "limits": "250,000 Credits/坐席/月",
+      "note": "重度依赖AI的核心开发者或高强度使用者",
+      "lastUpdated": "2026-05-22"
+    },
+    {
+      "provider": "智谱AI",
+      "planType": "Coding Plan",
+      "price": null,
+      "currency": "CNY",
+      "period": "月",
+      "models": "待抓取",
+      "limits": "待抓取",
+      "note": "页面SPA渲染，待补充",
+      "lastUpdated": "2026-05-22"
+    },
+    {
+      "provider": "字节跳动 (豆包)",
+      "planType": "Coding Plan",
+      "price": null,
+      "currency": "CNY",
+      "period": "月",
+      "models": "待抓取",
+      "limits": "待抓取",
+      "note": "页面SPA渲染，待补充",
+      "lastUpdated": "2026-05-22"
+    }
+  ]
+}

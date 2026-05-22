@@ -63,7 +63,17 @@ for (const [g, entry] of groupMap) {
   console.log(`  group-${slug}.json — ${entry.models.length} models`);
 }
 
-// 5. /api/v1/stats.json
+// 5. /api/v1/plans.json — subscription/coding plans
+if (pricing.subscriptionPlans) {
+  fs.writeFileSync(path.join(apiDir, 'plans.json'), JSON.stringify({
+    lastUpdated: pricing.lastUpdated,
+    total: pricing.subscriptionPlans.length,
+    plans: pricing.subscriptionPlans
+  }, null, 2));
+  console.log(`✅ plans.json — ${pricing.subscriptionPlans.length} plans`);
+}
+
+// 6. /api/v1/stats.json
 const withPrices = allModels.filter(m => m.input != null);
 const sortedInput = [...withPrices].sort((a, b) => a.input - b.input).slice(0, 5);
 const sortedOutput = [...withPrices].sort((a, b) => a.output - b.output).slice(0, 5);

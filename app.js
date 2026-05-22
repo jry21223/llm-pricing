@@ -346,5 +346,47 @@ function applyLang() {
   if (pricingData) renderTable();
 }
 
+// ===== Subscription Plans =====
+function renderPlans() {
+  const container = document.getElementById('planContainer');
+  const plans = pricingData.subscriptionPlans;
+  
+  if (!plans || plans.length === 0) {
+    container.innerHTML = '<div class="plan-pending">暂无订阅套餐数据</div>';
+    return;
+  }
+  
+  container.innerHTML = plans.map(p => {
+    const hasPrice = p.price !== null && p.price !== undefined;
+    
+    return `<div class="plan-card">
+      <div class="plan-header">
+        <span class="plan-provider">${escHtml(p.provider)}</span>
+        <span class="plan-type">${escHtml(p.planType)}</span>
+      </div>
+      ${hasPrice ? `<div class="plan-price-box">
+        <span class="plan-price">${p.currency === 'CNY' ? '¥' : '$'}${p.price}</span>
+        <span class="plan-period">/ ${escHtml(p.period)}</span>
+      </div>` : `<div class="plan-price-box">
+        <span class="plan-price" style="color:var(--text-secondary);font-size:1rem;">待定</span>
+      </div>`}
+      <div class="plan-details">
+        <p><strong>支持模型：</strong>${escHtml(p.models)}</p>
+        <p><strong>额度限制：</strong>${escHtml(p.limits)}</p>
+      </div>
+      <div class="plan-note">${escHtml(p.note)}</div>
+    </div>`;
+  }).join('');
+}
+
+// Extend loadData to also render plans
+const _origLoadData = loadData;
+loadData = async function() {
+  await _origLoadData();
+  if (pricingData && pricingData.subscriptionPlans) {
+    renderPlans();
+  }
+};
+
 // ===== Init =====
 document.addEventListener('DOMContentLoaded', loadData);

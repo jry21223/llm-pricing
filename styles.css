@@ -415,6 +415,97 @@ th.sort-active .sort-icon { opacity: 1; color: var(--primary); }
 }
 
 /* === Info Section === */
+/* === Subscription Plans === */
+.plan-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+}
+
+.plan-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.plan-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+.plan-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.plan-provider {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.plan-type {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.plan-price-box {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.plan-price {
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: "SF Mono", monospace;
+  color: var(--text);
+}
+
+.plan-period {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.plan-details {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.plan-details p {
+  margin-bottom: 4px;
+}
+
+.plan-details strong {
+  color: var(--text);
+}
+
+.plan-note {
+  margin-top: 8px;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.plan-pending {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: 20px;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .plan-container { grid-template-columns: 1fr; }
+}
+
 .info-section {
   margin-top: 40px;
   margin-bottom: 40px;

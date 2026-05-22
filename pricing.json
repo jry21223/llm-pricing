@@ -4,152 +4,561 @@
     {
       "provider": "OpenAI",
       "providerUrl": "https://openai.com/api/pricing/",
-      "color": "#10a37f", "group": "OpenAI",
+      "color": "#10a37f",
+      "group": "OpenAI",
       "models": [
-        { "name": "GPT-5.5", "input": 5.00, "cachedInput": 0.50, "output": 30.00, "contextWindow": 270000, "currency": "USD", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "note": "旗舰模型" },
-        { "name": "GPT-5.4", "input": 2.50, "cachedInput": 0.25, "output": 15.00, "contextWindow": 270000, "currency": "USD", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "note": "高性价比编码模型" },
-        { "name": "GPT-5.4 mini", "input": 0.75, "cachedInput": 0.075, "output": 4.50, "contextWindow": 270000, "currency": "USD", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "note": "最强小模型" },
-        { "name": "GPT-5.4 nano", "input": 0.20, "output": 1.25, "contextWindow": 400000, "currency": "USD", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "note": "超轻量模型" },
-        { "name": "GPT-5.5 Pro", "input": 30.00, "output": 180.00, "contextWindow": 1050000, "currency": "USD", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "note": "最大上下文高端版" }
+        {
+          "name": "GPT-5.5",
+          "input": 5.0,
+          "cachedInput": 0.5,
+          "output": 30.0,
+          "contextWindow": 270000,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "旗舰模型"
+        },
+        {
+          "name": "GPT-5.4",
+          "input": 2.5,
+          "cachedInput": 0.25,
+          "output": 15.0,
+          "contextWindow": 270000,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "高性价比编码模型"
+        },
+        {
+          "name": "GPT-5.4 mini",
+          "input": 0.75,
+          "cachedInput": 0.075,
+          "output": 4.5,
+          "contextWindow": 270000,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "最强小模型"
+        },
+        {
+          "name": "GPT-5.4 nano",
+          "input": 0.2,
+          "output": 1.25,
+          "contextWindow": 400000,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "超轻量模型"
+        },
+        {
+          "name": "GPT-5.5 Pro",
+          "input": 30.0,
+          "output": 180.0,
+          "contextWindow": 1050000,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "最大上下文高端版"
+        }
       ]
     },
     {
-      "provider": "OpenRouter → OpenAI", "providerUrl": "https://openrouter.ai/pricing",
-      "color": "#10a37f", "group": "OpenAI",
+      "provider": "OpenRouter → OpenAI",
+      "providerUrl": "https://openrouter.ai/pricing",
+      "color": "#10a37f",
+      "group": "OpenAI",
       "models": [
-        { "name": "GPT-5.5", "input": 5.0, "output": 30.0, "contextWindow": 1050000, "currency": "USD", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "source": "OpenRouter", "note": "中转价，与官方同价" }
+        {
+          "name": "GPT-5.5",
+          "input": 5.0,
+          "output": 30.0,
+          "contextWindow": 1050000,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "source": "OpenRouter",
+          "note": "中转价，与官方同价"
+        }
       ]
     },
     {
-      "provider": "DeepSeek", "providerUrl": "https://api-docs.deepseek.com/quick_start/pricing",
-      "color": "#4f46e5", "group": "DeepSeek",
+      "provider": "DeepSeek",
+      "providerUrl": "https://api-docs.deepseek.com/quick_start/pricing",
+      "color": "#4f46e5",
+      "group": "DeepSeek",
       "models": [
-        { "name": "deepseek-v4-flash", "input": 0.14, "cachedInput": 0.0028, "output": 0.28, "contextWindow": 1000000, "currency": "USD", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "note": "缓存命中仅 $0.0028/M" },
-        { "name": "deepseek-v4-pro", "input": 1.74, "cachedInput": 0.0145, "output": 3.48, "contextWindow": 1000000, "currency": "USD", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "note": "原价，当前75%折扣：input=$0.435, output=$0.87（至2026-05-31）" }
+        {
+          "name": "deepseek-v4-flash",
+          "input": 0.14,
+          "cachedInput": 0.0028,
+          "output": 0.28,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "缓存命中仅 $0.0028/M"
+        },
+        {
+          "name": "deepseek-v4-pro",
+          "input": 1.74,
+          "cachedInput": 0.0145,
+          "output": 3.48,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "原价，当前75%折扣：input=$0.435, output=$0.87（至2026-05-31）"
+        }
       ]
     },
     {
-      "provider": "OpenRouter → DeepSeek", "providerUrl": "https://openrouter.ai/pricing",
-      "color": "#4f46e5", "group": "DeepSeek",
+      "provider": "OpenRouter → DeepSeek",
+      "providerUrl": "https://openrouter.ai/pricing",
+      "color": "#4f46e5",
+      "group": "DeepSeek",
       "models": [
-        { "name": "deepseek-v4-flash", "input": 0.112, "output": 0.224, "contextWindow": 1048576, "currency": "USD", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "source": "OpenRouter", "note": "比官方低20%" },
-        { "name": "deepseek-v4-pro", "input": 0.435, "output": 0.87, "contextWindow": 1048576, "currency": "USD", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "source": "OpenRouter", "note": "75%折扣价" }
+        {
+          "name": "deepseek-v4-flash",
+          "input": 0.112,
+          "output": 0.224,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "source": "OpenRouter",
+          "note": "比官方低20%"
+        },
+        {
+          "name": "deepseek-v4-pro",
+          "input": 0.435,
+          "output": 0.87,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "source": "OpenRouter",
+          "note": "75%折扣价"
+        }
       ]
     },
     {
-      "provider": "Anthropic (Claude)", "providerUrl": "https://www.anthropic.com/pricing",
-      "color": "#d97706", "group": "Anthropic",
+      "provider": "Anthropic (Claude)",
+      "providerUrl": "https://www.anthropic.com/pricing",
+      "color": "#d97706",
+      "group": "Anthropic",
       "models": [
-        { "name": "Claude Opus 4.7", "input": 5.00, "cachedInput": 0.50, "output": 25.00, "contextWindow": 1000000, "currency": "USD", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "note": "旗舰模型，1M上下文" },
-        { "name": "Claude Sonnet 4.6", "input": 3.00, "cachedInput": 0.30, "output": 15.00, "contextWindow": 1000000, "currency": "USD", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "note": "高性价比编码+推理" },
-        { "name": "Claude Haiku 4.5", "input": 1.00, "cachedInput": 0.10, "output": 5.00, "contextWindow": 200000, "currency": "USD", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "note": "轻量快速版本" }
+        {
+          "name": "Claude Opus 4.7",
+          "input": 5.0,
+          "cachedInput": 0.5,
+          "output": 25.0,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "旗舰模型，1M上下文"
+        },
+        {
+          "name": "Claude Sonnet 4.6",
+          "input": 3.0,
+          "cachedInput": 0.3,
+          "output": 15.0,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "高性价比编码+推理"
+        },
+        {
+          "name": "Claude Haiku 4.5",
+          "input": 1.0,
+          "cachedInput": 0.1,
+          "output": 5.0,
+          "contextWindow": 200000,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "轻量快速版本"
+        }
       ]
     },
     {
-      "provider": "OpenRouter → Anthropic", "providerUrl": "https://openrouter.ai/pricing",
-      "color": "#d97706", "group": "Anthropic",
+      "provider": "OpenRouter → Anthropic",
+      "providerUrl": "https://openrouter.ai/pricing",
+      "color": "#d97706",
+      "group": "Anthropic",
       "models": [
-        { "name": "Claude Opus 4.7", "input": 5.0, "output": 25.0, "contextWindow": 1000000, "currency": "USD", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "source": "OpenRouter", "note": "与官方同价" }
+        {
+          "name": "Claude Opus 4.7",
+          "input": 5.0,
+          "output": 25.0,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "source": "OpenRouter",
+          "note": "与官方同价"
+        }
       ]
     },
     {
-      "provider": "阿里云 (通义千问)", "providerUrl": "https://help.aliyun.com/zh/model-studio/model-pricing",
-      "color": "#ff6a00", "group": "阿里云",
+      "provider": "阿里云 (通义千问)",
+      "providerUrl": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "color": "#ff6a00",
+      "group": "阿里云",
       "models": [
-        { "name": "qwen3.7-max", "input": 12, "output": 36, "contextWindow": 1000000, "currency": "CNY", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "note": "旗舰推理，≤1M" },
-        { "name": "qwen3.6-plus", "input": 2, "output": 12, "contextWindow": 1000000, "currency": "CNY", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "note": "≤256K" },
-        { "name": "qwen3.6-flash", "input": 1.2, "output": 7.2, "contextWindow": 1000000, "currency": "CNY", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "note": "≤256K" },
-        { "name": "qwen3.5-plus", "input": 0.8, "output": 4.8, "contextWindow": 1000000, "currency": "CNY", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "note": "≤128K" },
-        { "name": "qwen3.5-flash", "input": 0.2, "output": 2, "contextWindow": 1000000, "currency": "CNY", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "note": "超低价" },
-        { "name": "qwen-turbo", "input": 0.3, "output": 3, "contextWindow": 1000000, "currency": "CNY", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "note": "最轻量" }
+        {
+          "name": "qwen3.7-max",
+          "input": 12,
+          "output": 36,
+          "contextWindow": 1000000,
+          "currency": "CNY",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "旗舰推理，≤1M"
+        },
+        {
+          "name": "qwen3.6-plus",
+          "input": 2,
+          "output": 12,
+          "contextWindow": 1000000,
+          "currency": "CNY",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "≤256K"
+        },
+        {
+          "name": "qwen3.6-flash",
+          "input": 1.2,
+          "output": 7.2,
+          "contextWindow": 1000000,
+          "currency": "CNY",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "≤256K"
+        },
+        {
+          "name": "qwen3.5-plus",
+          "input": 0.8,
+          "output": 4.8,
+          "contextWindow": 1000000,
+          "currency": "CNY",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "≤128K"
+        },
+        {
+          "name": "qwen3.5-flash",
+          "input": 0.2,
+          "output": 2,
+          "contextWindow": 1000000,
+          "currency": "CNY",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "超低价"
+        },
+        {
+          "name": "qwen-turbo",
+          "input": 0.3,
+          "output": 3,
+          "contextWindow": 1000000,
+          "currency": "CNY",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "最轻量"
+        }
       ]
     },
     {
-      "provider": "OpenRouter → 阿里云", "providerUrl": "https://openrouter.ai/pricing",
-      "color": "#ff6a00", "group": "阿里云",
+      "provider": "OpenRouter → 阿里云",
+      "providerUrl": "https://openrouter.ai/pricing",
+      "color": "#ff6a00",
+      "group": "阿里云",
       "models": [
-        { "name": "qwen3.7-max", "input": 2.5, "output": 7.5, "contextWindow": 1000000, "currency": "USD", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "source": "OpenRouter", "note": "美元计价，通过OpenRouter调用" }
+        {
+          "name": "qwen3.7-max",
+          "input": 2.5,
+          "output": 7.5,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "source": "OpenRouter",
+          "note": "美元计价，通过OpenRouter调用"
+        }
       ]
     },
     {
-      "provider": "Google (Gemini)", "providerUrl": "https://ai.google.dev/pricing",
-      "color": "#4285f4", "group": "Google",
+      "provider": "Google (Gemini)",
+      "providerUrl": "https://ai.google.dev/pricing",
+      "color": "#4285f4",
+      "group": "Google",
       "models": [
-        { "name": "Gemini 3.5 Flash", "input": 1.5, "cachedInput": 0.15, "output": 9, "contextWindow": 1048576, "currency": "USD", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "note": "多模态，1M上下文" },
-        { "name": "Gemini 3.1 Flash Lite", "input": 0.25, "cachedInput": 0.025, "output": 1.5, "contextWindow": 1048576, "currency": "USD", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "note": "超轻量多模态" }
+        {
+          "name": "Gemini 3.5 Flash",
+          "input": 1.5,
+          "cachedInput": 0.15,
+          "output": 9,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "多模态，1M上下文"
+        },
+        {
+          "name": "Gemini 3.1 Flash Lite",
+          "input": 0.25,
+          "cachedInput": 0.025,
+          "output": 1.5,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "超轻量多模态"
+        }
       ]
     },
     {
-      "provider": "OpenRouter → Google", "providerUrl": "https://openrouter.ai/pricing",
-      "color": "#4285f4", "group": "Google",
+      "provider": "OpenRouter → Google",
+      "providerUrl": "https://openrouter.ai/pricing",
+      "color": "#4285f4",
+      "group": "Google",
       "models": [
-        { "name": "Gemini 3.5 Flash", "input": 1.5, "output": 9, "contextWindow": 1048576, "currency": "USD", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "source": "OpenRouter", "note": "与官方同价" }
+        {
+          "name": "Gemini 3.5 Flash",
+          "input": 1.5,
+          "output": 9,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "source": "OpenRouter",
+          "note": "与官方同价"
+        }
       ]
     },
     {
-      "provider": "xAI (Grok)", "providerUrl": "https://console.x.ai/",
-      "color": "#1a1a2e", "group": "xAI",
+      "provider": "xAI (Grok)",
+      "providerUrl": "https://console.x.ai/",
+      "color": "#1a1a2e",
+      "group": "xAI",
       "models": [
-        { "name": "Grok 4.3", "input": 1.25, "cachedInput": 0.20, "output": 2.5, "contextWindow": 1000000, "currency": "USD", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "note": "推理模型，1M上下文" },
-        { "name": "Grok Build 0.1", "input": 1.0, "cachedInput": 0.20, "output": 2.0, "contextWindow": 256000, "currency": "USD", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "note": "编码专用模型" }
+        {
+          "name": "Grok 4.3",
+          "input": 1.25,
+          "cachedInput": 0.2,
+          "output": 2.5,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "推理模型，1M上下文"
+        },
+        {
+          "name": "Grok Build 0.1",
+          "input": 1.0,
+          "cachedInput": 0.2,
+          "output": 2.0,
+          "contextWindow": 256000,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "编码专用模型"
+        }
       ]
     },
     {
-      "provider": "OpenRouter → xAI", "providerUrl": "https://openrouter.ai/pricing",
-      "color": "#1a1a2e", "group": "xAI",
+      "provider": "OpenRouter → xAI",
+      "providerUrl": "https://openrouter.ai/pricing",
+      "color": "#1a1a2e",
+      "group": "xAI",
       "models": [
-        { "name": "Grok 4.3", "input": 1.25, "output": 2.5, "contextWindow": 1000000, "currency": "USD", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "source": "OpenRouter", "note": "与官方同价" }
+        {
+          "name": "Grok 4.3",
+          "input": 1.25,
+          "output": 2.5,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "source": "OpenRouter",
+          "note": "与官方同价"
+        }
       ]
     },
     {
       "provider": "月之暗面 (Kimi)",
       "providerUrl": "https://platform.kimi.com/docs/pricing/chat-k26",
-      "color": "#7c3aed", "group": "月之暗面",
+      "color": "#7c3aed",
+      "group": "月之暗面",
       "models": [
-        { "name": "kimi-k2.6", "input": 6.50, "cachedInput": 1.10, "output": 27.00, "contextWindow": 262144, "currency": "CNY", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "note": "多模态，256K上下文，缓存命中¥1.10" }
+        {
+          "name": "kimi-k2.6",
+          "input": 6.5,
+          "cachedInput": 1.1,
+          "output": 27.0,
+          "contextWindow": 262144,
+          "currency": "CNY",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "多模态，256K上下文，缓存命中¥1.10"
+        }
       ]
     },
     {
       "provider": "MiniMax",
       "providerUrl": "https://platform.minimaxi.com/docs/guides/pricing-paygo",
-      "color": "#0891b2", "group": "MiniMax",
+      "color": "#0891b2",
+      "group": "MiniMax",
       "models": [
-        { "name": "MiniMax-M2.7", "input": 2.1, "cachedInput": 0.42, "output": 8.4, "contextWindow": 192000, "currency": "CNY", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "note": "缓存读取¥0.42/缓存写入¥2.625" },
-        { "name": "MiniMax-M2.7-highspeed", "input": 4.2, "cachedInput": 0.42, "output": 16.8, "contextWindow": 192000, "currency": "CNY", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "note": "高速版，缓存写入¥2.625" },
-        { "name": "MiniMax-M2.5", "input": 2.1, "cachedInput": 0.21, "output": 8.4, "contextWindow": 192000, "currency": "CNY", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "note": "缓存读取¥0.21/缓存写入¥2.625" }
+        {
+          "name": "MiniMax-M2.7",
+          "input": 2.1,
+          "cachedInput": 0.42,
+          "output": 8.4,
+          "contextWindow": 192000,
+          "currency": "CNY",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "缓存读取¥0.42/缓存写入¥2.625"
+        },
+        {
+          "name": "MiniMax-M2.7-highspeed",
+          "input": 4.2,
+          "cachedInput": 0.42,
+          "output": 16.8,
+          "contextWindow": 192000,
+          "currency": "CNY",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "高速版，缓存写入¥2.625"
+        },
+        {
+          "name": "MiniMax-M2.5",
+          "input": 2.1,
+          "cachedInput": 0.21,
+          "output": 8.4,
+          "contextWindow": 192000,
+          "currency": "CNY",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "缓存读取¥0.21/缓存写入¥2.625"
+        }
       ]
     },
     {
       "provider": "小米 (MiMo)",
       "providerUrl": "https://help.aliyun.com/zh/model-studio/models",
-      "color": "#f97316", "group": "小米",
+      "color": "#f97316",
+      "group": "小米",
       "models": [
-        { "name": "mimo-v2.5-pro", "input": 4, "output": 16, "contextWindow": 1000000, "currency": "CNY", "unit": "/1M tokens", "lastUpdated": "2026-05-22", "note": "通过阿里云百炼调用，1M上下文，价格近似值" }
+        {
+          "name": "mimo-v2.5-pro",
+          "input": 4,
+          "output": 16,
+          "contextWindow": 1000000,
+          "currency": "CNY",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "通过阿里云百炼调用，1M上下文，价格近似值"
+        }
       ]
     },
     {
       "provider": "硅基流动 (SiliconFlow)",
       "providerUrl": "https://siliconflow.cn/pricing",
-      "color": "#06b6d4", "group": "硅基流动",
+      "color": "#06b6d4",
+      "group": "硅基流动",
       "models": []
     },
     {
       "provider": "智谱AI (GLM)",
       "providerUrl": "https://open.bigmodel.cn/pricing",
-      "color": "#1d4ed8", "group": "智谱AI",
+      "color": "#1d4ed8",
+      "group": "智谱AI",
       "models": []
     },
     {
       "provider": "百度 (文心一言)",
       "providerUrl": "https://yiyan.baidu.com/",
-      "color": "#2563eb", "group": "百度",
+      "color": "#2563eb",
+      "group": "百度",
       "models": []
     },
     {
       "provider": "字节跳动 (豆包)",
       "providerUrl": "https://www.volcengine.com/product/doubao",
-      "color": "#e11d48", "group": "字节跳动",
+      "color": "#e11d48",
+      "group": "字节跳动",
       "models": []
+    }
+  ],
+  "subscriptionPlans": [
+    {
+      "provider": "阿里云 (百炼)",
+      "planType": "Coding Plan Pro",
+      "price": 200,
+      "currency": "CNY",
+      "period": "月",
+      "models": "qwen3.6-plus, kimi-k2.5, glm-5, MiniMax-M2.5, qwen3-coder-plus 等",
+      "limits": "每月90,000次请求 / 每5小时6,000次",
+      "note": "兼容 Claude Code、OpenClaw 等主流AI编程工具",
+      "lastUpdated": "2026-05-22"
+    },
+    {
+      "provider": "阿里云 (百炼)",
+      "planType": "Token Plan 标准坐席",
+      "price": 198,
+      "currency": "CNY",
+      "period": "坐席/月",
+      "models": "qwen3.7-max, qwen3.6-plus, deepseek-v4-pro, kimi-k2.6, glm-5.1, MiniMax-M2.5 等",
+      "limits": "25,000 Credits/坐席/月",
+      "note": "多模型按Credits统一计量，支持团队管理",
+      "lastUpdated": "2026-05-22"
+    },
+    {
+      "provider": "阿里云 (百炼)",
+      "planType": "Token Plan 高级坐席",
+      "price": 698,
+      "currency": "CNY",
+      "period": "坐席/月",
+      "models": "同上",
+      "limits": "100,000 Credits/坐席/月",
+      "note": "日常高频使用AI编程或办公的团队成员",
+      "lastUpdated": "2026-05-22"
+    },
+    {
+      "provider": "阿里云 (百炼)",
+      "planType": "Token Plan 尊享坐席",
+      "price": 1398,
+      "currency": "CNY",
+      "period": "坐席/月",
+      "models": "同上",
+      "limits": "250,000 Credits/坐席/月",
+      "note": "重度依赖AI的核心开发者或高强度使用者",
+      "lastUpdated": "2026-05-22"
+    },
+    {
+      "provider": "智谱AI",
+      "planType": "Coding Plan",
+      "price": null,
+      "currency": "CNY",
+      "period": "月",
+      "models": "待抓取",
+      "limits": "待抓取",
+      "note": "页面SPA渲染，待补充",
+      "lastUpdated": "2026-05-22"
+    },
+    {
+      "provider": "字节跳动 (豆包)",
+      "planType": "Coding Plan",
+      "price": null,
+      "currency": "CNY",
+      "period": "月",
+      "models": "待抓取",
+      "limits": "待抓取",
+      "note": "页面SPA渲染，待补充",
+      "lastUpdated": "2026-05-22"
     }
   ]
 }

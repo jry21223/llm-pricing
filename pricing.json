@@ -989,6 +989,18 @@
       "note": "专业开发者",
       "category": "coding",
       "lastUpdated": "2026-05-22"
+    },
+    {
+      "provider": "OpenClaw",
+      "planType": "Coding Plan (通过阿里云)",
+      "price": 200,
+      "currency": "CNY",
+      "period": "月",
+      "models": "qwen3.6-plus, kimi-k2.5, glm-5.1, MiniMax-M2.5 等",
+      "limits": "每月90,000次请求",
+      "note": "OpenClaw 内直连使用，兼容 Claude Code 等工具",
+      "category": "coding",
+      "lastUpdated": "2026-05-23"
     }
   ],
   "freeModels": [
@@ -1141,11 +1153,11 @@
       "pricing": "Flash $0.14/$0.28, 75%折扣中"
     },
     {
-      "name": "OpenClaw Coding Plan",
-      "url": "https://docs.openclaw.ai",
-      "type": "AI编程工具",
-      "features": "通过阿里云百炼Coding Plan接入模型",
-      "pricing": "¥200/月，支持GLM5/K2.5/M2.5等"
+      "name": "OpenClaw",
+      "url": "https://openclaw.ai",
+      "type": "AI编程工具/Agent平台",
+      "features": "支持多模型后端(OpenAI/DeepSeek/GLM/Kimi等)，Agent工作流，工具链集成，通过阿里云百炼Coding Plan/Token Plan接入",
+      "pricing": "¥200/月(Coding Plan) / ¥198起/坐席(Token Plan)"
     },
     {
       "name": "百度千帆",

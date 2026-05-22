@@ -1,6 +1,6 @@
 {
   "lastUpdated": "2026-05-22",
-  "total": 34,
+  "total": 33,
   "plans": [
     {
       "provider": "ChatGPT",
@@ -397,18 +397,6 @@
       "note": "专业开发者",
       "category": "coding",
       "lastUpdated": "2026-05-22"
-    },
-    {
-      "provider": "OpenClaw",
-      "planType": "Coding Plan (通过阿里云)",
-      "price": 200,
-      "currency": "CNY",
-      "period": "月",
-      "models": "qwen3.6-plus, kimi-k2.5, glm-5.1, MiniMax-M2.5 等",
-      "limits": "每月90,000次请求",
-      "note": "OpenClaw 内直连使用，兼容 Claude Code 等工具",
-      "category": "coding",
-      "lastUpdated": "2026-05-23"
     }
   ]
 }

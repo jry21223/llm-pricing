@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LLM API 价格对比 | LLM Pricing Hub</title>
+  <meta name="description" content="各大模型 API 价格实时对比，支持 OpenAI、DeepSeek、Claude、通义千问、GLM 等">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <h1 class="logo">🤖 LLM 价格对比</h1>
+        <div class="header-right">
+          <span class="update-badge" id="updateBadge">更新中...</span>
+          <button class="lang-toggle" id="langToggle" onclick="toggleLang()">EN</button>
+        </div>
+      </div>
+      <p class="subtitle" id="subtitle">各大模型 API 每百万 Token 价格实时对比，数据每日自动更新</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- 搜索和筛选栏 -->
+    <div class="toolbar">
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+        <input type="text" id="searchInput" placeholder="搜索模型或厂商..." oninput="filterModels()">
+      </div>
+      <div class="sort-options">
+        <label for="sortSelect" class="sort-label" id="sortLabel">排序：</label>
+        <select id="sortSelect" onchange="renderTable()">
+          <option value="input-asc">Input 价格 ↑</option>
+          <option value="input-desc">Input 价格 ↓</option>
+          <option value="output-asc">Output 价格 ↑</option>
+          <option value="output-desc">Output 价格 ↓</option>
+          <option value="provider">按厂商</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- 更新状态 -->
+    <div class="status-bar" id="statusBar">
+      <span id="dataStatus">加载数据中...</span>
+    </div>
+
+    <!-- 数据表格 -->
+    <div class="table-container" id="tableContainer">
+      <table class="pricing-table" id="pricingTable">
+        <thead>
+          <tr>
+            <th data-col="provider" onclick="sortBy('provider')">厂商 <span class="sort-icon">↕</span></th>
+            <th data-col="name" onclick="sortBy('name')">模型 <span class="sort-icon">↕</span></th>
+            <th data-col="input" onclick="sortBy('input')">Input (每百万Token) <span class="sort-icon">↕</span></th>
+            <th data-col="cachedInput" onclick="sortBy('cachedInput')">缓存命中 <span class="sort-icon">↕</span></th>
+            <th data-col="output" onclick="sortBy('output')">Output (每百万Token) <span class="sort-icon">↕</span></th>
+            <th data-col="context" onclick="sortBy('context')">上下文 <span class="sort-icon">↕</span></th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <tr><td colspan="6" class="loading-cell">加载中...</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 厂商概览卡片 -->
+    <section class="providers-section">
+      <h2 class="section-title" id="sectionTitle">厂商概览</h2>
+      <div class="provider-cards" id="providerCards">
+      </div>
+    </section>
+
+    <!-- 说明 -->
+    <section class="info-section">
+      <h2 class="section-title">说明</h2>
+      <div class="info-content">
+        <p>📌 价格为每百万 Token（约 75 万个英文单词或 70 万个汉字）的 API 调用价格。</p>
+        <p>📌 缓存命中价格适用于输入上下文缓存（Prompt Caching / Context Caching）。</p>
+        <p>📌 数据来源：各厂商官方定价页面，每日 UTC 8:00 自动更新。</p>
+        <p>📌 标记为「待抓取」的厂商数据将在后续自动更新脚本中补齐。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>数据仅供参考，准确价格请以各厂商官网为准。</p>
+      <p class="footer-links">
+        <a href="https://github.com/jry233/llm-pricing" target="_blank">GitHub</a>
+        <span class="sep">·</span>
+        <a href="https://openai.com/api/pricing/" target="_blank">OpenAI</a>
+        <span class="sep">·</span>
+        <a href="https://api-docs.deepseek.com/quick_start/pricing" target="_blank">DeepSeek</a>
+        <span class="sep">·</span>
+        <a href="https://www.anthropic.com/pricing" target="_blank">Anthropic</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

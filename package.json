@@ -1,0 +1,12 @@
+{
+  "name": "llm-pricing",
+  "version": "1.0.0",
+  "description": "LLM API pricing comparison hub - auto-updated daily",
+  "private": true,
+  "scripts": {
+    "update": "node update-pricing.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  }
+}

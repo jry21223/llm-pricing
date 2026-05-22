@@ -1,0 +1,97 @@
+{
+  "lastUpdated": "2026-05-22",
+  "totalProviders": 13,
+  "totalModels": 27,
+  "modelsWithPricing": 27,
+  "cheapestInput": [
+    {
+      "provider": "OpenRouter (中转聚合)",
+      "model": "DeepSeek V4 Flash (OpenRouter)",
+      "input": 0.112,
+      "currency": "USD"
+    },
+    {
+      "provider": "DeepSeek",
+      "model": "deepseek-v4-flash",
+      "input": 0.14,
+      "currency": "USD"
+    },
+    {
+      "provider": "OpenAI",
+      "model": "GPT-5.4 nano",
+      "input": 0.2,
+      "currency": "USD"
+    },
+    {
+      "provider": "阿里云 (通义千问)",
+      "model": "qwen3.5-flash",
+      "input": 0.2,
+      "currency": "CNY"
+    },
+    {
+      "provider": "Google (Gemini)",
+      "model": "Gemini 3.1 Flash Lite",
+      "input": 0.25,
+      "currency": "USD"
+    }
+  ],
+  "cheapestOutput": [
+    {
+      "provider": "OpenRouter (中转聚合)",
+      "model": "DeepSeek V4 Flash (OpenRouter)",
+      "output": 0.224,
+      "currency": "USD"
+    },
+    {
+      "provider": "DeepSeek",
+      "model": "deepseek-v4-flash",
+      "output": 0.28,
+      "currency": "USD"
+    },
+    {
+      "provider": "OpenRouter (中转聚合)",
+      "model": "DeepSeek V4 Pro (OpenRouter)",
+      "output": 0.87,
+      "currency": "USD"
+    },
+    {
+      "provider": "OpenAI",
+      "model": "GPT-5.4 nano",
+      "output": 1.25,
+      "currency": "USD"
+    },
+    {
+      "provider": "Google (Gemini)",
+      "model": "Gemini 3.1 Flash Lite",
+      "output": 1.5,
+      "currency": "USD"
+    }
+  ],
+  "largestContext": [
+    {
+      "provider": "OpenRouter (中转聚合)",
+      "model": "GPT-5.5 (OpenRouter)",
+      "contextWindow": 1050000
+    },
+    {
+      "provider": "OpenAI",
+      "model": "GPT-5.5 Pro",
+      "contextWindow": 1050000
+    },
+    {
+      "provider": "OpenRouter (中转聚合)",
+      "model": "DeepSeek V4 Flash (OpenRouter)",
+      "contextWindow": 1048576
+    },
+    {
+      "provider": "Google (Gemini)",
+      "model": "Gemini 3.1 Flash Lite",
+      "contextWindow": 1048576
+    },
+    {
+      "provider": "OpenRouter (中转聚合)",
+      "model": "DeepSeek V4 Pro (OpenRouter)",
+      "contextWindow": 1048576
+    }
+  ]
+}

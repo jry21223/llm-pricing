@@ -1,0 +1,41 @@
+{
+  "provider": "Anthropic (Claude)",
+  "providerUrl": "https://www.anthropic.com/pricing",
+  "lastUpdated": "2026-05-22",
+  "total": 3,
+  "models": [
+    {
+      "name": "Claude Opus 4.7",
+      "input": 5,
+      "cachedInput": 0.5,
+      "output": 25,
+      "contextWindow": 1000000,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "旗舰模型，1M上下文"
+    },
+    {
+      "name": "Claude Sonnet 4.6",
+      "input": 3,
+      "cachedInput": 0.3,
+      "output": 15,
+      "contextWindow": 1000000,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "高性价比编码+推理"
+    },
+    {
+      "name": "Claude Haiku 4.5",
+      "input": 1,
+      "cachedInput": 0.1,
+      "output": 5,
+      "contextWindow": 200000,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "轻量快速版本"
+    }
+  ]
+}

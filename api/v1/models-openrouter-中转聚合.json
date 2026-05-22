@@ -1,0 +1,78 @@
+{
+  "provider": "OpenRouter (中转聚合)",
+  "providerUrl": "https://openrouter.ai/pricing",
+  "lastUpdated": "2026-05-22",
+  "total": 7,
+  "models": [
+    {
+      "name": "GPT-5.5 (OpenRouter)",
+      "input": 5,
+      "output": 30,
+      "contextWindow": 1050000,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "与官方同价"
+    },
+    {
+      "name": "Claude Opus 4.7 (OpenRouter)",
+      "input": 5,
+      "output": 25,
+      "contextWindow": 1000000,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "与官方同价"
+    },
+    {
+      "name": "DeepSeek V4 Flash (OpenRouter)",
+      "input": 0.112,
+      "output": 0.224,
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "比官方低20%"
+    },
+    {
+      "name": "DeepSeek V4 Pro (OpenRouter)",
+      "input": 0.435,
+      "output": 0.87,
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "75%折扣价"
+    },
+    {
+      "name": "Qwen3.7-Max (OpenRouter)",
+      "input": 2.5,
+      "output": 7.5,
+      "contextWindow": 1000000,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "通过OpenRouter调用"
+    },
+    {
+      "name": "Gemini 3.5 Flash (OpenRouter)",
+      "input": 1.5,
+      "output": 9,
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "与官方同价"
+    },
+    {
+      "name": "Grok 4.3 (OpenRouter)",
+      "input": 1.25,
+      "output": 2.5,
+      "contextWindow": 1000000,
+      "currency": "USD",
+      "unit": "/1M tokens",
+      "lastUpdated": "2026-05-22",
+      "note": "与官方同价"
+    }
+  ]
+}

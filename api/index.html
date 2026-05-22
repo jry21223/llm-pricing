@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LLM Pricing API 文档</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔌</text></svg>">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", sans-serif; background: #f8fafc; color: #1e293b; line-height: 1.6; }
+    .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+    header { background: linear-gradient(135deg, #0f172a, #1e293b); color: white; padding: 32px 0; margin-bottom: 32px; }
+    header h1 { font-size: 1.5rem; margin-bottom: 8px; }
+    header p { color: #94a3b8; font-size: 0.9rem; }
+    .card { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+    .card h2 { font-size: 1.1rem; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+    .method { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; font-family: monospace; }
+    .get { background: #dbeafe; color: #1d4ed8; }
+    .url { font-family: monospace; background: #f1f5f9; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; word-break: break-all; }
+    .desc { color: #64748b; font-size: 0.85rem; margin: 8px 0; }
+    pre { background: #0f172a; color: #e2e8f0; padding: 16px; border-radius: 8px; overflow-x: auto; font-size: 0.8rem; line-height: 1.5; margin-top: 12px; }
+    .param { display: inline-block; background: #f1f5f9; padding: 1px 6px; border-radius: 4px; font-family: monospace; font-size: 0.8rem; color: #64748b; }
+    .example { margin-top: 8px; }
+    .example a { color: #10a37f; text-decoration: none; font-size: 0.85rem; }
+    .example a:hover { text-decoration: underline; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-top: 12px; }
+    td, th { padding: 8px 12px; border: 1px solid #e2e8f0; text-align: left; }
+    th { background: #f1f5f9; font-weight: 600; }
+    .footer { text-align: center; color: #94a3b8; font-size: 0.8rem; padding: 24px 0; }
+    @media (max-width: 640px) { .container { padding: 12px; } pre { font-size: 0.7rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>🔌 LLM Pricing API</h1>
+    <p>RESTful API 接口，查询各大模型价格</p>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- Base Info -->
+  <div class="card">
+    <h2>📍 基本信息</h2>
+    <p class="desc">Base URL: <code>https://jry21223.github.io/llm-pricing</code></p>
+    <p class="desc">也支持 Vercel 部署：<code>https://llm-pricing.vercel.app</code></p>
+    <p class="desc">所有接口返回 JSON 格式，支持 CORS。</p>
+  </div>
+
+  <!-- Raw Data -->
+  <div class="card">
+    <h2><span class="method get">GET</span> 原始数据</h2>
+    <span class="url">/pricing.json</span>
+    <p class="desc">完整的定价原始数据，不经过任何处理。</p>
+    <div class="example">
+      <a href="https://jry21223.github.io/llm-pricing/pricing.json" target="_blank">查看原始数据 →</a>
+    </div>
+  </div>
+
+  <!-- All Models -->
+  <div class="card">
+    <h2><span class="method get">GET</span> 所有模型</h2>
+    <span class="url">/api/v1/models.json</span>
+    <p class="desc">展平后的所有模型列表，包含厂商信息。</p>
+    <table>
+      <tr><th>参数</th><th>类型</th><th>说明</th></tr>
+      <tr><td>provider</td><td>string</td><td>厂商名</td></tr>
+      <tr><td>name</td><td>string</td><td>模型名</td></tr>
+      <tr><td>input</td><td>number</td><td>Input 价格</td></tr>
+      <tr><td>cachedInput</td><td>number?</td><td>缓存命中价格</td></tr>
+      <tr><td>output</td><td>number</td><td>Output 价格</td></tr>
+      <tr><td>contextWindow</td><td>number?</td><td>上下文窗口长度</td></tr>
+      <tr><td>currency</td><td>string</td><td>币种 (USD/CNY)</td></tr>
+    </table>
+    <div class="example">
+      <a href="https://jry21223.github.io/llm-pricing/api/v1/models.json" target="_blank">查看示例 →</a>
+    </div>
+  </div>
+
+  <!-- Providers -->
+  <div class="card">
+    <h2><span class="method get">GET</span> 厂商列表</h2>
+    <span class="url">/api/v1/providers.json</span>
+    <p class="desc">列出所有厂商及其包含的模型数量。</p>
+    <div class="example">
+      <a href="/llm-pricing/api/v1/providers.json" target="_blank">查看示例 →</a>
+    </div>
+  </div>
+
+  <!-- Per Provider -->
+  <div class="card">
+    <h2><span class="method get">GET</span> 特定厂商模型</h2>
+    <span class="url">/api/v1/models-{slug}.json</span>
+    <p class="desc">按厂商名查询其包含的模型。slug 为拼音/英文标识。</p>
+    <table>
+      <tr><th>厂商</th><th>Slug</th><th>链接</th></tr>
+      <tr><td>OpenAI</td><td><code>openai</code></td><td><a href="/llm-pricing/api/v1/models-openai.json" target="_blank">查看</a></td></tr>
+      <tr><td>DeepSeek</td><td><code>deepseek</code></td><td><a href="/llm-pricing/api/v1/models-deepseek.json" target="_blank">查看</a></td></tr>
+      <tr><td>Anthropic</td><td><code>anthropic-claude</code></td><td><a href="/llm-pricing/api/v1/models-anthropic-claude.json" target="_blank">查看</a></td></tr>
+      <tr><td>阿里云</td><td><code>阿里云-通义千问</code></td><td><a href="/llm-pricing/api/v1/models-阿里云-通义千问.json" target="_blank">查看</a></td></tr>
+      <tr><td>Google</td><td><code>google-gemini</code></td><td><a href="/llm-pricing/api/v1/models-google-gemini.json" target="_blank">查看</a></td></tr>
+      <tr><td>xAI</td><td><code>xai-grok</code></td><td><a href="/llm-pricing/api/v1/models-xai-grok.json" target="_blank">查看</a></td></tr>
+      <tr><td>OpenRouter</td><td><code>openrouter-中转聚合</code></td><td><a href="/llm-pricing/api/v1/models-openrouter-中转聚合.json" target="_blank">查看</a></td></tr>
+    </table>
+  </div>
+
+  <!-- Stats -->
+  <div class="card">
+    <h2><span class="method get">GET</span> 统计数据</h2>
+    <span class="url">/api/v1/stats.json</span>
+    <p class="desc">价格统计：最便宜的 Input/Output 模型、最大上下文窗口排名。</p>
+    <div class="example">
+      <a href="/llm-pricing/api/v1/stats.json" target="_blank">查看示例 →</a>
+    </div>
+  </div>
+
+  <!-- Vercel Dynamic API -->
+  <div class="card" style="border: 2px solid #10a37f;">
+    <h2>⚡ Vercel 动态 API（推荐）</h2>
+    <p class="desc">部署到 Vercel 后可使用动态查询，无需重新生成静态文件。</p>
+    <p class="desc">部署方式：<code>vercel --prod</code></p>
+
+    <h3 style="margin-top:16px;font-size:0.95rem;"><span class="method get">GET</span> <span class="url">/api/models</span></h3>
+    <p class="desc">查看所有模型，支持筛选：</p>
+    <table>
+      <tr><th>参数</th><th>示例</th><th>说明</th></tr>
+      <tr><td><code>?provider=</code></td><td>deepseek</td><td>按厂商筛选</td></tr>
+      <tr><td><code>?search=</code></td><td>gpt</td><td>搜索模型名或厂商名</td></tr>
+      <tr><td><code>?minPrice=</code></td><td>0.1</td><td>最低 Input 价格</td></tr>
+      <tr><td><code>?maxPrice=</code></td><td>2</td><td>最高 Input 价格</td></tr>
+      <tr><td><code>?currency=</code></td><td>CNY</td><td>币种过滤</td></tr>
+      <tr><td><code>?sort=</code></td><td>input</td><td>排序 (input/output/context)</td></tr>
+    </table>
+
+    <h3 style="margin-top:16px;font-size:0.95rem;"><span class="method get">GET</span> <span class="url">/api/models/:slug</span></h3>
+    <p class="desc">特定厂商：<code>/api/models/deepseek</code></p>
+
+    <h3 style="margin-top:16px;font-size:0.95rem;"><span class="method get">GET</span> <span class="url">/api/compare?models=a,b,c</span></h3>
+    <p class="desc">对比模型：<code>/api/compare?models=gpt-5.5,claude-opus,qwen3.7</code></p>
+
+    <h3 style="margin-top:16px;font-size:0.95rem;"><span class="method get">GET</span> <span class="url">/api/stats</span></h3>
+    <p class="desc">统计数据（同静态版）</p>
+
+    <h3 style="margin-top:16px;font-size:0.95rem;"><span class="method get">GET</span> <span class="url">/api/providers</span></h3>
+    <p class="desc">厂商列表</p>
+  </div>
+
+  <!-- Usage Example -->
+  <div class="card">
+    <h2>📦 调用示例</h2>
+    <pre># 获取所有模型
+curl https://jry21223.github.io/llm-pricing/api/v1/models.json
+
+# 获取 OpenAI 模型（Vercel 动态 API）
+curl /api/models?provider=openai
+
+# 搜索 GPT 相关模型
+curl /api/models?search=gpt&sort=input
+
+# 对比三款热门模型
+curl /api/compare?models=gpt-5.5,claude-opus-4.7,qwen3.7-max
+
+# 用 JavaScript fetch
+fetch('/api/models?minPrice=0&maxPrice=1&currency=USD')
+  .then(r => r.json())
+  .then(data => console.log(data))</pre>
+  </div>
+</div>
+
+<div class="footer">
+  <p>LLM Pricing Hub · <a href="https://github.com/jry21223/llm-pricing" target="_blank">GitHub</a></p>
+</div>
+</body>
+</html>

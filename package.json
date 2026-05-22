@@ -4,7 +4,8 @@
   "description": "LLM API pricing comparison hub - auto-updated daily",
   "private": true,
   "scripts": {
-    "update": "node update-pricing.js"
+    "update": "node update-pricing.js && node api/generate.js",
+    "generate-api": "node api/generate.js"
   },
   "dependencies": {
     "node-fetch": "^2.7.0"

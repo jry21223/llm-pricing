@@ -42,35 +42,6 @@
       ]
     },
     {
-      "provider": "DeepSeek",
-      "providerUrl": "https://api-docs.deepseek.com/quick_start/pricing",
-      "color": "#4f46e5",
-      "models": [
-        {
-          "name": "deepseek-v4-flash",
-          "input": 0.14,
-          "cachedInput": 0.0028,
-          "output": 0.28,
-          "contextWindow": 1000000,
-          "currency": "USD",
-          "unit": "/1M tokens",
-          "lastUpdated": "2026-05-22",
-          "note": "缓存命中仅 $0.0028/M"
-        },
-        {
-          "name": "deepseek-v4-pro",
-          "input": 1.74,
-          "cachedInput": 0.0145,
-          "output": 3.48,
-          "contextWindow": 1000000,
-          "currency": "USD",
-          "unit": "/1M tokens",
-          "lastUpdated": "2026-05-22",
-          "note": "原价，当前75%折扣中，折扣后 input=$0.435, cached=$0.003625, output=$0.87（截止2026-05-31）"
-        }
-      ]
-    },
-    {
       "provider": "Anthropic (Claude)",
       "providerUrl": "https://www.anthropic.com/pricing",
       "color": "#d97706",
@@ -111,10 +82,100 @@
       ]
     },
     {
+      "provider": "DeepSeek",
+      "providerUrl": "https://api-docs.deepseek.com/quick_start/pricing",
+      "color": "#4f46e5",
+      "models": [
+        {
+          "name": "deepseek-v4-flash",
+          "input": 0.14,
+          "cachedInput": 0.0028,
+          "output": 0.28,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "缓存命中仅 $0.0028/M"
+        },
+        {
+          "name": "deepseek-v4-pro",
+          "input": 1.74,
+          "cachedInput": 0.0145,
+          "output": 3.48,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "原价，当前75%折扣中，折扣后 input=$0.435, cached=$0.003625, output=$0.87（截止2026-05-31）"
+        }
+      ]
+    },
+    {
       "provider": "阿里云 (通义千问)",
-      "providerUrl": "https://help.aliyun.com/zh/model-studio/models",
+      "providerUrl": "https://help.aliyun.com/zh/model-studio/model-pricing",
       "color": "#ff6a00",
-      "models": []
+      "models": [
+        {
+          "name": "qwen3.7-max",
+          "input": 12,
+          "output": 36,
+          "contextWindow": 1000000,
+          "currency": "CNY",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "旗舰推理模型，0<Token≤1M，支持Batch半价、缓存折扣"
+        },
+        {
+          "name": "qwen3.6-plus",
+          "input": 2,
+          "output": 12,
+          "contextWindow": 1000000,
+          "currency": "CNY",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "能力与成本均衡，0<Token≤256K，256K-1M输入¥8/输出¥48"
+        },
+        {
+          "name": "qwen3.6-flash",
+          "input": 1.2,
+          "output": 7.2,
+          "contextWindow": 1000000,
+          "currency": "CNY",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "高性价比，0<Token≤256K，支持Batch半价、缓存折扣"
+        },
+        {
+          "name": "qwen3.5-plus",
+          "input": 0.8,
+          "output": 4.8,
+          "contextWindow": 1000000,
+          "currency": "CNY",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "0<Token≤128K，128K-256K输入¥2/输出¥12"
+        },
+        {
+          "name": "qwen3.5-flash",
+          "input": 0.2,
+          "output": 2,
+          "contextWindow": 1000000,
+          "currency": "CNY",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "超低价格，0<Token≤128K，支持Batch半价、缓存折扣"
+        },
+        {
+          "name": "qwen-turbo",
+          "input": 0.3,
+          "output": 3,
+          "contextWindow": 1000000,
+          "currency": "CNY",
+          "unit": "/1M tokens",
+          "lastUpdated": "2026-05-22",
+          "note": "最轻量模型，支持思考模式"
+        }
+      ]
     },
     {
       "provider": "智谱AI (GLM)",

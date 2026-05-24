@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-22",
+  "lastUpdated": "2026-05-24",
   "providers": [
     {
       "provider": "OpenAI",
@@ -9,9 +9,9 @@
       "models": [
         {
           "name": "GPT-5.5",
-          "input": 5.0,
+          "input": 5,
           "cachedInput": 0.5,
-          "output": 30.0,
+          "output": 30,
           "contextWindow": 270000,
           "currency": "USD",
           "unit": "/1M tokens",
@@ -22,7 +22,7 @@
           "name": "GPT-5.4",
           "input": 2.5,
           "cachedInput": 0.25,
-          "output": 15.0,
+          "output": 15,
           "contextWindow": 270000,
           "currency": "USD",
           "unit": "/1M tokens",
@@ -52,8 +52,8 @@
         },
         {
           "name": "GPT-5.5 Pro",
-          "input": 30.0,
-          "output": 180.0,
+          "input": 30,
+          "output": 180,
           "contextWindow": 1050000,
           "currency": "USD",
           "unit": "/1M tokens",
@@ -70,14 +70,557 @@
       "models": [
         {
           "name": "GPT-5.5",
-          "input": 5.0,
-          "output": 30.0,
+          "input": 5,
+          "output": 30,
           "contextWindow": 1050000,
           "currency": "USD",
           "unit": "/1M tokens",
           "lastUpdated": "2026-05-22",
           "source": "OpenRouter",
           "note": "中转价，与官方同价"
+        },
+        {
+          "name": "GPT Chat Latest",
+          "input": 5,
+          "cachedInput": 0.5,
+          "output": 30,
+          "contextWindow": 400000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.5 Pro",
+          "input": 30,
+          "output": 180,
+          "contextWindow": 1050000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.5",
+          "input": 5,
+          "cachedInput": 0.5,
+          "output": 30,
+          "contextWindow": 1050000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.4 Image 2",
+          "input": 8,
+          "cachedInput": 2,
+          "output": 15,
+          "contextWindow": 272000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.4 Nano",
+          "input": 0.2,
+          "cachedInput": 0.02,
+          "output": 1.25,
+          "contextWindow": 400000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.4 Mini",
+          "input": 0.75,
+          "cachedInput": 0.075,
+          "output": 4.5,
+          "contextWindow": 400000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.4 Pro",
+          "input": 30,
+          "output": 180,
+          "contextWindow": 1050000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.4",
+          "input": 2.5,
+          "cachedInput": 0.25,
+          "output": 15,
+          "contextWindow": 1050000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.3 Chat",
+          "input": 1.75,
+          "cachedInput": 0.175,
+          "output": 14,
+          "contextWindow": 128000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.3-Codex",
+          "input": 1.75,
+          "cachedInput": 0.175,
+          "output": 14,
+          "contextWindow": 400000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT Audio",
+          "input": 2.5,
+          "output": 10,
+          "contextWindow": 128000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT Audio Mini",
+          "input": 0.6,
+          "output": 2.4,
+          "contextWindow": 128000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.2-Codex",
+          "input": 1.75,
+          "cachedInput": 0.175,
+          "output": 14,
+          "contextWindow": 400000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.2 Chat",
+          "input": 1.75,
+          "cachedInput": 0.175,
+          "output": 14,
+          "contextWindow": 128000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.2 Pro",
+          "input": 21,
+          "output": 168,
+          "contextWindow": 400000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.2",
+          "input": 1.75,
+          "cachedInput": 0.175,
+          "output": 14,
+          "contextWindow": 400000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.1-Codex-Max",
+          "input": 1.25,
+          "cachedInput": 0.125,
+          "output": 10,
+          "contextWindow": 400000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.1",
+          "input": 1.25,
+          "cachedInput": 0.13,
+          "output": 10,
+          "contextWindow": 400000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.1 Chat",
+          "input": 1.25,
+          "cachedInput": 0.125,
+          "output": 10,
+          "contextWindow": 128000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.1-Codex",
+          "input": 1.25,
+          "cachedInput": 0.125,
+          "output": 10,
+          "contextWindow": 400000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.1-Codex-Mini",
+          "input": 0.25,
+          "cachedInput": 0.03,
+          "output": 2,
+          "contextWindow": 400000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "gpt-oss-safeguard-20b",
+          "input": 0.075,
+          "cachedInput": 0.037,
+          "output": 0.3,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5 Image Mini",
+          "input": 2.5,
+          "cachedInput": 0.25,
+          "output": 2,
+          "contextWindow": 400000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5 Image",
+          "input": 10,
+          "cachedInput": 1.25,
+          "output": 10,
+          "contextWindow": 400000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "o3 Deep Research",
+          "input": 10,
+          "cachedInput": 2.5,
+          "output": 40,
+          "contextWindow": 200000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "o4 Mini Deep Research",
+          "input": 2,
+          "cachedInput": 0.5,
+          "output": 8,
+          "contextWindow": 200000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5 Pro",
+          "input": 15,
+          "output": 120,
+          "contextWindow": 400000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5 Codex",
+          "input": 1.25,
+          "cachedInput": 0.125,
+          "output": 10,
+          "contextWindow": 400000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4o Audio",
+          "input": 2.5,
+          "output": 10,
+          "contextWindow": 128000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5 Chat",
+          "input": 1.25,
+          "cachedInput": 0.125,
+          "output": 10,
+          "contextWindow": 128000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5",
+          "input": 1.25,
+          "cachedInput": 0.125,
+          "output": 10,
+          "contextWindow": 400000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5 Mini",
+          "input": 0.25,
+          "cachedInput": 0.025,
+          "output": 2,
+          "contextWindow": 400000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5 Nano",
+          "input": 0.05,
+          "cachedInput": 0.01,
+          "output": 0.4,
+          "contextWindow": 400000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "gpt-oss-120b",
+          "input": 0.039,
+          "output": 0.18,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "gpt-oss-20b",
+          "input": 0.03,
+          "output": 0.14,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "o3 Pro",
+          "input": 20,
+          "output": 80,
+          "contextWindow": 200000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "o4 Mini High",
+          "input": 1.1,
+          "cachedInput": 0.275,
+          "output": 4.4,
+          "contextWindow": 200000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "o3",
+          "input": 2,
+          "cachedInput": 0.5,
+          "output": 8,
+          "contextWindow": 200000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "o4 Mini",
+          "input": 1.1,
+          "cachedInput": 0.275,
+          "output": 4.4,
+          "contextWindow": 200000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4.1",
+          "input": 2,
+          "cachedInput": 0.5,
+          "output": 8,
+          "contextWindow": 1047576,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4.1 Mini",
+          "input": 0.4,
+          "cachedInput": 0.1,
+          "output": 1.6,
+          "contextWindow": 1047576,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4.1 Nano",
+          "input": 0.1,
+          "cachedInput": 0.025,
+          "output": 0.4,
+          "contextWindow": 1047576,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "o1-pro",
+          "input": 150,
+          "output": 600,
+          "contextWindow": 200000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4o-mini Search Preview",
+          "input": 0.15,
+          "output": 0.6,
+          "contextWindow": 128000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4o Search Preview",
+          "input": 2.5,
+          "output": 10,
+          "contextWindow": 128000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "o3 Mini High",
+          "input": 1.1,
+          "cachedInput": 0.55,
+          "output": 4.4,
+          "contextWindow": 200000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "o3 Mini",
+          "input": 1.1,
+          "cachedInput": 0.55,
+          "output": 4.4,
+          "contextWindow": 200000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "o1",
+          "input": 15,
+          "cachedInput": 7.5,
+          "output": 60,
+          "contextWindow": 200000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4o (2024-11-20)",
+          "input": 2.5,
+          "cachedInput": 1.25,
+          "output": 10,
+          "contextWindow": 128000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4o (2024-08-06)",
+          "input": 2.5,
+          "cachedInput": 1.25,
+          "output": 10,
+          "contextWindow": 128000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4o-mini (2024-07-18)",
+          "input": 0.15,
+          "cachedInput": 0.075,
+          "output": 0.6,
+          "contextWindow": 128000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4o-mini",
+          "input": 0.15,
+          "cachedInput": 0.075,
+          "output": 0.6,
+          "contextWindow": 128000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4o",
+          "input": 2.5,
+          "output": 10,
+          "contextWindow": 128000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4o (2024-05-13)",
+          "input": 5,
+          "output": 15,
+          "contextWindow": 128000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4 Turbo",
+          "input": 10,
+          "output": 30,
+          "contextWindow": 128000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-3.5 Turbo (older v0613)",
+          "input": 1,
+          "output": 2,
+          "contextWindow": 4095,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4 Turbo Preview",
+          "input": 10,
+          "output": 30,
+          "contextWindow": 128000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4 Turbo (older v1106)",
+          "input": 10,
+          "output": 30,
+          "contextWindow": 128000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-3.5 Turbo Instruct",
+          "input": 1.5,
+          "output": 2,
+          "contextWindow": 4095,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-3.5 Turbo 16k",
+          "input": 3,
+          "output": 4,
+          "contextWindow": 16385,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4 (older v0314)",
+          "input": 30,
+          "output": 60,
+          "contextWindow": 8191,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-3.5 Turbo",
+          "input": 0.5,
+          "output": 1.5,
+          "contextWindow": 16385,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4",
+          "input": 30,
+          "output": 60,
+          "contextWindow": 8191,
+          "currency": "USD",
+          "source": "OpenRouter"
         }
       ]
     },
@@ -94,8 +637,6 @@
           "output": 0.28,
           "contextWindow": 1000000,
           "currency": "USD",
-          "unit": "/1M tokens",
-          "lastUpdated": "2026-05-22",
           "note": "缓存命中仅 $0.0028/M"
         },
         {
@@ -105,8 +646,6 @@
           "output": 3.48,
           "contextWindow": 1000000,
           "currency": "USD",
-          "unit": "/1M tokens",
-          "lastUpdated": "2026-05-22",
           "note": "原价，当前75%折扣：input=$0.435, output=$0.87（至2026-05-31）"
         }
       ]
@@ -138,6 +677,118 @@
           "lastUpdated": "2026-05-22",
           "source": "OpenRouter",
           "note": "75%折扣价"
+        },
+        {
+          "name": "DeepSeek V4 Pro",
+          "input": 0.435,
+          "cachedInput": 0.004,
+          "output": 0.87,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "DeepSeek V4 Flash",
+          "input": 0.1,
+          "cachedInput": 0.02,
+          "output": 0.2,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "DeepSeek V3.2 Speciale",
+          "input": 0.287,
+          "cachedInput": 0.058,
+          "output": 0.431,
+          "contextWindow": 163840,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "DeepSeek V3.2",
+          "input": 0.252,
+          "cachedInput": 0.025,
+          "output": 0.378,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "DeepSeek V3.2 Exp",
+          "input": 0.27,
+          "output": 0.41,
+          "contextWindow": 163840,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "DeepSeek V3.1 Terminus",
+          "input": 0.27,
+          "cachedInput": 0.13,
+          "output": 0.95,
+          "contextWindow": 163840,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "DeepSeek V3.1",
+          "input": 0.21,
+          "cachedInput": 0.13,
+          "output": 0.79,
+          "contextWindow": 163840,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "R1 0528",
+          "input": 0.5,
+          "cachedInput": 0.35,
+          "output": 2.15,
+          "contextWindow": 163840,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "DeepSeek V3 0324",
+          "input": 0.2,
+          "cachedInput": 0.135,
+          "output": 0.77,
+          "contextWindow": 163840,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "R1 Distill Qwen 32B",
+          "input": 0.29,
+          "output": 0.29,
+          "contextWindow": 128000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "R1 Distill Llama 70B",
+          "input": 0.7,
+          "output": 0.8,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "R1",
+          "input": 0.7,
+          "output": 2.5,
+          "contextWindow": 163840,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "DeepSeek V3",
+          "input": 0.32,
+          "output": 0.89,
+          "contextWindow": 163840,
+          "currency": "USD",
+          "source": "OpenRouter"
         }
       ]
     },
@@ -149,9 +800,9 @@
       "models": [
         {
           "name": "Claude Opus 4.7",
-          "input": 5.0,
+          "input": 5,
           "cachedInput": 0.5,
-          "output": 25.0,
+          "output": 25,
           "contextWindow": 1000000,
           "currency": "USD",
           "unit": "/1M tokens",
@@ -160,9 +811,9 @@
         },
         {
           "name": "Claude Sonnet 4.6",
-          "input": 3.0,
+          "input": 3,
           "cachedInput": 0.3,
-          "output": 15.0,
+          "output": 15,
           "contextWindow": 1000000,
           "currency": "USD",
           "unit": "/1M tokens",
@@ -171,9 +822,9 @@
         },
         {
           "name": "Claude Haiku 4.5",
-          "input": 1.0,
+          "input": 1,
           "cachedInput": 0.1,
-          "output": 5.0,
+          "output": 5,
           "contextWindow": 200000,
           "currency": "USD",
           "unit": "/1M tokens",
@@ -190,8 +841,8 @@
       "models": [
         {
           "name": "Claude Opus 4.7",
-          "input": 5.0,
-          "output": 25.0,
+          "input": 5,
+          "output": 25,
           "contextWindow": 1000000,
           "currency": "USD",
           "unit": "/1M tokens",
@@ -356,9 +1007,9 @@
         },
         {
           "name": "Grok Build 0.1",
-          "input": 1.0,
+          "input": 1,
           "cachedInput": 0.2,
-          "output": 2.0,
+          "output": 2,
           "contextWindow": 256000,
           "currency": "USD",
           "unit": "/1M tokens",
@@ -396,7 +1047,7 @@
           "name": "kimi-k2.6",
           "input": 6.5,
           "cachedInput": 1.1,
-          "output": 27.0,
+          "output": 27,
           "contextWindow": 262144,
           "currency": "CNY",
           "unit": "/1M tokens",
@@ -480,68 +1131,103 @@
         {
           "name": "GLM-5.1",
           "input": 0.98,
-          "cachedInput": 0.182,
+          "cachedInput": 0.18,
           "output": 3.08,
-          "contextWindow": 200000,
+          "contextWindow": 202752,
           "currency": "USD",
-          "unit": "/1M tokens",
-          "lastUpdated": "2026-05-22",
           "note": "最新旗舰，对齐 Claude Opus 4.6"
+        },
+        {
+          "name": "GLM-5V Turbo",
+          "input": 1.2,
+          "cachedInput": 0.24,
+          "output": 4,
+          "contextWindow": 202752,
+          "currency": "USD"
+        },
+        {
+          "name": "GLM-5 Turbo",
+          "input": 1.2,
+          "cachedInput": 0.24,
+          "output": 4,
+          "contextWindow": 202752,
+          "currency": "USD",
+          "note": "增强版基座"
         },
         {
           "name": "GLM-5",
           "input": 0.6,
           "cachedInput": 0.12,
           "output": 1.92,
-          "contextWindow": 200000,
+          "contextWindow": 202752,
           "currency": "USD",
-          "unit": "/1M tokens",
-          "lastUpdated": "2026-05-22",
           "note": "开源 SOTA Agent 基座"
-        },
-        {
-          "name": "GLM-5 Turbo",
-          "input": 1.2,
-          "cachedInput": 0.24,
-          "output": 4.0,
-          "contextWindow": 200000,
-          "currency": "USD",
-          "unit": "/1M tokens",
-          "lastUpdated": "2026-05-22",
-          "note": "增强版基座"
-        },
-        {
-          "name": "GLM-4.7",
-          "input": 0.4,
-          "cachedInput": 0.08,
-          "output": 1.75,
-          "contextWindow": 200000,
-          "currency": "USD",
-          "unit": "/1M tokens",
-          "lastUpdated": "2026-05-22",
-          "note": "高智能模型，全面升级"
         },
         {
           "name": "GLM-4.7 Flash",
           "input": 0.06,
           "cachedInput": 0.01,
           "output": 0.4,
-          "contextWindow": 200000,
+          "contextWindow": 202752,
           "currency": "USD",
-          "unit": "/1M tokens",
-          "lastUpdated": "2026-05-22",
           "note": "免费模型，轻量高速"
+        },
+        {
+          "name": "GLM-4.7",
+          "input": 0.4,
+          "cachedInput": 0.08,
+          "output": 1.75,
+          "contextWindow": 202752,
+          "currency": "USD",
+          "note": "高智能模型，全面升级"
+        },
+        {
+          "name": "GLM 4.6V",
+          "input": 0.3,
+          "cachedInput": 0.05,
+          "output": 0.9,
+          "contextWindow": 131072,
+          "currency": "USD"
+        },
+        {
+          "name": "GLM-4.6",
+          "input": 0.43,
+          "cachedInput": 0.08,
+          "output": 1.74,
+          "contextWindow": 202752,
+          "currency": "USD"
+        },
+        {
+          "name": "GLM 4.5V",
+          "input": 0.6,
+          "cachedInput": 0.11,
+          "output": 1.8,
+          "contextWindow": 65536,
+          "currency": "USD"
+        },
+        {
+          "name": "GLM 4.5",
+          "input": 0.6,
+          "cachedInput": 0.11,
+          "output": 2.2,
+          "contextWindow": 131072,
+          "currency": "USD"
         },
         {
           "name": "GLM-4.5 Air",
           "input": 0.13,
-          "cachedInput": 0.025,
+          "cachedInput": 0.03,
           "output": 0.85,
-          "contextWindow": 130000,
+          "contextWindow": 131072,
           "currency": "USD",
-          "unit": "/1M tokens",
-          "lastUpdated": "2026-05-22",
           "note": "高性价比"
+        },
+        {
+          "name": "GLM 4 32B ",
+          "input": 0.1,
+          "output": 0.1,
+          "contextWindow": 128000,
+          "currency": "USD"
         }
       ]
     },
@@ -589,6 +1275,1115 @@
           "unit": "/1M tokens",
           "lastUpdated": "2026-05-22",
           "note": "待抓取（火山方舟SPA）"
+        }
+      ]
+    },
+    {
+      "provider": "OpenRouter → 阿里云 (通义千问)",
+      "providerUrl": "https://openrouter.ai/pricing",
+      "color": "#ff6a00",
+      "group": "阿里云",
+      "models": [
+        {
+          "name": "Qwen3.7 Max",
+          "input": 2.5,
+          "output": 7.5,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3.5 Plus 2026-04-20",
+          "input": 0.3,
+          "output": 1.8,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3.6 Flash",
+          "input": 0.188,
+          "output": 1.125,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3.6 35B A3B",
+          "input": 0.15,
+          "output": 1,
+          "contextWindow": 262144,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3.6 Max Preview",
+          "input": 1.04,
+          "output": 6.24,
+          "contextWindow": 262144,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3.6 27B",
+          "input": 0.3,
+          "output": 3.2,
+          "contextWindow": 262144,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3.6 Plus",
+          "input": 0.325,
+          "output": 1.95,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3.5-9B",
+          "input": 0.04,
+          "output": 0.15,
+          "contextWindow": 262144,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3.5-35B-A3B",
+          "input": 0.139,
+          "output": 1,
+          "contextWindow": 262144,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3.5-27B",
+          "input": 0.195,
+          "output": 1.56,
+          "contextWindow": 262144,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3.5-122B-A10B",
+          "input": 0.26,
+          "output": 2.08,
+          "contextWindow": 262144,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3.5-Flash",
+          "input": 0.065,
+          "output": 0.26,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3.5 Plus 2026-02-15",
+          "input": 0.26,
+          "output": 1.56,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3.5 397B A17B",
+          "input": 0.39,
+          "output": 2.34,
+          "contextWindow": 262144,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 Max Thinking",
+          "input": 0.78,
+          "output": 3.9,
+          "contextWindow": 262144,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 Coder Next",
+          "input": 0.11,
+          "cachedInput": 0.07,
+          "output": 0.8,
+          "contextWindow": 262144,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 VL 32B Instruct",
+          "input": 0.104,
+          "output": 0.416,
+          "contextWindow": 262144,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 VL 8B Thinking",
+          "input": 0.117,
+          "output": 1.365,
+          "contextWindow": 256000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 VL 8B Instruct",
+          "input": 0.08,
+          "output": 0.5,
+          "contextWindow": 256000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 VL 30B A3B Thinking",
+          "input": 0.13,
+          "output": 1.56,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 VL 30B A3B Instruct",
+          "input": 0.13,
+          "output": 0.52,
+          "contextWindow": 262144,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 VL 235B A22B Thinking",
+          "input": 0.26,
+          "output": 2.6,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 VL 235B A22B Instruct",
+          "input": 0.2,
+          "cachedInput": 0.11,
+          "output": 0.88,
+          "contextWindow": 262144,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 Max",
+          "input": 0.78,
+          "cachedInput": 0.156,
+          "output": 3.9,
+          "contextWindow": 262144,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 Coder Plus",
+          "input": 0.65,
+          "cachedInput": 0.13,
+          "output": 3.25,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 Coder Flash",
+          "input": 0.195,
+          "cachedInput": 0.039,
+          "output": 0.975,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 Next 80B A3B Thinking",
+          "input": 0.098,
+          "output": 0.78,
+          "contextWindow": 262144,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 Next 80B A3B Instruct",
+          "input": 0.09,
+          "output": 1.1,
+          "contextWindow": 262144,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen Plus 0728 (thinking)",
+          "input": 0.26,
+          "output": 0.78,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen Plus 0728",
+          "input": 0.26,
+          "output": 0.78,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 30B A3B Thinking 2507",
+          "input": 0.08,
+          "cachedInput": 0.08,
+          "output": 0.4,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 Coder 30B A3B Instruct",
+          "input": 0.07,
+          "output": 0.27,
+          "contextWindow": 160000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 30B A3B Instruct 2507",
+          "input": 0.09,
+          "output": 0.3,
+          "contextWindow": 262144,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 235B A22B Thinking 2507",
+          "input": 0.15,
+          "output": 1.495,
+          "contextWindow": 262144,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 Coder 480B A35B",
+          "input": 0.22,
+          "output": 1.8,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 235B A22B Instruct 2507",
+          "input": 0.071,
+          "output": 0.1,
+          "contextWindow": 262144,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 30B A3B",
+          "input": 0.09,
+          "output": 0.45,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 8B",
+          "input": 0.05,
+          "cachedInput": 0.05,
+          "output": 0.4,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 14B",
+          "input": 0.1,
+          "output": 0.24,
+          "contextWindow": 131702,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 32B",
+          "input": 0.08,
+          "output": 0.28,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 235B A22B",
+          "input": 0.455,
+          "output": 1.82,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen2.5 VL 72B Instruct",
+          "input": 0.25,
+          "output": 0.75,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen-Plus",
+          "input": 0.26,
+          "cachedInput": 0.052,
+          "output": 0.78,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen2.5 Coder 32B Instruct",
+          "input": 0.66,
+          "output": 1,
+          "contextWindow": 128000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen2.5 7B Instruct",
+          "input": 0.04,
+          "output": 0.1,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen2.5 72B Instruct",
+          "input": 0.36,
+          "output": 0.4,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        }
+      ]
+    },
+    {
+      "provider": "OpenRouter → xAI (Grok)",
+      "providerUrl": "https://openrouter.ai/pricing",
+      "color": "#1a1a2e",
+      "group": "xAI",
+      "models": [
+        {
+          "name": "Grok Build 0.1",
+          "input": 1,
+          "cachedInput": 0.2,
+          "output": 2,
+          "contextWindow": 256000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Grok 4.3",
+          "input": 1.25,
+          "cachedInput": 0.2,
+          "output": 2.5,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Grok 4.20 Multi-Agent",
+          "input": 2,
+          "cachedInput": 0.2,
+          "output": 6,
+          "contextWindow": 2000000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Grok 4.20",
+          "input": 1.25,
+          "cachedInput": 0.2,
+          "output": 2.5,
+          "contextWindow": 2000000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        }
+      ]
+    },
+    {
+      "provider": "OpenRouter → Google (Gemini)",
+      "providerUrl": "https://openrouter.ai/pricing",
+      "color": "#4285f4",
+      "group": "Google",
+      "models": [
+        {
+          "name": "Gemini 3.5 Flash",
+          "input": 1.5,
+          "cachedInput": 0.15,
+          "output": 9,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemini 3.1 Flash Lite",
+          "input": 0.25,
+          "cachedInput": 0.025,
+          "output": 1.5,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemma 4 26B A4B ",
+          "input": 0.06,
+          "output": 0.33,
+          "contextWindow": 262144,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemma 4 31B",
+          "input": 0.12,
+          "output": 0.37,
+          "contextWindow": 262144,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemini 3.1 Flash Lite Preview",
+          "input": 0.25,
+          "cachedInput": 0.025,
+          "output": 1.5,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Nano Banana 2 (Gemini 3.1 Flash Image Preview)",
+          "input": 0.5,
+          "output": 3,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemini 3.1 Pro Preview Custom Tools",
+          "input": 2,
+          "cachedInput": 0.2,
+          "output": 12,
+          "contextWindow": 1048756,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemini 3.1 Pro Preview",
+          "input": 2,
+          "cachedInput": 0.2,
+          "output": 12,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemini 3 Flash Preview",
+          "input": 0.5,
+          "cachedInput": 0.05,
+          "output": 3,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Nano Banana Pro (Gemini 3 Pro Image Preview)",
+          "input": 2,
+          "cachedInput": 0.2,
+          "output": 12,
+          "contextWindow": 65536,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Nano Banana (Gemini 2.5 Flash Image)",
+          "input": 0.3,
+          "cachedInput": 0.03,
+          "output": 2.5,
+          "contextWindow": 32768,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemini 2.5 Flash Lite Preview 09-2025",
+          "input": 0.1,
+          "cachedInput": 0.01,
+          "output": 0.4,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemini 2.5 Flash Lite",
+          "input": 0.1,
+          "cachedInput": 0.01,
+          "output": 0.4,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemini 2.5 Flash",
+          "input": 0.3,
+          "cachedInput": 0.03,
+          "output": 2.5,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemini 2.5 Pro",
+          "input": 1.25,
+          "cachedInput": 0.125,
+          "output": 10,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemini 2.5 Pro Preview 06-05",
+          "input": 1.25,
+          "cachedInput": 0.125,
+          "output": 10,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemma 3n 4B",
+          "input": 0.06,
+          "output": 0.12,
+          "contextWindow": 32768,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemini 2.5 Pro Preview 05-06",
+          "input": 1.25,
+          "cachedInput": 0.125,
+          "output": 10,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemma 3 4B",
+          "input": 0.04,
+          "output": 0.08,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemma 3 12B",
+          "input": 0.04,
+          "output": 0.13,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemma 3 27B",
+          "input": 0.08,
+          "output": 0.16,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemini 2.0 Flash Lite",
+          "input": 0.075,
+          "output": 0.3,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemini 2.0 Flash",
+          "input": 0.1,
+          "cachedInput": 0.025,
+          "output": 0.4,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemma 2 27B",
+          "input": 0.65,
+          "output": 0.65,
+          "contextWindow": 8192,
+          "currency": "USD",
+          "source": "OpenRouter"
+        }
+      ]
+    },
+    {
+      "provider": "OpenRouter → Anthropic (Claude)",
+      "providerUrl": "https://openrouter.ai/pricing",
+      "color": "#d97706",
+      "group": "Anthropic",
+      "models": [
+        {
+          "name": "Claude Opus 4.7 (Fast)",
+          "input": 30,
+          "cachedInput": 3,
+          "output": 150,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude Opus 4.7",
+          "input": 5,
+          "cachedInput": 0.5,
+          "output": 25,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude Opus 4.6 (Fast)",
+          "input": 30,
+          "cachedInput": 3,
+          "output": 150,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude Sonnet 4.6",
+          "input": 3,
+          "cachedInput": 0.3,
+          "output": 15,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude Opus 4.6",
+          "input": 5,
+          "cachedInput": 0.5,
+          "output": 25,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude Opus 4.5",
+          "input": 5,
+          "cachedInput": 0.5,
+          "output": 25,
+          "contextWindow": 200000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude Haiku 4.5",
+          "input": 1,
+          "cachedInput": 0.1,
+          "output": 5,
+          "contextWindow": 200000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude Sonnet 4.5",
+          "input": 3,
+          "cachedInput": 0.3,
+          "output": 15,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude Opus 4.1",
+          "input": 15,
+          "cachedInput": 1.5,
+          "output": 75,
+          "contextWindow": 200000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude Opus 4",
+          "input": 15,
+          "cachedInput": 1.5,
+          "output": 75,
+          "contextWindow": 200000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude Sonnet 4",
+          "input": 3,
+          "cachedInput": 0.3,
+          "output": 15,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude 3.5 Haiku",
+          "input": 0.8,
+          "cachedInput": 0.08,
+          "output": 4,
+          "contextWindow": 200000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude 3 Haiku",
+          "input": 0.25,
+          "cachedInput": 0.03,
+          "output": 1.25,
+          "contextWindow": 200000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        }
+      ]
+    },
+    {
+      "provider": "OpenRouter → 小米 (MiMo)",
+      "providerUrl": "https://openrouter.ai/pricing",
+      "color": "#f97316",
+      "group": "小米",
+      "models": [
+        {
+          "name": "MiMo-V2.5-Pro",
+          "input": 1,
+          "cachedInput": 0.2,
+          "output": 3,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "MiMo-V2.5",
+          "input": 0.4,
+          "cachedInput": 0.08,
+          "output": 2,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "MiMo-V2-Omni",
+          "input": 0.4,
+          "cachedInput": 0.08,
+          "output": 2,
+          "contextWindow": 262144,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "MiMo-V2-Pro",
+          "input": 1,
+          "cachedInput": 0.2,
+          "output": 3,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "MiMo-V2-Flash",
+          "input": 0.1,
+          "cachedInput": 0.01,
+          "output": 0.3,
+          "contextWindow": 262144,
+          "currency": "USD",
+          "source": "OpenRouter"
+        }
+      ]
+    },
+    {
+      "provider": "OpenRouter → 百度 (文心一言)",
+      "providerUrl": "https://openrouter.ai/pricing",
+      "color": "#2563eb",
+      "group": "百度",
+      "models": [
+        {
+          "name": "Qianfan-OCR-Fast",
+          "input": 0.68,
+          "output": 2.81,
+          "contextWindow": 65536,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "ERNIE 4.5 21B A3B Thinking",
+          "input": 0.07,
+          "output": 0.28,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "ERNIE 4.5 21B A3B",
+          "input": 0.07,
+          "output": 0.28,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "ERNIE 4.5 VL 28B A3B",
+          "input": 0.14,
+          "output": 0.56,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "ERNIE 4.5 VL 424B A47B ",
+          "input": 0.42,
+          "output": 1.25,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "ERNIE 4.5 300B A47B ",
+          "input": 0.28,
+          "output": 1.1,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        }
+      ]
+    },
+    {
+      "provider": "OpenRouter → 月之暗面 (Kimi)",
+      "providerUrl": "https://openrouter.ai/pricing",
+      "color": "#7c3aed",
+      "group": "月之暗面",
+      "models": [
+        {
+          "name": "Kimi K2.6",
+          "input": 0.73,
+          "cachedInput": 0.25,
+          "output": 3.49,
+          "contextWindow": 262144,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Kimi K2.5",
+          "input": 0.4,
+          "cachedInput": 0.09,
+          "output": 1.9,
+          "contextWindow": 262144,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Kimi K2 Thinking",
+          "input": 0.6,
+          "output": 2.5,
+          "contextWindow": 262144,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Kimi K2 0905",
+          "input": 0.6,
+          "output": 2.5,
+          "contextWindow": 262144,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Kimi K2 0711",
+          "input": 0.57,
+          "output": 2.3,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        }
+      ]
+    },
+    {
+      "provider": "OpenRouter → 智谱AI (GLM)",
+      "providerUrl": "https://openrouter.ai/pricing",
+      "color": "#1d4ed8",
+      "group": "智谱AI",
+      "models": [
+        {
+          "name": "GLM 5.1",
+          "input": 0.98,
+          "cachedInput": 0.182,
+          "output": 3.08,
+          "contextWindow": 202752,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GLM 5V Turbo",
+          "input": 1.2,
+          "cachedInput": 0.24,
+          "output": 4,
+          "contextWindow": 202752,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GLM 5 Turbo",
+          "input": 1.2,
+          "cachedInput": 0.24,
+          "output": 4,
+          "contextWindow": 202752,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GLM 5",
+          "input": 0.6,
+          "cachedInput": 0.12,
+          "output": 1.92,
+          "contextWindow": 202752,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GLM 4.7 Flash",
+          "input": 0.06,
+          "cachedInput": 0.01,
+          "output": 0.4,
+          "contextWindow": 202752,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GLM 4.7",
+          "input": 0.4,
+          "cachedInput": 0.08,
+          "output": 1.75,
+          "contextWindow": 202752,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GLM 4.6V",
+          "input": 0.3,
+          "cachedInput": 0.05,
+          "output": 0.9,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GLM 4.6",
+          "input": 0.43,
+          "cachedInput": 0.08,
+          "output": 1.74,
+          "contextWindow": 202752,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GLM 4.5V",
+          "input": 0.6,
+          "cachedInput": 0.11,
+          "output": 1.8,
+          "contextWindow": 65536,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GLM 4.5",
+          "input": 0.6,
+          "cachedInput": 0.11,
+          "output": 2.2,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GLM 4.5 Air",
+          "input": 0.13,
+          "cachedInput": 0.025,
+          "output": 0.85,
+          "contextWindow": 131072,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GLM 4 32B ",
+          "input": 0.1,
+          "output": 0.1,
+          "contextWindow": 128000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        }
+      ]
+    },
+    {
+      "provider": "OpenRouter → MiniMax",
+      "providerUrl": "https://openrouter.ai/pricing",
+      "color": "#0891b2",
+      "group": "MiniMax",
+      "models": [
+        {
+          "name": "MiniMax M2.7",
+          "input": 0.279,
+          "output": 1.2,
+          "contextWindow": 204800,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "MiniMax M2.5",
+          "input": 0.15,
+          "output": 1.15,
+          "contextWindow": 204800,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "MiniMax M2-her",
+          "input": 0.3,
+          "cachedInput": 0.03,
+          "output": 1.2,
+          "contextWindow": 65536,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "MiniMax M2.1",
+          "input": 0.29,
+          "cachedInput": 0.03,
+          "output": 0.95,
+          "contextWindow": 204800,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "MiniMax M2",
+          "input": 0.255,
+          "cachedInput": 0.03,
+          "output": 1,
+          "contextWindow": 204800,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "MiniMax M1",
+          "input": 0.4,
+          "output": 2.2,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "MiniMax-01",
+          "input": 0.2,
+          "output": 1.1,
+          "contextWindow": 1000192,
+          "currency": "USD",
+          "source": "OpenRouter"
         }
       ]
     }

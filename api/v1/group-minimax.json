@@ -1,8 +1,8 @@
 {
   "group": "MiniMax",
   "color": "#0891b2",
-  "lastUpdated": "2026-05-22",
-  "total": 3,
+  "lastUpdated": "2026-05-24",
+  "total": 10,
   "models": [
     {
       "name": "MiniMax-M2.7",
@@ -39,6 +39,65 @@
       "lastUpdated": "2026-05-22",
       "note": "缓存读取¥0.21/缓存写入¥2.625",
       "source": "官方"
+    },
+    {
+      "name": "MiniMax M2.7",
+      "input": 0.279,
+      "output": 1.2,
+      "contextWindow": 204800,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "MiniMax M2.5",
+      "input": 0.15,
+      "output": 1.15,
+      "contextWindow": 204800,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "MiniMax M2-her",
+      "input": 0.3,
+      "cachedInput": 0.03,
+      "output": 1.2,
+      "contextWindow": 65536,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "MiniMax M2.1",
+      "input": 0.29,
+      "cachedInput": 0.03,
+      "output": 0.95,
+      "contextWindow": 204800,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "MiniMax M2",
+      "input": 0.255,
+      "cachedInput": 0.03,
+      "output": 1,
+      "contextWindow": 204800,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "MiniMax M1",
+      "input": 0.4,
+      "output": 2.2,
+      "contextWindow": 1000000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "MiniMax-01",
+      "input": 0.2,
+      "output": 1.1,
+      "contextWindow": 1000192,
+      "currency": "USD",
+      "source": "OpenRouter"
     }
   ]
 }

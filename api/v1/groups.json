@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-22",
+  "lastUpdated": "2026-05-24",
   "total": 13,
   "groups": [
     {
       "provider": "OpenAI",
       "group": "OpenAI",
       "color": "#10a37f",
-      "modelCount": 6,
+      "modelCount": 69,
       "models": [
         {
           "name": "GPT-5.5",
@@ -31,6 +31,258 @@
         {
           "name": "GPT-5.5",
           "source": "OpenRouter"
+        },
+        {
+          "name": "GPT Chat Latest",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.5 Pro",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.5",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.4 Image 2",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.4 Nano",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.4 Mini",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.4 Pro",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.4",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.3 Chat",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.3-Codex",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT Audio",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT Audio Mini",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.2-Codex",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.2 Chat",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.2 Pro",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.2",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.1-Codex-Max",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.1",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.1 Chat",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.1-Codex",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5.1-Codex-Mini",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "gpt-oss-safeguard-20b",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5 Image Mini",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5 Image",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "o3 Deep Research",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "o4 Mini Deep Research",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5 Pro",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5 Codex",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4o Audio",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5 Chat",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5 Mini",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-5 Nano",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "gpt-oss-120b",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "gpt-oss-20b",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "o3 Pro",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "o4 Mini High",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "o3",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "o4 Mini",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4.1",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4.1 Mini",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4.1 Nano",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "o1-pro",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4o-mini Search Preview",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4o Search Preview",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "o3 Mini High",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "o3 Mini",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "o1",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4o (2024-11-20)",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4o (2024-08-06)",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4o-mini (2024-07-18)",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4o-mini",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4o",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4o (2024-05-13)",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4 Turbo",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-3.5 Turbo (older v0613)",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4 Turbo Preview",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4 Turbo (older v1106)",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-3.5 Turbo Instruct",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-3.5 Turbo 16k",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4 (older v0314)",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-3.5 Turbo",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4",
+          "source": "OpenRouter"
         }
       ]
     },
@@ -38,7 +290,7 @@
       "provider": "DeepSeek",
       "group": "DeepSeek",
       "color": "#4f46e5",
-      "modelCount": 4,
+      "modelCount": 17,
       "models": [
         {
           "name": "deepseek-v4-flash",
@@ -55,6 +307,58 @@
         {
           "name": "deepseek-v4-pro",
           "source": "OpenRouter"
+        },
+        {
+          "name": "DeepSeek V4 Pro",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "DeepSeek V4 Flash",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "DeepSeek V3.2 Speciale",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "DeepSeek V3.2",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "DeepSeek V3.2 Exp",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "DeepSeek V3.1 Terminus",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "DeepSeek V3.1",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "R1 0528",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "DeepSeek V3 0324",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "R1 Distill Qwen 32B",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "R1 Distill Llama 70B",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "R1",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "DeepSeek V3",
+          "source": "OpenRouter"
         }
       ]
     },
@@ -62,7 +366,7 @@
       "provider": "Anthropic",
       "group": "Anthropic",
       "color": "#d97706",
-      "modelCount": 4,
+      "modelCount": 17,
       "models": [
         {
           "name": "Claude Opus 4.7",
@@ -79,6 +383,58 @@
         {
           "name": "Claude Opus 4.7",
           "source": "OpenRouter"
+        },
+        {
+          "name": "Claude Opus 4.7 (Fast)",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude Opus 4.7",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude Opus 4.6 (Fast)",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude Sonnet 4.6",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude Opus 4.6",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude Opus 4.5",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude Haiku 4.5",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude Sonnet 4.5",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude Opus 4.1",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude Opus 4",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude Sonnet 4",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude 3.5 Haiku",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude 3 Haiku",
+          "source": "OpenRouter"
         }
       ]
     },
@@ -86,7 +442,7 @@
       "provider": "阿里云",
       "group": "阿里云",
       "color": "#ff6a00",
-      "modelCount": 7,
+      "modelCount": 53,
       "models": [
         {
           "name": "qwen3.7-max",
@@ -115,6 +471,190 @@
         {
           "name": "qwen3.7-max",
           "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3.7 Max",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3.5 Plus 2026-04-20",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3.6 Flash",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3.6 35B A3B",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3.6 Max Preview",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3.6 27B",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3.6 Plus",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3.5-9B",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3.5-35B-A3B",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3.5-27B",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3.5-122B-A10B",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3.5-Flash",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3.5 Plus 2026-02-15",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3.5 397B A17B",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 Max Thinking",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 Coder Next",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 VL 32B Instruct",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 VL 8B Thinking",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 VL 8B Instruct",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 VL 30B A3B Thinking",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 VL 30B A3B Instruct",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 VL 235B A22B Thinking",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 VL 235B A22B Instruct",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 Max",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 Coder Plus",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 Coder Flash",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 Next 80B A3B Thinking",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 Next 80B A3B Instruct",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen Plus 0728 (thinking)",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen Plus 0728",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 30B A3B Thinking 2507",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 Coder 30B A3B Instruct",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 30B A3B Instruct 2507",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 235B A22B Thinking 2507",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 Coder 480B A35B",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 235B A22B Instruct 2507",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 30B A3B",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 8B",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 14B",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 32B",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen3 235B A22B",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen2.5 VL 72B Instruct",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen-Plus",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen2.5 Coder 32B Instruct",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen2.5 7B Instruct",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Qwen2.5 72B Instruct",
+          "source": "OpenRouter"
         }
       ]
     },
@@ -122,7 +662,7 @@
       "provider": "Google",
       "group": "Google",
       "color": "#4285f4",
-      "modelCount": 3,
+      "modelCount": 27,
       "models": [
         {
           "name": "Gemini 3.5 Flash",
@@ -135,6 +675,102 @@
         {
           "name": "Gemini 3.5 Flash",
           "source": "OpenRouter"
+        },
+        {
+          "name": "Gemini 3.5 Flash",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemini 3.1 Flash Lite",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemma 4 26B A4B ",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemma 4 31B",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemini 3.1 Flash Lite Preview",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Nano Banana 2 (Gemini 3.1 Flash Image Preview)",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemini 3.1 Pro Preview Custom Tools",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemini 3.1 Pro Preview",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemini 3 Flash Preview",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Nano Banana Pro (Gemini 3 Pro Image Preview)",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Nano Banana (Gemini 2.5 Flash Image)",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemini 2.5 Flash Lite Preview 09-2025",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemini 2.5 Flash Lite",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemini 2.5 Flash",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemini 2.5 Pro",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemini 2.5 Pro Preview 06-05",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemma 3n 4B",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemini 2.5 Pro Preview 05-06",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemma 3 4B",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemma 3 12B",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemma 3 27B",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemini 2.0 Flash Lite",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemini 2.0 Flash",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Gemma 2 27B",
+          "source": "OpenRouter"
         }
       ]
     },
@@ -142,7 +778,7 @@
       "provider": "xAI",
       "group": "xAI",
       "color": "#1a1a2e",
-      "modelCount": 3,
+      "modelCount": 7,
       "models": [
         {
           "name": "Grok 4.3",
@@ -155,6 +791,22 @@
         {
           "name": "Grok 4.3",
           "source": "OpenRouter"
+        },
+        {
+          "name": "Grok Build 0.1",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Grok 4.3",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Grok 4.20 Multi-Agent",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Grok 4.20",
+          "source": "OpenRouter"
         }
       ]
     },
@@ -162,11 +814,31 @@
       "provider": "月之暗面",
       "group": "月之暗面",
       "color": "#7c3aed",
-      "modelCount": 1,
+      "modelCount": 6,
       "models": [
         {
           "name": "kimi-k2.6",
           "source": "官方"
+        },
+        {
+          "name": "Kimi K2.6",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Kimi K2.5",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Kimi K2 Thinking",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Kimi K2 0905",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Kimi K2 0711",
+          "source": "OpenRouter"
         }
       ]
     },
@@ -174,7 +846,7 @@
       "provider": "MiniMax",
       "group": "MiniMax",
       "color": "#0891b2",
-      "modelCount": 3,
+      "modelCount": 10,
       "models": [
         {
           "name": "MiniMax-M2.7",
@@ -187,6 +859,34 @@
         {
           "name": "MiniMax-M2.5",
           "source": "官方"
+        },
+        {
+          "name": "MiniMax M2.7",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "MiniMax M2.5",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "MiniMax M2-her",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "MiniMax M2.1",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "MiniMax M2",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "MiniMax M1",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "MiniMax-01",
+          "source": "OpenRouter"
         }
       ]
     },
@@ -194,11 +894,31 @@
       "provider": "小米",
       "group": "小米",
       "color": "#f97316",
-      "modelCount": 1,
+      "modelCount": 6,
       "models": [
         {
           "name": "mimo-v2.5-pro",
           "source": "官方"
+        },
+        {
+          "name": "MiMo-V2.5-Pro",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "MiMo-V2.5",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "MiMo-V2-Omni",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "MiMo-V2-Pro",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "MiMo-V2-Flash",
+          "source": "OpenRouter"
         }
       ]
     },
@@ -213,14 +933,14 @@
       "provider": "智谱AI",
       "group": "智谱AI",
       "color": "#1d4ed8",
-      "modelCount": 6,
+      "modelCount": 24,
       "models": [
         {
           "name": "GLM-5.1",
           "source": "官方"
         },
         {
-          "name": "GLM-5",
+          "name": "GLM-5V Turbo",
           "source": "官方"
         },
         {
@@ -228,7 +948,7 @@
           "source": "官方"
         },
         {
-          "name": "GLM-4.7",
+          "name": "GLM-5",
           "source": "官方"
         },
         {
@@ -236,8 +956,80 @@
           "source": "官方"
         },
         {
+          "name": "GLM-4.7",
+          "source": "官方"
+        },
+        {
+          "name": "GLM 4.6V",
+          "source": "官方"
+        },
+        {
+          "name": "GLM-4.6",
+          "source": "官方"
+        },
+        {
+          "name": "GLM 4.5V",
+          "source": "官方"
+        },
+        {
+          "name": "GLM 4.5",
+          "source": "官方"
+        },
+        {
           "name": "GLM-4.5 Air",
           "source": "官方"
+        },
+        {
+          "name": "GLM 4 32B ",
+          "source": "官方"
+        },
+        {
+          "name": "GLM 5.1",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GLM 5V Turbo",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GLM 5 Turbo",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GLM 5",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GLM 4.7 Flash",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GLM 4.7",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GLM 4.6V",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GLM 4.6",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GLM 4.5V",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GLM 4.5",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GLM 4.5 Air",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GLM 4 32B ",
+          "source": "OpenRouter"
         }
       ]
     },
@@ -245,7 +1037,7 @@
       "provider": "百度",
       "group": "百度",
       "color": "#2563eb",
-      "modelCount": 2,
+      "modelCount": 8,
       "models": [
         {
           "name": "CoBuddy (千帆)",
@@ -254,6 +1046,30 @@
         {
           "name": "ERNIE 4.0",
           "source": "官方"
+        },
+        {
+          "name": "Qianfan-OCR-Fast",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "ERNIE 4.5 21B A3B Thinking",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "ERNIE 4.5 21B A3B",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "ERNIE 4.5 VL 28B A3B",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "ERNIE 4.5 VL 424B A47B ",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "ERNIE 4.5 300B A47B ",
+          "source": "OpenRouter"
         }
       ]
     },

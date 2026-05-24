@@ -1,8 +1,8 @@
 {
   "group": "Google",
   "color": "#4285f4",
-  "lastUpdated": "2026-05-22",
-  "total": 3,
+  "lastUpdated": "2026-05-24",
+  "total": 27,
   "models": [
     {
       "name": "Gemini 3.5 Flash",
@@ -38,6 +38,213 @@
       "lastUpdated": "2026-05-22",
       "source": "OpenRouter",
       "note": "与官方同价"
+    },
+    {
+      "name": "Gemini 3.5 Flash",
+      "input": 1.5,
+      "cachedInput": 0.15,
+      "output": 9,
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Gemini 3.1 Flash Lite",
+      "input": 0.25,
+      "cachedInput": 0.025,
+      "output": 1.5,
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Gemma 4 26B A4B ",
+      "input": 0.06,
+      "output": 0.33,
+      "contextWindow": 262144,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Gemma 4 31B",
+      "input": 0.12,
+      "output": 0.37,
+      "contextWindow": 262144,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Gemini 3.1 Flash Lite Preview",
+      "input": 0.25,
+      "cachedInput": 0.025,
+      "output": 1.5,
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Nano Banana 2 (Gemini 3.1 Flash Image Preview)",
+      "input": 0.5,
+      "output": 3,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Gemini 3.1 Pro Preview Custom Tools",
+      "input": 2,
+      "cachedInput": 0.2,
+      "output": 12,
+      "contextWindow": 1048756,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Gemini 3.1 Pro Preview",
+      "input": 2,
+      "cachedInput": 0.2,
+      "output": 12,
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Gemini 3 Flash Preview",
+      "input": 0.5,
+      "cachedInput": 0.05,
+      "output": 3,
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Nano Banana Pro (Gemini 3 Pro Image Preview)",
+      "input": 2,
+      "cachedInput": 0.2,
+      "output": 12,
+      "contextWindow": 65536,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Nano Banana (Gemini 2.5 Flash Image)",
+      "input": 0.3,
+      "cachedInput": 0.03,
+      "output": 2.5,
+      "contextWindow": 32768,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Gemini 2.5 Flash Lite Preview 09-2025",
+      "input": 0.1,
+      "cachedInput": 0.01,
+      "output": 0.4,
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Gemini 2.5 Flash Lite",
+      "input": 0.1,
+      "cachedInput": 0.01,
+      "output": 0.4,
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Gemini 2.5 Flash",
+      "input": 0.3,
+      "cachedInput": 0.03,
+      "output": 2.5,
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Gemini 2.5 Pro",
+      "input": 1.25,
+      "cachedInput": 0.125,
+      "output": 10,
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Gemini 2.5 Pro Preview 06-05",
+      "input": 1.25,
+      "cachedInput": 0.125,
+      "output": 10,
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Gemma 3n 4B",
+      "input": 0.06,
+      "output": 0.12,
+      "contextWindow": 32768,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Gemini 2.5 Pro Preview 05-06",
+      "input": 1.25,
+      "cachedInput": 0.125,
+      "output": 10,
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Gemma 3 4B",
+      "input": 0.04,
+      "output": 0.08,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Gemma 3 12B",
+      "input": 0.04,
+      "output": 0.13,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Gemma 3 27B",
+      "input": 0.08,
+      "output": 0.16,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Gemini 2.0 Flash Lite",
+      "input": 0.075,
+      "output": 0.3,
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Gemini 2.0 Flash",
+      "input": 0.1,
+      "cachedInput": 0.025,
+      "output": 0.4,
+      "contextWindow": 1000000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Gemma 2 27B",
+      "input": 0.65,
+      "output": 0.65,
+      "contextWindow": 8192,
+      "currency": "USD",
+      "source": "OpenRouter"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "group": "OpenAI",
   "color": "#10a37f",
-  "lastUpdated": "2026-05-22",
-  "total": 6,
+  "lastUpdated": "2026-05-24",
+  "total": 69,
   "models": [
     {
       "name": "GPT-5.5",
@@ -72,6 +72,549 @@
       "lastUpdated": "2026-05-22",
       "source": "OpenRouter",
       "note": "中转价，与官方同价"
+    },
+    {
+      "name": "GPT Chat Latest",
+      "input": 5,
+      "cachedInput": 0.5,
+      "output": 30,
+      "contextWindow": 400000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-5.5 Pro",
+      "input": 30,
+      "output": 180,
+      "contextWindow": 1050000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-5.5",
+      "input": 5,
+      "cachedInput": 0.5,
+      "output": 30,
+      "contextWindow": 1050000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-5.4 Image 2",
+      "input": 8,
+      "cachedInput": 2,
+      "output": 15,
+      "contextWindow": 272000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-5.4 Nano",
+      "input": 0.2,
+      "cachedInput": 0.02,
+      "output": 1.25,
+      "contextWindow": 400000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-5.4 Mini",
+      "input": 0.75,
+      "cachedInput": 0.075,
+      "output": 4.5,
+      "contextWindow": 400000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-5.4 Pro",
+      "input": 30,
+      "output": 180,
+      "contextWindow": 1050000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-5.4",
+      "input": 2.5,
+      "cachedInput": 0.25,
+      "output": 15,
+      "contextWindow": 1050000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-5.3 Chat",
+      "input": 1.75,
+      "cachedInput": 0.175,
+      "output": 14,
+      "contextWindow": 128000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-5.3-Codex",
+      "input": 1.75,
+      "cachedInput": 0.175,
+      "output": 14,
+      "contextWindow": 400000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT Audio",
+      "input": 2.5,
+      "output": 10,
+      "contextWindow": 128000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT Audio Mini",
+      "input": 0.6,
+      "output": 2.4,
+      "contextWindow": 128000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-5.2-Codex",
+      "input": 1.75,
+      "cachedInput": 0.175,
+      "output": 14,
+      "contextWindow": 400000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-5.2 Chat",
+      "input": 1.75,
+      "cachedInput": 0.175,
+      "output": 14,
+      "contextWindow": 128000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-5.2 Pro",
+      "input": 21,
+      "output": 168,
+      "contextWindow": 400000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-5.2",
+      "input": 1.75,
+      "cachedInput": 0.175,
+      "output": 14,
+      "contextWindow": 400000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-5.1-Codex-Max",
+      "input": 1.25,
+      "cachedInput": 0.125,
+      "output": 10,
+      "contextWindow": 400000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-5.1",
+      "input": 1.25,
+      "cachedInput": 0.13,
+      "output": 10,
+      "contextWindow": 400000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-5.1 Chat",
+      "input": 1.25,
+      "cachedInput": 0.125,
+      "output": 10,
+      "contextWindow": 128000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-5.1-Codex",
+      "input": 1.25,
+      "cachedInput": 0.125,
+      "output": 10,
+      "contextWindow": 400000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-5.1-Codex-Mini",
+      "input": 0.25,
+      "cachedInput": 0.03,
+      "output": 2,
+      "contextWindow": 400000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "gpt-oss-safeguard-20b",
+      "input": 0.075,
+      "cachedInput": 0.037,
+      "output": 0.3,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-5 Image Mini",
+      "input": 2.5,
+      "cachedInput": 0.25,
+      "output": 2,
+      "contextWindow": 400000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-5 Image",
+      "input": 10,
+      "cachedInput": 1.25,
+      "output": 10,
+      "contextWindow": 400000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "o3 Deep Research",
+      "input": 10,
+      "cachedInput": 2.5,
+      "output": 40,
+      "contextWindow": 200000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "o4 Mini Deep Research",
+      "input": 2,
+      "cachedInput": 0.5,
+      "output": 8,
+      "contextWindow": 200000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-5 Pro",
+      "input": 15,
+      "output": 120,
+      "contextWindow": 400000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-5 Codex",
+      "input": 1.25,
+      "cachedInput": 0.125,
+      "output": 10,
+      "contextWindow": 400000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-4o Audio",
+      "input": 2.5,
+      "output": 10,
+      "contextWindow": 128000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-5 Chat",
+      "input": 1.25,
+      "cachedInput": 0.125,
+      "output": 10,
+      "contextWindow": 128000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-5",
+      "input": 1.25,
+      "cachedInput": 0.125,
+      "output": 10,
+      "contextWindow": 400000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-5 Mini",
+      "input": 0.25,
+      "cachedInput": 0.025,
+      "output": 2,
+      "contextWindow": 400000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-5 Nano",
+      "input": 0.05,
+      "cachedInput": 0.01,
+      "output": 0.4,
+      "contextWindow": 400000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "gpt-oss-120b",
+      "input": 0.039,
+      "output": 0.18,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "gpt-oss-20b",
+      "input": 0.03,
+      "output": 0.14,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "o3 Pro",
+      "input": 20,
+      "output": 80,
+      "contextWindow": 200000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "o4 Mini High",
+      "input": 1.1,
+      "cachedInput": 0.275,
+      "output": 4.4,
+      "contextWindow": 200000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "o3",
+      "input": 2,
+      "cachedInput": 0.5,
+      "output": 8,
+      "contextWindow": 200000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "o4 Mini",
+      "input": 1.1,
+      "cachedInput": 0.275,
+      "output": 4.4,
+      "contextWindow": 200000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-4.1",
+      "input": 2,
+      "cachedInput": 0.5,
+      "output": 8,
+      "contextWindow": 1047576,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-4.1 Mini",
+      "input": 0.4,
+      "cachedInput": 0.1,
+      "output": 1.6,
+      "contextWindow": 1047576,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-4.1 Nano",
+      "input": 0.1,
+      "cachedInput": 0.025,
+      "output": 0.4,
+      "contextWindow": 1047576,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "o1-pro",
+      "input": 150,
+      "output": 600,
+      "contextWindow": 200000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-4o-mini Search Preview",
+      "input": 0.15,
+      "output": 0.6,
+      "contextWindow": 128000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-4o Search Preview",
+      "input": 2.5,
+      "output": 10,
+      "contextWindow": 128000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "o3 Mini High",
+      "input": 1.1,
+      "cachedInput": 0.55,
+      "output": 4.4,
+      "contextWindow": 200000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "o3 Mini",
+      "input": 1.1,
+      "cachedInput": 0.55,
+      "output": 4.4,
+      "contextWindow": 200000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "o1",
+      "input": 15,
+      "cachedInput": 7.5,
+      "output": 60,
+      "contextWindow": 200000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-4o (2024-11-20)",
+      "input": 2.5,
+      "cachedInput": 1.25,
+      "output": 10,
+      "contextWindow": 128000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-4o (2024-08-06)",
+      "input": 2.5,
+      "cachedInput": 1.25,
+      "output": 10,
+      "contextWindow": 128000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-4o-mini (2024-07-18)",
+      "input": 0.15,
+      "cachedInput": 0.075,
+      "output": 0.6,
+      "contextWindow": 128000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-4o-mini",
+      "input": 0.15,
+      "cachedInput": 0.075,
+      "output": 0.6,
+      "contextWindow": 128000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-4o",
+      "input": 2.5,
+      "output": 10,
+      "contextWindow": 128000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-4o (2024-05-13)",
+      "input": 5,
+      "output": 15,
+      "contextWindow": 128000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-4 Turbo",
+      "input": 10,
+      "output": 30,
+      "contextWindow": 128000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-3.5 Turbo (older v0613)",
+      "input": 1,
+      "output": 2,
+      "contextWindow": 4095,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-4 Turbo Preview",
+      "input": 10,
+      "output": 30,
+      "contextWindow": 128000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-4 Turbo (older v1106)",
+      "input": 10,
+      "output": 30,
+      "contextWindow": 128000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-3.5 Turbo Instruct",
+      "input": 1.5,
+      "output": 2,
+      "contextWindow": 4095,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-3.5 Turbo 16k",
+      "input": 3,
+      "output": 4,
+      "contextWindow": 16385,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-4 (older v0314)",
+      "input": 30,
+      "output": 60,
+      "contextWindow": 8191,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-3.5 Turbo",
+      "input": 0.5,
+      "output": 1.5,
+      "contextWindow": 16385,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-4",
+      "input": 30,
+      "output": 60,
+      "contextWindow": 8191,
+      "currency": "USD",
+      "source": "OpenRouter"
     }
   ]
 }

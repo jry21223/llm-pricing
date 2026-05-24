@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-22",
-  "totalModels": 39,
+  "lastUpdated": "2026-05-24",
+  "totalModels": 243,
   "cheapestInput": [
     {
       "name": "CoBuddy (千帆)",
@@ -14,51 +14,36 @@
       "note": "免费！百度编码助手模型，通过OpenRouter调用"
     },
     {
-      "name": "GLM-4.7 Flash",
-      "input": 0.06,
-      "cachedInput": 0.01,
-      "output": 0.4,
-      "contextWindow": 200000,
+      "name": "gpt-oss-20b",
+      "input": 0.03,
+      "output": 0.14,
+      "contextWindow": 131072,
       "currency": "USD",
-      "unit": "/1M tokens",
-      "lastUpdated": "2026-05-22",
-      "note": "免费模型，轻量高速",
-      "source": "官方"
+      "source": "OpenRouter"
     },
     {
-      "name": "deepseek-v4-flash",
-      "input": 0.112,
-      "output": 0.224,
-      "contextWindow": 1048576,
+      "name": "gpt-oss-120b",
+      "input": 0.039,
+      "output": 0.18,
+      "contextWindow": 131072,
       "currency": "USD",
-      "unit": "/1M tokens",
-      "lastUpdated": "2026-05-22",
-      "source": "OpenRouter",
-      "note": "比官方低20%"
+      "source": "OpenRouter"
     },
     {
-      "name": "GLM-4.5 Air",
-      "input": 0.13,
-      "cachedInput": 0.025,
-      "output": 0.85,
-      "contextWindow": 130000,
+      "name": "Qwen3.5-9B",
+      "input": 0.04,
+      "output": 0.15,
+      "contextWindow": 262144,
       "currency": "USD",
-      "unit": "/1M tokens",
-      "lastUpdated": "2026-05-22",
-      "note": "高性价比",
-      "source": "官方"
+      "source": "OpenRouter"
     },
     {
-      "name": "deepseek-v4-flash",
-      "input": 0.14,
-      "cachedInput": 0.0028,
-      "output": 0.28,
-      "contextWindow": 1000000,
+      "name": "Qwen2.5 7B Instruct",
+      "input": 0.04,
+      "output": 0.1,
+      "contextWindow": 131072,
       "currency": "USD",
-      "unit": "/1M tokens",
-      "lastUpdated": "2026-05-22",
-      "note": "缓存命中仅 $0.0028/M",
-      "source": "官方"
+      "source": "OpenRouter"
     }
   ],
   "cheapestOutput": [
@@ -74,54 +59,57 @@
       "note": "免费！百度编码助手模型，通过OpenRouter调用"
     },
     {
-      "name": "deepseek-v4-flash",
-      "input": 0.112,
-      "output": 0.224,
-      "contextWindow": 1048576,
+      "name": "Gemma 3 4B",
+      "input": 0.04,
+      "output": 0.08,
+      "contextWindow": 131072,
       "currency": "USD",
-      "unit": "/1M tokens",
-      "lastUpdated": "2026-05-22",
-      "source": "OpenRouter",
-      "note": "比官方低20%"
+      "source": "OpenRouter"
     },
     {
-      "name": "deepseek-v4-flash",
-      "input": 0.14,
-      "cachedInput": 0.0028,
-      "output": 0.28,
-      "contextWindow": 1000000,
+      "name": "Qwen3 235B A22B Instruct 2507",
+      "input": 0.071,
+      "output": 0.1,
+      "contextWindow": 262144,
       "currency": "USD",
-      "unit": "/1M tokens",
-      "lastUpdated": "2026-05-22",
-      "note": "缓存命中仅 $0.0028/M",
-      "source": "官方"
+      "source": "OpenRouter"
     },
     {
-      "name": "GLM-4.7 Flash",
-      "input": 0.06,
-      "cachedInput": 0.01,
-      "output": 0.4,
-      "contextWindow": 200000,
+      "name": "Qwen2.5 7B Instruct",
+      "input": 0.04,
+      "output": 0.1,
+      "contextWindow": 131072,
       "currency": "USD",
-      "unit": "/1M tokens",
-      "lastUpdated": "2026-05-22",
-      "note": "免费模型，轻量高速",
-      "source": "官方"
+      "source": "OpenRouter"
     },
     {
-      "name": "GLM-4.5 Air",
-      "input": 0.13,
-      "cachedInput": 0.025,
-      "output": 0.85,
-      "contextWindow": 130000,
+      "name": "GLM 4 32B ",
+      "input": 0.1,
+      "output": 0.1,
+      "contextWindow": 128000,
       "currency": "USD",
-      "unit": "/1M tokens",
-      "lastUpdated": "2026-05-22",
-      "note": "高性价比",
       "source": "官方"
     }
   ],
   "largestContext": [
+    {
+      "name": "Grok 4.20 Multi-Agent",
+      "input": 2,
+      "cachedInput": 0.2,
+      "output": 6,
+      "contextWindow": 2000000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Grok 4.20",
+      "input": 1.25,
+      "cachedInput": 0.2,
+      "output": 2.5,
+      "contextWindow": 2000000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
     {
       "name": "GPT-5.5 Pro",
       "input": 30,
@@ -145,38 +133,12 @@
       "note": "中转价，与官方同价"
     },
     {
-      "name": "deepseek-v4-flash",
-      "input": 0.112,
-      "output": 0.224,
-      "contextWindow": 1048576,
+      "name": "GPT-5.5 Pro",
+      "input": 30,
+      "output": 180,
+      "contextWindow": 1050000,
       "currency": "USD",
-      "unit": "/1M tokens",
-      "lastUpdated": "2026-05-22",
-      "source": "OpenRouter",
-      "note": "比官方低20%"
-    },
-    {
-      "name": "deepseek-v4-pro",
-      "input": 0.435,
-      "output": 0.87,
-      "contextWindow": 1048576,
-      "currency": "USD",
-      "unit": "/1M tokens",
-      "lastUpdated": "2026-05-22",
-      "source": "OpenRouter",
-      "note": "75%折扣价"
-    },
-    {
-      "name": "Gemini 3.5 Flash",
-      "input": 1.5,
-      "cachedInput": 0.15,
-      "output": 9,
-      "contextWindow": 1048576,
-      "currency": "USD",
-      "unit": "/1M tokens",
-      "lastUpdated": "2026-05-22",
-      "note": "多模态，1M上下文",
-      "source": "官方"
+      "source": "OpenRouter"
     }
   ]
 }

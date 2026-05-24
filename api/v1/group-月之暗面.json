@@ -1,8 +1,8 @@
 {
   "group": "月之暗面",
   "color": "#7c3aed",
-  "lastUpdated": "2026-05-22",
-  "total": 1,
+  "lastUpdated": "2026-05-24",
+  "total": 6,
   "models": [
     {
       "name": "kimi-k2.6",
@@ -15,6 +15,48 @@
       "lastUpdated": "2026-05-22",
       "note": "多模态，256K上下文，缓存命中¥1.10",
       "source": "官方"
+    },
+    {
+      "name": "Kimi K2.6",
+      "input": 0.73,
+      "cachedInput": 0.25,
+      "output": 3.49,
+      "contextWindow": 262144,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Kimi K2.5",
+      "input": 0.4,
+      "cachedInput": 0.09,
+      "output": 1.9,
+      "contextWindow": 262144,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Kimi K2 Thinking",
+      "input": 0.6,
+      "output": 2.5,
+      "contextWindow": 262144,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Kimi K2 0905",
+      "input": 0.6,
+      "output": 2.5,
+      "contextWindow": 262144,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Kimi K2 0711",
+      "input": 0.57,
+      "output": 2.3,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "source": "OpenRouter"
     }
   ]
 }

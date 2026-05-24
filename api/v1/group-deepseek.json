@@ -1,8 +1,8 @@
 {
   "group": "DeepSeek",
   "color": "#4f46e5",
-  "lastUpdated": "2026-05-22",
-  "total": 4,
+  "lastUpdated": "2026-05-24",
+  "total": 17,
   "models": [
     {
       "name": "deepseek-v4-flash",
@@ -11,8 +11,6 @@
       "output": 0.28,
       "contextWindow": 1000000,
       "currency": "USD",
-      "unit": "/1M tokens",
-      "lastUpdated": "2026-05-22",
       "note": "缓存命中仅 $0.0028/M",
       "source": "官方"
     },
@@ -23,8 +21,6 @@
       "output": 3.48,
       "contextWindow": 1000000,
       "currency": "USD",
-      "unit": "/1M tokens",
-      "lastUpdated": "2026-05-22",
       "note": "原价，当前75%折扣：input=$0.435, output=$0.87（至2026-05-31）",
       "source": "官方"
     },
@@ -49,6 +45,118 @@
       "lastUpdated": "2026-05-22",
       "source": "OpenRouter",
       "note": "75%折扣价"
+    },
+    {
+      "name": "DeepSeek V4 Pro",
+      "input": 0.435,
+      "cachedInput": 0.004,
+      "output": 0.87,
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "DeepSeek V4 Flash",
+      "input": 0.1,
+      "cachedInput": 0.02,
+      "output": 0.2,
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "DeepSeek V3.2 Speciale",
+      "input": 0.287,
+      "cachedInput": 0.058,
+      "output": 0.431,
+      "contextWindow": 163840,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "DeepSeek V3.2",
+      "input": 0.252,
+      "cachedInput": 0.025,
+      "output": 0.378,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "DeepSeek V3.2 Exp",
+      "input": 0.27,
+      "output": 0.41,
+      "contextWindow": 163840,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "DeepSeek V3.1 Terminus",
+      "input": 0.27,
+      "cachedInput": 0.13,
+      "output": 0.95,
+      "contextWindow": 163840,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "DeepSeek V3.1",
+      "input": 0.21,
+      "cachedInput": 0.13,
+      "output": 0.79,
+      "contextWindow": 163840,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "R1 0528",
+      "input": 0.5,
+      "cachedInput": 0.35,
+      "output": 2.15,
+      "contextWindow": 163840,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "DeepSeek V3 0324",
+      "input": 0.2,
+      "cachedInput": 0.135,
+      "output": 0.77,
+      "contextWindow": 163840,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "R1 Distill Qwen 32B",
+      "input": 0.29,
+      "output": 0.29,
+      "contextWindow": 128000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "R1 Distill Llama 70B",
+      "input": 0.7,
+      "output": 0.8,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "R1",
+      "input": 0.7,
+      "output": 2.5,
+      "contextWindow": 163840,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "DeepSeek V3",
+      "input": 0.32,
+      "output": 0.89,
+      "contextWindow": 163840,
+      "currency": "USD",
+      "source": "OpenRouter"
     }
   ]
 }

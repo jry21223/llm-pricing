@@ -1,8 +1,8 @@
 {
   "group": "阿里云",
   "color": "#ff6a00",
-  "lastUpdated": "2026-05-22",
-  "total": 7,
+  "lastUpdated": "2026-05-24",
+  "total": 53,
   "models": [
     {
       "name": "qwen3.7-max",
@@ -80,6 +80,382 @@
       "lastUpdated": "2026-05-22",
       "source": "OpenRouter",
       "note": "美元计价，通过OpenRouter调用"
+    },
+    {
+      "name": "Qwen3.7 Max",
+      "input": 2.5,
+      "output": 7.5,
+      "contextWindow": 1000000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3.5 Plus 2026-04-20",
+      "input": 0.3,
+      "output": 1.8,
+      "contextWindow": 1000000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3.6 Flash",
+      "input": 0.188,
+      "output": 1.125,
+      "contextWindow": 1000000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3.6 35B A3B",
+      "input": 0.15,
+      "output": 1,
+      "contextWindow": 262144,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3.6 Max Preview",
+      "input": 1.04,
+      "output": 6.24,
+      "contextWindow": 262144,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3.6 27B",
+      "input": 0.3,
+      "output": 3.2,
+      "contextWindow": 262144,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3.6 Plus",
+      "input": 0.325,
+      "output": 1.95,
+      "contextWindow": 1000000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3.5-9B",
+      "input": 0.04,
+      "output": 0.15,
+      "contextWindow": 262144,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3.5-35B-A3B",
+      "input": 0.139,
+      "output": 1,
+      "contextWindow": 262144,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3.5-27B",
+      "input": 0.195,
+      "output": 1.56,
+      "contextWindow": 262144,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3.5-122B-A10B",
+      "input": 0.26,
+      "output": 2.08,
+      "contextWindow": 262144,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3.5-Flash",
+      "input": 0.065,
+      "output": 0.26,
+      "contextWindow": 1000000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3.5 Plus 2026-02-15",
+      "input": 0.26,
+      "output": 1.56,
+      "contextWindow": 1000000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3.5 397B A17B",
+      "input": 0.39,
+      "output": 2.34,
+      "contextWindow": 262144,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3 Max Thinking",
+      "input": 0.78,
+      "output": 3.9,
+      "contextWindow": 262144,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3 Coder Next",
+      "input": 0.11,
+      "cachedInput": 0.07,
+      "output": 0.8,
+      "contextWindow": 262144,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3 VL 32B Instruct",
+      "input": 0.104,
+      "output": 0.416,
+      "contextWindow": 262144,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3 VL 8B Thinking",
+      "input": 0.117,
+      "output": 1.365,
+      "contextWindow": 256000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3 VL 8B Instruct",
+      "input": 0.08,
+      "output": 0.5,
+      "contextWindow": 256000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3 VL 30B A3B Thinking",
+      "input": 0.13,
+      "output": 1.56,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3 VL 30B A3B Instruct",
+      "input": 0.13,
+      "output": 0.52,
+      "contextWindow": 262144,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3 VL 235B A22B Thinking",
+      "input": 0.26,
+      "output": 2.6,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3 VL 235B A22B Instruct",
+      "input": 0.2,
+      "cachedInput": 0.11,
+      "output": 0.88,
+      "contextWindow": 262144,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3 Max",
+      "input": 0.78,
+      "cachedInput": 0.156,
+      "output": 3.9,
+      "contextWindow": 262144,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3 Coder Plus",
+      "input": 0.65,
+      "cachedInput": 0.13,
+      "output": 3.25,
+      "contextWindow": 1000000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3 Coder Flash",
+      "input": 0.195,
+      "cachedInput": 0.039,
+      "output": 0.975,
+      "contextWindow": 1000000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3 Next 80B A3B Thinking",
+      "input": 0.098,
+      "output": 0.78,
+      "contextWindow": 262144,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3 Next 80B A3B Instruct",
+      "input": 0.09,
+      "output": 1.1,
+      "contextWindow": 262144,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen Plus 0728 (thinking)",
+      "input": 0.26,
+      "output": 0.78,
+      "contextWindow": 1000000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen Plus 0728",
+      "input": 0.26,
+      "output": 0.78,
+      "contextWindow": 1000000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3 30B A3B Thinking 2507",
+      "input": 0.08,
+      "cachedInput": 0.08,
+      "output": 0.4,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3 Coder 30B A3B Instruct",
+      "input": 0.07,
+      "output": 0.27,
+      "contextWindow": 160000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3 30B A3B Instruct 2507",
+      "input": 0.09,
+      "output": 0.3,
+      "contextWindow": 262144,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3 235B A22B Thinking 2507",
+      "input": 0.15,
+      "output": 1.495,
+      "contextWindow": 262144,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3 Coder 480B A35B",
+      "input": 0.22,
+      "output": 1.8,
+      "contextWindow": 1048576,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3 235B A22B Instruct 2507",
+      "input": 0.071,
+      "output": 0.1,
+      "contextWindow": 262144,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3 30B A3B",
+      "input": 0.09,
+      "output": 0.45,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3 8B",
+      "input": 0.05,
+      "cachedInput": 0.05,
+      "output": 0.4,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3 14B",
+      "input": 0.1,
+      "output": 0.24,
+      "contextWindow": 131702,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3 32B",
+      "input": 0.08,
+      "output": 0.28,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen3 235B A22B",
+      "input": 0.455,
+      "output": 1.82,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen2.5 VL 72B Instruct",
+      "input": 0.25,
+      "output": 0.75,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen-Plus",
+      "input": 0.26,
+      "cachedInput": 0.052,
+      "output": 0.78,
+      "contextWindow": 1000000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen2.5 Coder 32B Instruct",
+      "input": 0.66,
+      "output": 1,
+      "contextWindow": 128000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen2.5 7B Instruct",
+      "input": 0.04,
+      "output": 0.1,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Qwen2.5 72B Instruct",
+      "input": 0.36,
+      "output": 0.4,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "source": "OpenRouter"
     }
   ]
 }

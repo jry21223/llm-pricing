@@ -1,8 +1,8 @@
 {
   "group": "百度",
   "color": "#2563eb",
-  "lastUpdated": "2026-05-22",
-  "total": 2,
+  "lastUpdated": "2026-05-24",
+  "total": 8,
   "models": [
     {
       "name": "CoBuddy (千帆)",
@@ -25,6 +25,54 @@
       "lastUpdated": "2026-05-22",
       "note": "待抓取（SPA页面）",
       "source": "官方"
+    },
+    {
+      "name": "Qianfan-OCR-Fast",
+      "input": 0.68,
+      "output": 2.81,
+      "contextWindow": 65536,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "ERNIE 4.5 21B A3B Thinking",
+      "input": 0.07,
+      "output": 0.28,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "ERNIE 4.5 21B A3B",
+      "input": 0.07,
+      "output": 0.28,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "ERNIE 4.5 VL 28B A3B",
+      "input": 0.14,
+      "output": 0.56,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "ERNIE 4.5 VL 424B A47B ",
+      "input": 0.42,
+      "output": 1.25,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "ERNIE 4.5 300B A47B ",
+      "input": 0.28,
+      "output": 1.1,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "source": "OpenRouter"
     }
   ]
 }

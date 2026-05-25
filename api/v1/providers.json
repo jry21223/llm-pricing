@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-24",
+  "lastUpdated": "2026-05-25",
   "total": 28,
   "providers": [
     {
@@ -36,12 +36,8 @@
       "providerUrl": "https://openrouter.ai/pricing",
       "color": "#10a37f",
       "group": "OpenAI",
-      "modelCount": 64,
+      "modelCount": 63,
       "models": [
-        {
-          "name": "GPT-5.5",
-          "source": "OpenRouter"
-        },
         {
           "name": "GPT Chat Latest",
           "source": "OpenRouter"
@@ -318,16 +314,8 @@
       "providerUrl": "https://openrouter.ai/pricing",
       "color": "#4f46e5",
       "group": "DeepSeek",
-      "modelCount": 15,
+      "modelCount": 13,
       "models": [
-        {
-          "name": "deepseek-v4-flash",
-          "source": "OpenRouter"
-        },
-        {
-          "name": "deepseek-v4-pro",
-          "source": "OpenRouter"
-        },
         {
           "name": "DeepSeek V4 Pro",
           "source": "OpenRouter"

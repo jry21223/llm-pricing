@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-24",
+  "lastUpdated": "2026-05-25",
   "providers": [
     {
       "provider": "OpenAI",
@@ -68,17 +68,6 @@
       "color": "#10a37f",
       "group": "OpenAI",
       "models": [
-        {
-          "name": "GPT-5.5",
-          "input": 5,
-          "output": 30,
-          "contextWindow": 1050000,
-          "currency": "USD",
-          "unit": "/1M tokens",
-          "lastUpdated": "2026-05-22",
-          "source": "OpenRouter",
-          "note": "中转价，与官方同价"
-        },
         {
           "name": "GPT Chat Latest",
           "input": 5,
@@ -656,28 +645,6 @@
       "color": "#4f46e5",
       "group": "DeepSeek",
       "models": [
-        {
-          "name": "deepseek-v4-flash",
-          "input": 0.112,
-          "output": 0.224,
-          "contextWindow": 1048576,
-          "currency": "USD",
-          "unit": "/1M tokens",
-          "lastUpdated": "2026-05-22",
-          "source": "OpenRouter",
-          "note": "比官方低20%"
-        },
-        {
-          "name": "deepseek-v4-pro",
-          "input": 0.435,
-          "output": 0.87,
-          "contextWindow": 1048576,
-          "currency": "USD",
-          "unit": "/1M tokens",
-          "lastUpdated": "2026-05-22",
-          "source": "OpenRouter",
-          "note": "75%折扣价"
-        },
         {
           "name": "DeepSeek V4 Pro",
           "input": 0.435,

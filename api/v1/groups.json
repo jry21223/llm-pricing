@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-24",
+  "lastUpdated": "2026-05-25",
   "total": 13,
   "groups": [
     {
       "provider": "OpenAI",
       "group": "OpenAI",
       "color": "#10a37f",
-      "modelCount": 69,
+      "modelCount": 68,
       "models": [
         {
           "name": "GPT-5.5",
@@ -27,10 +27,6 @@
         {
           "name": "GPT-5.5 Pro",
           "source": "官方"
-        },
-        {
-          "name": "GPT-5.5",
-          "source": "OpenRouter"
         },
         {
           "name": "GPT Chat Latest",
@@ -290,7 +286,7 @@
       "provider": "DeepSeek",
       "group": "DeepSeek",
       "color": "#4f46e5",
-      "modelCount": 17,
+      "modelCount": 15,
       "models": [
         {
           "name": "deepseek-v4-flash",
@@ -299,14 +295,6 @@
         {
           "name": "deepseek-v4-pro",
           "source": "官方"
-        },
-        {
-          "name": "deepseek-v4-flash",
-          "source": "OpenRouter"
-        },
-        {
-          "name": "deepseek-v4-pro",
-          "source": "OpenRouter"
         },
         {
           "name": "DeepSeek V4 Pro",

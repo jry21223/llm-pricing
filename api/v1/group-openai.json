@@ -1,8 +1,8 @@
 {
   "group": "OpenAI",
   "color": "#10a37f",
-  "lastUpdated": "2026-05-24",
-  "total": 69,
+  "lastUpdated": "2026-05-25",
+  "total": 68,
   "models": [
     {
       "name": "GPT-5.5",
@@ -61,17 +61,6 @@
       "lastUpdated": "2026-05-22",
       "note": "最大上下文高端版",
       "source": "官方"
-    },
-    {
-      "name": "GPT-5.5",
-      "input": 5,
-      "output": 30,
-      "contextWindow": 1050000,
-      "currency": "USD",
-      "unit": "/1M tokens",
-      "lastUpdated": "2026-05-22",
-      "source": "OpenRouter",
-      "note": "中转价，与官方同价"
     },
     {
       "name": "GPT Chat Latest",

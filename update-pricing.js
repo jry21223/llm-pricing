@@ -292,7 +292,9 @@ async function mergeOpenRouter(data) {
   
   for (const [group, models] of Object.entries(byGroup)) {
     // Find the matching provider and add OpenRouter sub-entry
-    const provider = data.providers.find(p => (p.group || p.provider) === group);
+    const provider = data.providers.find(p =>
+      !p.provider.startsWith('OpenRouter') && (p.group || p.provider) === group
+    );
     if (provider) {
       // Find or create an "OpenRouter → X" sub-provider
       const orKey = `OpenRouter → ${provider.provider}`;
@@ -316,8 +318,10 @@ async function mergeOpenRouter(data) {
         // Remove ' (OpenRouter)' suffix for display, add source field
         m.name = m.name.replace(' (OpenRouter)', '');
         m.source = 'OpenRouter';
-        orProv.models.push(m);
       }
+      // Rebuild from the latest OpenRouter API response on each run. Otherwise the
+      // scheduled updater appends the same OpenRouter models every day.
+      orProv.models = newModels;
       console.log(`    ${group}: ${newModels.length} OpenRouter models merged`);
     }
   }

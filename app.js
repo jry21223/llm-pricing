@@ -49,15 +49,20 @@ const i18n = {
 };
 
 // ===== Data Loading =====
+function renderUpdateStatus() {
+  if (!pricingData) return;
+  const date = pricingData.lastUpdated || '—';
+  document.getElementById('dataStatus').textContent =
+    `${i18n[currentLang].updateAt}: ${date}`;
+  document.getElementById('updateBadge').textContent = `📅 ${date}`;
+}
+
 async function loadData() {
   try {
     const resp = await fetch('pricing.json?_=' + Date.now());
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
     pricingData = await resp.json();
-    document.getElementById('dataStatus').textContent = 
-      `${i18n[currentLang].updateAt}: ${pricingData.lastUpdated}`;
-    document.getElementById('updateBadge').textContent = 
-      `📅 ${pricingData.lastUpdated}`;
+    renderUpdateStatus();
     renderTable();
     renderCards();
   } catch (e) {
@@ -343,7 +348,10 @@ function applyLang() {
     }
   });
   
-  if (pricingData) renderTable();
+  if (pricingData) {
+    renderUpdateStatus();
+    renderTable();
+  }
 }
 
 // ===== Subscription Plans =====

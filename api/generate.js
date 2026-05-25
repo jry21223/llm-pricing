@@ -3,6 +3,10 @@ const fs = require('fs');
 const path = require('path');
 
 const pricing = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'pricing.json'), 'utf-8'));
+const sourcesPath = path.join(__dirname, '..', 'sources.json');
+const sources = fs.existsSync(sourcesPath)
+  ? JSON.parse(fs.readFileSync(sourcesPath, 'utf-8'))
+  : null;
 const apiDir = path.join(__dirname, 'v1');
 
 // Build groups
@@ -112,7 +116,16 @@ if (pricing.channels) {
   console.log(`✅ channels.json — ${pricing.channels.length} channels`);
 }
 
-// 8. /api/v1/stats.json
+// 8. /api/v1/sources.json — source/update policy metadata
+if (sources) {
+  fs.writeFileSync(path.join(apiDir, 'sources.json'), JSON.stringify({
+    ...sources,
+    pricingLastUpdated: pricing.lastUpdated
+  }, null, 2));
+  console.log('✅ sources.json');
+}
+
+// 9. /api/v1/stats.json
 const withPrices = allModels.filter(m => m.input != null);
 const sortedInput = [...withPrices].sort((a, b) => a.input - b.input).slice(0, 5);
 const sortedOutput = [...withPrices].sort((a, b) => a.output - b.output).slice(0, 5);

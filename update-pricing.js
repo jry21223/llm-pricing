@@ -11,6 +11,7 @@
 const fs = require('fs');
 const path = require('path');
 const PRICING_PATH = path.join(__dirname, 'pricing.json');
+const SOURCES_PATH = path.join(__dirname, 'sources.json');
 
 let openRouterModelsCache = null;
 
@@ -528,6 +529,44 @@ function rebuildActiveDeals(data, today) {
   console.log(`  ✅ Active deals rebuilt: ${deals.length}`);
 }
 
+function readSources() {
+  try {
+    return JSON.parse(fs.readFileSync(SOURCES_PATH, 'utf-8'));
+  } catch (e) {
+    console.log('⚠️ sources.json unavailable:', e.message);
+    return null;
+  }
+}
+
+function markSectionChecked(sources, sectionName, today, updated = true) {
+  const section = sources?.sections?.[sectionName];
+  if (!section) return;
+  section.lastChecked = today;
+  if (updated) section.lastUpdated = today;
+}
+
+function updateSourceMetadata(today) {
+  const sources = readSources();
+  if (!sources) return;
+
+  sources.lastChecked = today;
+  markSectionChecked(sources, 'modelPricing', today);
+  markSectionChecked(sources, 'freeModels', today);
+  markSectionChecked(sources, 'activeDeals', today);
+
+  // These sections are published every day, but their underlying values still
+  // require human/agent review, so keep their source dates honest.
+  if (sources.sections?.subscriptionPlans) {
+    sources.sections.subscriptionPlans.needsAgentReview = true;
+  }
+  if (sources.sections?.channels) {
+    sources.sections.channels.needsAgentReview = true;
+  }
+
+  fs.writeFileSync(SOURCES_PATH, JSON.stringify(sources, null, 2) + '\n', 'utf-8');
+  console.log('  ✅ sources.json metadata updated');
+}
+
 // ===== Main =====
 async function main() {
   console.log(`[${new Date().toISOString()}] Starting pricing update...`);
@@ -569,6 +608,7 @@ async function main() {
 
   await rebuildFreeModels(data, today);
   rebuildActiveDeals(data, today);
+  updateSourceMetadata(today);
   
   // Update timestamp
   data.lastUpdated = today;

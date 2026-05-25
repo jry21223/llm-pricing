@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "lastChecked": "2026-05-25",
+  "generatedBy": "update-pricing.js",
+  "sections": {
+    "modelPricing": {
+      "label": "模型 API 价格",
+      "updateMode": "mixed",
+      "cadence": "daily",
+      "lastChecked": "2026-05-25",
+      "lastUpdated": "2026-05-25",
+      "publishedFiles": [
+        "pricing.json",
+        "api/v1/models.json",
+        "api/v1/providers.json",
+        "api/v1/groups.json"
+      ],
+      "sources": [
+        {
+          "id": "openrouter-models",
+          "name": "OpenRouter Models API",
+          "url": "https://openrouter.ai/api/v1/models",
+          "type": "api",
+          "updateMode": "automatic",
+          "status": "active"
+        },
+        {
+          "id": "deepseek-pricing",
+          "name": "DeepSeek API Docs Pricing",
+          "url": "https://api-docs.deepseek.com/quick_start/pricing",
+          "type": "web-scrape",
+          "updateMode": "automatic",
+          "status": "active"
+        },
+        {
+          "id": "aliyun-model-studio",
+          "name": "阿里云百炼模型计费",
+          "url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+          "type": "web-scrape",
+          "updateMode": "best-effort",
+          "status": "partial"
+        },
+        {
+          "id": "kimi-pricing",
+          "name": "Kimi API Pricing",
+          "url": "https://platform.kimi.com/docs/pricing/chat-k26",
+          "type": "web-scrape",
+          "updateMode": "best-effort",
+          "status": "partial"
+        },
+        {
+          "id": "minimax-pricing",
+          "name": "MiniMax Pricing",
+          "url": "https://platform.minimaxi.com/docs/guides/pricing-paygo",
+          "type": "web-scrape",
+          "updateMode": "best-effort",
+          "status": "partial"
+        }
+      ]
+    },
+    "freeModels": {
+      "label": "免费模型",
+      "updateMode": "automatic",
+      "cadence": "daily",
+      "lastChecked": "2026-05-25",
+      "lastUpdated": "2026-05-25",
+      "publishedFiles": [
+        "api/v1/free.json"
+      ],
+      "sources": [
+        {
+          "id": "openrouter-free-models",
+          "name": "OpenRouter zero-priced/free models",
+          "url": "https://openrouter.ai/api/v1/models",
+          "type": "api",
+          "updateMode": "automatic",
+          "status": "active"
+        }
+      ]
+    },
+    "activeDeals": {
+      "label": "当前促销 / 限时优惠",
+      "updateMode": "derived",
+      "cadence": "daily",
+      "lastChecked": "2026-05-25",
+      "lastUpdated": "2026-05-25",
+      "publishedFiles": [
+        "api/v1/deals.json"
+      ],
+      "notes": "由 DeepSeek 官方价格、OpenRouter 免费模型、subscriptionPlans 和少量人工规则派生。复杂营销页变化应由 agent_review 提交 PR。",
+      "sources": [
+        {
+          "id": "deepseek-pricing",
+          "name": "DeepSeek API Docs Pricing",
+          "url": "https://api-docs.deepseek.com/quick_start/pricing",
+          "type": "web-scrape",
+          "updateMode": "automatic",
+          "status": "active"
+        },
+        {
+          "id": "openrouter-free-models",
+          "name": "OpenRouter zero-priced/free models",
+          "url": "https://openrouter.ai/api/v1/models",
+          "type": "api",
+          "updateMode": "automatic",
+          "status": "active"
+        },
+        {
+          "id": "subscription-plans",
+          "name": "Subscription and coding plan base table",
+          "url": "pricing.json#subscriptionPlans",
+          "type": "local-data",
+          "updateMode": "agent_review",
+          "status": "needs-review"
+        }
+      ]
+    },
+    "subscriptionPlans": {
+      "label": "Coding Plan / Token Plan / 订阅套餐",
+      "updateMode": "agent_review",
+      "cadence": "weekly-or-on-change",
+      "lastChecked": "2026-05-22",
+      "lastUpdated": "2026-05-22",
+      "publishedFiles": [
+        "api/v1/plans.json",
+        "api/v1/token-plans.json"
+      ],
+      "notes": "套餐页和控制台规则变化频繁，当前不应声称每日自动核验。让 OpenClaw/Copilot 每日巡检并开 PR。",
+      "sources": [
+        {
+          "id": "aliyun-bailian-plans",
+          "name": "阿里云百炼套餐",
+          "url": "https://bailian.console.aliyun.com/",
+          "type": "web-review",
+          "updateMode": "agent_review",
+          "status": "needs-review"
+        },
+        {
+          "id": "zhipu-coding-plans",
+          "name": "智谱 Coding Plan",
+          "url": "https://open.bigmodel.cn/",
+          "type": "web-review",
+          "updateMode": "agent_review",
+          "status": "needs-review"
+        },
+        {
+          "id": "volcengine-ark-plans",
+          "name": "火山方舟 Coding Plan",
+          "url": "https://www.volcengine.com/product/doubao",
+          "type": "web-review",
+          "updateMode": "agent_review",
+          "status": "needs-review"
+        }
+      ],
+      "needsAgentReview": true
+    },
+    "channels": {
+      "label": "其他平台 / 渠道",
+      "updateMode": "manual",
+      "cadence": "monthly-or-on-change",
+      "lastChecked": "2026-05-22",
+      "lastUpdated": "2026-05-22",
+      "publishedFiles": [
+        "api/v1/channels.json"
+      ],
+      "notes": "渠道列表用于导航，不属于每日价格自动抓取范围。",
+      "needsAgentReview": true
+    }
+  },
+  "agentReview": {
+    "defaultBranch": "main",
+    "policy": "Agent 只提交 PR，不直接覆盖 main；PR 必须包含来源链接、变更摘要和验证结果。",
+    "recommendedCadence": "daily for activeDeals/subscriptionPlans, weekly for channels",
+    "targets": [
+      "subscriptionPlans",
+      "activeDeals",
+      "channels"
+    ]
+  },
+  "pricingLastUpdated": "2026-05-25"
+}

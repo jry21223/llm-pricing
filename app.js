@@ -437,10 +437,19 @@ function renderDeals() {
   container.innerHTML = deals.map(d => {
     const type = d.type || 'discount';
     const isFree = d.type === 'free' || d.price === 0;
+    const badge = isFree
+      ? '<span class="deal-free-badge">🎉 免费</span>'
+      : type === 'plan'
+        ? '<span class="deal-plan-badge">套餐</span>'
+        : type === 'new_user'
+          ? '<span class="deal-free-badge">免费</span>'
+          : d.discount
+            ? `<span class="deal-discount-badge">-${escHtml(d.discount)}</span>`
+            : '';
     return `<div class="deal-card deal-type-${type}">
       <div class="deal-vendor">${escHtml(d.vendor)}</div>
       <div class="deal-name">${escHtml(d.deal)}</div>
-      ${isFree ? '<span class="deal-free-badge">🎉 免费</span>' : (d.discount ? `<span class="deal-discount-badge">-${d.discount}</span>` : '')}
+      ${badge}
       <div class="deal-detail">${d.current ? escHtml('现价: ' + d.current) : ''}${d.note ? ' · ' + escHtml(d.note) : ''}</div>
       ${d.expires && d.expires !== 'None' && d.expires !== '长期' ? `<div class="deal-expires">⏰ 截止: ${escHtml(d.expires)}</div>` : ''}
     </div>`;

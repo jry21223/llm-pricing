@@ -12,6 +12,34 @@ const fs = require('fs');
 const path = require('path');
 const PRICING_PATH = path.join(__dirname, 'pricing.json');
 
+let openRouterModelsCache = null;
+
+const OPENROUTER_SLUG_TO_GROUP = {
+  'openai': 'OpenAI',
+  'deepseek': 'DeepSeek',
+  'anthropic': 'Anthropic',
+  'z-ai': '智谱AI',
+  'google': 'Google',
+  'x-ai': 'xAI',
+  'qwen': '阿里云',
+  'minimax': 'MiniMax',
+  'moonshotai': '月之暗面',
+  'baidu': '百度',
+  'xiaomi': '小米',
+};
+
+const OPENROUTER_PROVIDER_LABELS = {
+  ...OPENROUTER_SLUG_TO_GROUP,
+  'meta-llama': 'Meta',
+  'nvidia': 'NVIDIA',
+  'openrouter': 'OpenRouter',
+  'arcee-ai': 'Arcee AI',
+  'cognitivecomputations': 'Venice',
+  'liquid': 'LiquidAI',
+  'nousresearch': 'Nous',
+  'poolside': 'Poolside',
+};
+
 // ===== HTTP helpers =====
 async function fetchText(url) {
   const resp = await fetch(url, {
@@ -27,6 +55,14 @@ async function fetchJSON(url) {
   });
   if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
   return resp.json();
+}
+
+async function getOpenRouterModels() {
+  if (!openRouterModelsCache) {
+    const data = await fetchJSON('https://openrouter.ai/api/v1/models');
+    openRouterModelsCache = data.data || [];
+  }
+  return openRouterModelsCache;
 }
 
 // ===== Scrapers =====
@@ -163,20 +199,14 @@ async function scrapeAliyun() {
  */
 async function scrapeOpenRouter() {
   console.log('    Scraping OpenRouter API...');
-  const data = await fetchJSON('https://openrouter.ai/api/v1/models');
+  const modelsData = await getOpenRouterModels();
   
   const byGroup = {};
-  const slugToGroup = {
-    'openai': 'OpenAI', 'deepseek': 'DeepSeek', 'anthropic': 'Anthropic',
-    'z-ai': '智谱AI', 'google': 'Google', 'x-ai': 'xAI',
-    'qwen': '阿里云', 'minimax': 'MiniMax', 'moonshotai': '月之暗面',
-    'baidu': '百度', 'xiaomi': '小米',
-  };
   
-  for (const m of data.data) {
+  for (const m of modelsData) {
     const parts = m.id.split('/');
     const slug = parts[0];
-    const group = slugToGroup[slug] || slug;
+    const group = OPENROUTER_SLUG_TO_GROUP[slug] || slug;
     const price = m.pricing || {};
     const prompt = parseFloat(price.prompt) * 1000000;
     const completion = parseFloat(price.completion) * 1000000;
@@ -251,9 +281,9 @@ async function scrapeKimi() {
  */
 async function scrapeZhipu() {
   console.log('    Scraping Zhipu via OpenRouter...');
-  const data = await fetchJSON('https://openrouter.ai/api/v1/models');
+  const modelsData = await getOpenRouterModels();
   
-  const glmModels = data.data.filter(m => m.id.startsWith('z-ai/') && !m.id.includes(':free'));
+  const glmModels = modelsData.filter(m => m.id.startsWith('z-ai/') && !m.id.includes(':free'));
   
   return glmModels.map(m => {
     const price = m.pricing || {};
@@ -327,11 +357,183 @@ async function mergeOpenRouter(data) {
   }
 }
 
+function cleanOpenRouterName(name) {
+  return (name || '').replace(/^[^:]+:\s*/, '').replace(/\s*\(free\)\s*$/i, '').trim();
+}
+
+function isFreeOpenRouterModel(model) {
+  const pricing = model.pricing || {};
+  const prompt = Number.parseFloat(pricing.prompt || '0');
+  const completion = Number.parseFloat(pricing.completion || '0');
+  return model.id.includes(':free') || (prompt === 0 && completion === 0);
+}
+
+function buildFreeModelEntry(model, lastUpdated) {
+  const slug = model.id.split('/')[0];
+  const provider = OPENROUTER_PROVIDER_LABELS[slug] || model.name.split(':')[0] || slug;
+  const modelName = cleanOpenRouterName(model.name);
+  const contextWindow = model.context_length || undefined;
+  const note = model.id === 'openrouter/free'
+    ? '自动路由到免费模型池'
+    : contextWindow >= 1000000
+      ? '完全免费，1M上下文'
+      : '完全免费';
+
+  return {
+    provider,
+    model: modelName,
+    source: 'OpenRouter',
+    openRouterId: model.id,
+    contextWindow,
+    note,
+    lastUpdated,
+  };
+}
+
+async function rebuildFreeModels(data, lastUpdated) {
+  const models = await getOpenRouterModels();
+  data.freeModels = models
+    .filter(isFreeOpenRouterModel)
+    .map(model => buildFreeModelEntry(model, lastUpdated))
+    .sort((a, b) => {
+      const contextDiff = (b.contextWindow || 0) - (a.contextWindow || 0);
+      if (contextDiff !== 0) return contextDiff;
+      return `${a.provider} ${a.model}`.localeCompare(`${b.provider} ${b.model}`);
+    });
+  console.log(`  ✅ Free models rebuilt from OpenRouter: ${data.freeModels.length}`);
+}
+
+function formatUsd(value) {
+  if (value === undefined || value === null || Number.isNaN(value)) return '';
+  return `$${Number(value.toFixed(6)).toString()}`;
+}
+
+function isExpired(expires, today) {
+  return /^\d{4}-\d{2}-\d{2}$/.test(expires) && expires < today;
+}
+
+function findProvider(data, providerName) {
+  return data.providers.find(provider => provider.provider === providerName);
+}
+
+function findSubscriptionPlan(data, providerName, planType) {
+  return (data.subscriptionPlans || []).find(plan =>
+    plan.provider === providerName && plan.planType === planType
+  );
+}
+
+function buildDeepSeekDiscountDeal(data, today) {
+  const expires = '2026-05-31';
+  if (isExpired(expires, today)) return null;
+
+  const deepSeek = findProvider(data, 'DeepSeek');
+  const model = deepSeek?.models.find(item => item.name === 'deepseek-v4-pro');
+  if (!model || model.input == null || model.output == null) return null;
+
+  return {
+    deal: 'DeepSeek V4 Pro 75%折扣',
+    vendor: 'DeepSeek',
+    type: 'discount',
+    discount: '75%',
+    original: `${formatUsd(model.input)}/${formatUsd(model.output)}`,
+    current: `${formatUsd(model.input * 0.25)}/${formatUsd(model.output * 0.25)}`,
+    expires,
+    note: 'Input/Output 均75%折扣',
+    source: 'DeepSeek pricing',
+    lastUpdated: today,
+  };
+}
+
+function buildOpenRouterFreeDeal(freeModels, openRouterId, deal, note) {
+  const freeModel = freeModels.find(model => model.openRouterId === openRouterId);
+  if (!freeModel) return null;
+
+  return {
+    deal,
+    vendor: freeModel.provider,
+    type: 'free',
+    discount: '100%',
+    original: '',
+    current: '完全免费',
+    expires: '长期',
+    note,
+    source: 'OpenRouter API',
+    lastUpdated: freeModel.lastUpdated,
+  };
+}
+
+function buildPlanDeal(data, providerName, planType, deal, today) {
+  const plan = findSubscriptionPlan(data, providerName, planType);
+  if (!plan || plan.price == null) return null;
+
+  return {
+    deal,
+    vendor: providerName.replace(/\s*\([^)]*\)/g, ''),
+    type: 'plan',
+    discount: '套餐',
+    original: '',
+    current: `${plan.currency === 'CNY' ? '¥' : '$'}${plan.price}/${plan.period}`,
+    expires: 'None',
+    note: plan.note,
+    source: 'subscriptionPlans',
+    sourceLastUpdated: plan.lastUpdated,
+    lastUpdated: today,
+  };
+}
+
+function rebuildActiveDeals(data, today) {
+  const deals = [
+    buildDeepSeekDiscountDeal(data, today),
+    {
+      deal: 'New User Free Quota',
+      vendor: '阿里云百炼',
+      type: 'new_user',
+      discount: '免费',
+      original: '',
+      current: '100万Token免费',
+      expires: '开通后90天',
+      note: '各100万Token免费额度',
+      source: 'manual',
+      lastUpdated: today,
+    },
+    buildOpenRouterFreeDeal(
+      data.freeModels,
+      'z-ai/glm-4.5-air:free',
+      'GLM-4.5 Air 免费',
+      '通过OpenRouter(Z.ai)免费使用'
+    ),
+    buildOpenRouterFreeDeal(
+      data.freeModels,
+      'deepseek/deepseek-v4-flash:free',
+      'DeepSeek V4 Flash 免费',
+      '通过OpenRouter免费使用'
+    ),
+    buildPlanDeal(data, '智谱AI (GLM)', 'Coding Plan Lite', 'GLM Coding Plan Lite', today),
+    buildPlanDeal(data, '字节跳动 (豆包)', 'Ark Coding Plan Pro', 'Ark Coding Plan Pro', today),
+    buildOpenRouterFreeDeal(
+      data.freeModels,
+      'qwen/qwen3-coder:free',
+      'Qwen3 Coder 免费',
+      '480B参数编码模型，1M上下文，通过OpenRouter'
+    ),
+    buildOpenRouterFreeDeal(
+      data.freeModels,
+      'nvidia/nemotron-3-super-120b-a12b:free',
+      'NVIDIA Nemotron 3 Super 免费',
+      '1M上下文，通过OpenRouter'
+    ),
+  ].filter(Boolean).filter(deal => !isExpired(deal.expires, today));
+
+  data.activeDeals = deals;
+  console.log(`  ✅ Active deals rebuilt: ${deals.length}`);
+}
+
 // ===== Main =====
 async function main() {
   console.log(`[${new Date().toISOString()}] Starting pricing update...`);
   
   const data = JSON.parse(fs.readFileSync(PRICING_PATH, 'utf-8'));
+  const today = new Date().toISOString().slice(0, 10);
   let updatedCount = 0;
   
   for (const provider of data.providers) {
@@ -364,9 +566,12 @@ async function main() {
   
   // Merge OpenRouter data
   await mergeOpenRouter(data);
+
+  await rebuildFreeModels(data, today);
+  rebuildActiveDeals(data, today);
   
   // Update timestamp
-  data.lastUpdated = new Date().toISOString().slice(0, 10);
+  data.lastUpdated = today;
   
   // Write back
   fs.writeFileSync(PRICING_PATH, JSON.stringify(data, null, 2) + '\n', 'utf-8');

@@ -635,6 +635,7 @@ th.sort-active .sort-icon { opacity: 1; color: var(--primary); }
 .deal-type-discount { background: linear-gradient(135deg, #fef2f2, #fee2e2); border-color: #fca5a5; }
 .deal-type-free { background: linear-gradient(135deg, #f0fdf4, #dcfce7); border-color: #86efac; }
 .deal-type-new_user { background: linear-gradient(135deg, #eff6ff, #dbeafe); border-color: #93c5fd; }
+.deal-type-plan { background: linear-gradient(135deg, #fff7ed, #ffedd5); border-color: #fdba74; }
 .deal-type-credit_bonus { background: linear-gradient(135deg, #fdf4ff, #fae8ff); border-color: #d8b4fe; }
 
 .deal-vendor {
@@ -667,6 +668,16 @@ th.sort-active .sort-icon { opacity: 1; color: var(--primary); }
   font-size: 0.7rem;
   font-weight: 700;
   background: #22c55e;
+  color: white;
+}
+
+.deal-plan-badge {
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  background: #f97316;
   color: white;
 }
 

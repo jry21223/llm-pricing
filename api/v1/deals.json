@@ -10,7 +10,9 @@
       "original": "$1.74/$3.48",
       "current": "$0.435/$0.87",
       "expires": "2026-05-31",
-      "note": "Input/Output 均75%折扣"
+      "note": "Input/Output 均75%折扣",
+      "source": "DeepSeek pricing",
+      "lastUpdated": "2026-05-25"
     },
     {
       "deal": "New User Free Quota",
@@ -20,47 +22,59 @@
       "original": "",
       "current": "100万Token免费",
       "expires": "开通后90天",
-      "note": "各100万Token免费额度"
+      "note": "各100万Token免费额度",
+      "source": "manual",
+      "lastUpdated": "2026-05-25"
     },
     {
-      "deal": "GLM-4.7 Flash 免费",
+      "deal": "GLM-4.5 Air 免费",
       "vendor": "智谱AI",
       "type": "free",
       "discount": "100%",
       "original": "",
       "current": "完全免费",
       "expires": "长期",
-      "note": "通过OpenRouter(Z.ai)免费使用"
+      "note": "通过OpenRouter(Z.ai)免费使用",
+      "source": "OpenRouter API",
+      "lastUpdated": "2026-05-25"
     },
     {
       "deal": "DeepSeek V4 Flash 免费",
       "vendor": "DeepSeek",
       "type": "free",
       "discount": "100%",
-      "original": "$0.14/$0.28",
+      "original": "",
       "current": "完全免费",
       "expires": "长期",
-      "note": "通过OpenRouter免费使用"
+      "note": "通过OpenRouter免费使用",
+      "source": "OpenRouter API",
+      "lastUpdated": "2026-05-25"
     },
     {
       "deal": "GLM Coding Plan Lite",
       "vendor": "智谱AI",
-      "type": "discount",
-      "discount": "-",
-      "original": "¥49/月",
+      "type": "plan",
+      "discount": "套餐",
+      "original": "",
       "current": "¥49/月",
       "expires": "None",
-      "note": "入门级Coding套餐"
+      "note": "入门级",
+      "source": "subscriptionPlans",
+      "sourceLastUpdated": "2026-05-22",
+      "lastUpdated": "2026-05-25"
     },
     {
       "deal": "Ark Coding Plan Pro",
-      "vendor": "字节跳动(豆包)",
-      "type": "discount",
-      "discount": "-",
-      "original": "¥200/月",
+      "vendor": "字节跳动",
+      "type": "plan",
+      "discount": "套餐",
+      "original": "",
       "current": "¥200/月",
       "expires": "None",
-      "note": "火山方舟AI编码套餐"
+      "note": "高级编程用户",
+      "source": "subscriptionPlans",
+      "sourceLastUpdated": "2026-05-22",
+      "lastUpdated": "2026-05-25"
     },
     {
       "deal": "Qwen3 Coder 免费",
@@ -70,7 +84,9 @@
       "original": "",
       "current": "完全免费",
       "expires": "长期",
-      "note": "480B参数编码模型，1M上下文，通过OpenRouter"
+      "note": "480B参数编码模型，1M上下文，通过OpenRouter",
+      "source": "OpenRouter API",
+      "lastUpdated": "2026-05-25"
     },
     {
       "deal": "NVIDIA Nemotron 3 Super 免费",
@@ -80,7 +96,9 @@
       "original": "",
       "current": "完全免费",
       "expires": "长期",
-      "note": "1M上下文，通过OpenRouter"
+      "note": "1M上下文，通过OpenRouter",
+      "source": "OpenRouter API",
+      "lastUpdated": "2026-05-25"
     }
   ]
 }

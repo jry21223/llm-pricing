@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-22",
+  "lastUpdated": "2026-05-25",
   "providers": [
     {
       "provider": "OpenAI",
@@ -8,9 +8,9 @@
       "models": [
         {
           "name": "GPT-5.5",
-          "input": 5.00,
-          "cachedInput": 0.50,
-          "output": 30.00,
+          "input": 5,
+          "cachedInput": 0.5,
+          "output": 30,
           "contextWindow": 270000,
           "currency": "USD",
           "unit": "/1M tokens",
@@ -19,9 +19,9 @@
         },
         {
           "name": "GPT-5.4",
-          "input": 2.50,
+          "input": 2.5,
           "cachedInput": 0.25,
-          "output": 15.00,
+          "output": 15,
           "contextWindow": 270000,
           "currency": "USD",
           "unit": "/1M tokens",
@@ -32,7 +32,7 @@
           "name": "GPT-5.4 mini",
           "input": 0.75,
           "cachedInput": 0.075,
-          "output": 4.50,
+          "output": 4.5,
           "contextWindow": 270000,
           "currency": "USD",
           "unit": "/1M tokens",

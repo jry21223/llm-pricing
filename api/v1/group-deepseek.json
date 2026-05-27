@@ -1,7 +1,7 @@
 {
   "group": "DeepSeek",
   "color": "#4f46e5",
-  "lastUpdated": "2026-05-25",
+  "lastUpdated": "2026-05-27",
   "total": 15,
   "models": [
     {
@@ -130,9 +130,9 @@
     },
     {
       "name": "DeepSeek V3",
-      "input": 0.32,
-      "output": 0.89,
-      "contextWindow": 163840,
+      "input": 0.229,
+      "output": 0.914,
+      "contextWindow": 131072,
       "currency": "USD",
       "source": "OpenRouter"
     }

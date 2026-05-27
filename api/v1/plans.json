@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-25",
+  "lastUpdated": "2026-05-27",
   "total": 33,
   "plans": [
     {
@@ -140,11 +140,11 @@
       "price": 200,
       "currency": "CNY",
       "period": "月",
-      "models": "qwen3.6-plus, kimi-k2.5, glm-5, MiniMax-M2.5 等",
-      "limits": "每月90,000次请求 / 每5小时6,000次",
-      "note": "兼容 Claude Code、OpenClaw 等",
+      "models": "qwen3.6-plus, kimi-k2.5, glm-5, MiniMax-M2.5, qwen3.5-plus, qwen3-max, qwen3-coder-next/plus, glm-4.7",
+      "limits": "每5小时6,000次 / 每周45,000次 / 每月90,000次",
+      "note": "Pro 高级套餐；Lite 已停止新购/续费升级",
       "category": "coding",
-      "lastUpdated": "2026-05-22"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "阿里云 (百炼)",
@@ -188,11 +188,11 @@
       "price": 49,
       "currency": "CNY",
       "period": "月",
-      "models": "GLM-4.7, GLM-4.5 Air",
-      "limits": "基础使用",
-      "note": "入门级",
+      "models": "GLM-5.1, GLM-5-Turbo, GLM-4.7, GLM-4.5-Air",
+      "limits": "最多约80次 prompts/5小时；最多约400次 prompts/周",
+      "note": "入门级；MCP 每月合计100次",
       "category": "coding",
-      "lastUpdated": "2026-05-22"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "智谱AI (GLM)",
@@ -200,11 +200,11 @@
       "price": 149,
       "currency": "CNY",
       "period": "月",
-      "models": "GLM-5, GLM-5.1",
-      "limits": "高级使用",
-      "note": "专业开发者",
+      "models": "GLM-5.1, GLM-5-Turbo, GLM-4.7, GLM-4.5-Air",
+      "limits": "最多约400次 prompts/5小时；最多约2,000次 prompts/周",
+      "note": "专业开发者；MCP 每月合计1,000次",
       "category": "coding",
-      "lastUpdated": "2026-05-22"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "智谱AI (GLM)",
@@ -212,11 +212,11 @@
       "price": 469,
       "currency": "CNY",
       "period": "月",
-      "models": "GLM-5.1, 所有模型",
-      "limits": "无限使用",
-      "note": "重度使用者",
+      "models": "GLM-5.1, GLM-5-Turbo, GLM-4.7, GLM-4.5-Air",
+      "limits": "最多约1,600次 prompts/5小时；最多约8,000次 prompts/周",
+      "note": "重度使用者；MCP 每月合计4,000次",
       "category": "coding",
-      "lastUpdated": "2026-05-22"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "字节跳动 (豆包)",

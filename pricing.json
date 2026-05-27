@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-25",
+  "lastUpdated": "2026-05-27",
   "providers": [
     {
       "provider": "OpenAI",
@@ -751,9 +751,9 @@
         },
         {
           "name": "DeepSeek V3",
-          "input": 0.32,
-          "output": 0.89,
-          "contextWindow": 163840,
+          "input": 0.229,
+          "output": 0.914,
+          "contextWindow": 131072,
           "currency": "USD",
           "source": "OpenRouter"
         }
@@ -1183,8 +1183,7 @@
         {
           "name": "GLM-4.5 Air",
           "input": 0.13,
-          "cachedInput": 0.03,
-          "output": 0.85,
+          "output": 0.84,
           "contextWindow": 131072,
           "currency": "USD",
           "note": "高性价比"
@@ -1253,8 +1252,9 @@
       "models": [
         {
           "name": "Qwen3.7 Max",
-          "input": 2.5,
-          "output": 7.5,
+          "input": 1.25,
+          "cachedInput": 0.25,
+          "output": 3.75,
           "contextWindow": 1000000,
           "currency": "USD",
           "source": "OpenRouter"
@@ -1278,6 +1278,7 @@
         {
           "name": "Qwen3.6 35B A3B",
           "input": 0.15,
+          "cachedInput": 0.05,
           "output": 1,
           "contextWindow": 262144,
           "currency": "USD",
@@ -1294,7 +1295,8 @@
         {
           "name": "Qwen3.6 27B",
           "input": 0.3,
-          "output": 3.2,
+          "cachedInput": 0.15,
+          "output": 2,
           "contextWindow": 262144,
           "currency": "USD",
           "source": "OpenRouter"
@@ -2021,18 +2023,18 @@
       "models": [
         {
           "name": "MiMo-V2.5-Pro",
-          "input": 1,
-          "cachedInput": 0.2,
-          "output": 3,
+          "input": 0.435,
+          "cachedInput": 0.004,
+          "output": 0.87,
           "contextWindow": 1048576,
           "currency": "USD",
           "source": "OpenRouter"
         },
         {
           "name": "MiMo-V2.5",
-          "input": 0.4,
-          "cachedInput": 0.08,
-          "output": 2,
+          "input": 0.14,
+          "cachedInput": 0.003,
+          "output": 0.28,
           "contextWindow": 1048576,
           "currency": "USD",
           "source": "OpenRouter"
@@ -2270,9 +2272,8 @@
         },
         {
           "name": "GLM 4.5 Air",
-          "input": 0.13,
-          "cachedInput": 0.025,
-          "output": 0.85,
+          "input": 0.125,
+          "output": 0.84,
           "contextWindow": 131072,
           "currency": "USD",
           "source": "OpenRouter"
@@ -2494,11 +2495,11 @@
       "price": 200,
       "currency": "CNY",
       "period": "月",
-      "models": "qwen3.6-plus, kimi-k2.5, glm-5, MiniMax-M2.5 等",
-      "limits": "每月90,000次请求 / 每5小时6,000次",
-      "note": "兼容 Claude Code、OpenClaw 等",
+      "models": "qwen3.6-plus, kimi-k2.5, glm-5, MiniMax-M2.5, qwen3.5-plus, qwen3-max, qwen3-coder-next/plus, glm-4.7",
+      "limits": "每5小时6,000次 / 每周45,000次 / 每月90,000次",
+      "note": "Pro 高级套餐；Lite 已停止新购/续费升级",
       "category": "coding",
-      "lastUpdated": "2026-05-22"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "阿里云 (百炼)",
@@ -2542,11 +2543,11 @@
       "price": 49,
       "currency": "CNY",
       "period": "月",
-      "models": "GLM-4.7, GLM-4.5 Air",
-      "limits": "基础使用",
-      "note": "入门级",
+      "models": "GLM-5.1, GLM-5-Turbo, GLM-4.7, GLM-4.5-Air",
+      "limits": "最多约80次 prompts/5小时；最多约400次 prompts/周",
+      "note": "入门级；MCP 每月合计100次",
       "category": "coding",
-      "lastUpdated": "2026-05-22"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "智谱AI (GLM)",
@@ -2554,11 +2555,11 @@
       "price": 149,
       "currency": "CNY",
       "period": "月",
-      "models": "GLM-5, GLM-5.1",
-      "limits": "高级使用",
-      "note": "专业开发者",
+      "models": "GLM-5.1, GLM-5-Turbo, GLM-4.7, GLM-4.5-Air",
+      "limits": "最多约400次 prompts/5小时；最多约2,000次 prompts/周",
+      "note": "专业开发者；MCP 每月合计1,000次",
       "category": "coding",
-      "lastUpdated": "2026-05-22"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "智谱AI (GLM)",
@@ -2566,11 +2567,11 @@
       "price": 469,
       "currency": "CNY",
       "period": "月",
-      "models": "GLM-5.1, 所有模型",
-      "limits": "无限使用",
-      "note": "重度使用者",
+      "models": "GLM-5.1, GLM-5-Turbo, GLM-4.7, GLM-4.5-Air",
+      "limits": "最多约1,600次 prompts/5小时；最多约8,000次 prompts/周",
+      "note": "重度使用者；MCP 每月合计4,000次",
       "category": "coding",
-      "lastUpdated": "2026-05-22"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "字节跳动 (豆包)",
@@ -2761,7 +2762,7 @@
       "openRouterId": "openrouter/owl-alpha",
       "contextWindow": 1048756,
       "note": "完全免费，1M上下文",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "DeepSeek",
@@ -2770,7 +2771,7 @@
       "openRouterId": "deepseek/deepseek-v4-flash:free",
       "contextWindow": 1048576,
       "note": "完全免费，1M上下文",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "Google",
@@ -2779,7 +2780,7 @@
       "openRouterId": "google/lyria-3-clip-preview",
       "contextWindow": 1048576,
       "note": "完全免费，1M上下文",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "Google",
@@ -2788,7 +2789,7 @@
       "openRouterId": "google/lyria-3-pro-preview",
       "contextWindow": 1048576,
       "note": "完全免费，1M上下文",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "阿里云",
@@ -2797,7 +2798,7 @@
       "openRouterId": "qwen/qwen3-coder:free",
       "contextWindow": 1048576,
       "note": "完全免费，1M上下文",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "NVIDIA",
@@ -2806,16 +2807,7 @@
       "openRouterId": "nvidia/nemotron-3-super-120b-a12b:free",
       "contextWindow": 1000000,
       "note": "完全免费，1M上下文",
-      "lastUpdated": "2026-05-25"
-    },
-    {
-      "provider": "Arcee AI",
-      "model": "Trinity Large Thinking",
-      "source": "OpenRouter",
-      "openRouterId": "arcee-ai/trinity-large-thinking:free",
-      "contextWindow": 262144,
-      "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "Google",
@@ -2824,7 +2816,7 @@
       "openRouterId": "google/gemma-4-26b-a4b-it:free",
       "contextWindow": 262144,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "Google",
@@ -2833,7 +2825,16 @@
       "openRouterId": "google/gemma-4-31b-it:free",
       "contextWindow": 262144,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "provider": "Poolside",
+      "model": "Laguna M.1",
+      "source": "OpenRouter",
+      "openRouterId": "poolside/laguna-m.1:free",
+      "contextWindow": 262144,
+      "note": "完全免费",
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "阿里云",
@@ -2842,7 +2843,7 @@
       "openRouterId": "qwen/qwen3-next-80b-a3b-instruct:free",
       "contextWindow": 262144,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "NVIDIA",
@@ -2851,7 +2852,7 @@
       "openRouterId": "nvidia/nemotron-3-nano-30b-a3b:free",
       "contextWindow": 256000,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "NVIDIA",
@@ -2860,7 +2861,7 @@
       "openRouterId": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
       "contextWindow": 256000,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "MiniMax",
@@ -2869,7 +2870,7 @@
       "openRouterId": "minimax/minimax-m2.5:free",
       "contextWindow": 204800,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "OpenRouter",
@@ -2878,7 +2879,7 @@
       "openRouterId": "openrouter/free",
       "contextWindow": 200000,
       "note": "自动路由到免费模型池",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "Meta",
@@ -2887,7 +2888,7 @@
       "openRouterId": "meta-llama/llama-3.2-3b-instruct:free",
       "contextWindow": 131072,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "Meta",
@@ -2896,7 +2897,7 @@
       "openRouterId": "meta-llama/llama-3.3-70b-instruct:free",
       "contextWindow": 131072,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "Nous",
@@ -2905,7 +2906,7 @@
       "openRouterId": "nousresearch/hermes-3-llama-3.1-405b:free",
       "contextWindow": 131072,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "OpenAI",
@@ -2914,7 +2915,7 @@
       "openRouterId": "openai/gpt-oss-120b:free",
       "contextWindow": 131072,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "OpenAI",
@@ -2923,16 +2924,7 @@
       "openRouterId": "openai/gpt-oss-20b:free",
       "contextWindow": 131072,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
-    },
-    {
-      "provider": "Poolside",
-      "model": "Laguna M.1",
-      "source": "OpenRouter",
-      "openRouterId": "poolside/laguna-m.1:free",
-      "contextWindow": 131072,
-      "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "Poolside",
@@ -2941,7 +2933,7 @@
       "openRouterId": "poolside/laguna-xs.2:free",
       "contextWindow": 131072,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "智谱AI",
@@ -2950,7 +2942,7 @@
       "openRouterId": "z-ai/glm-4.5-air:free",
       "contextWindow": 131072,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "百度",
@@ -2959,7 +2951,7 @@
       "openRouterId": "baidu/cobuddy:free",
       "contextWindow": 131072,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "NVIDIA",
@@ -2968,7 +2960,7 @@
       "openRouterId": "nvidia/nemotron-nano-12b-v2-vl:free",
       "contextWindow": 128000,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "NVIDIA",
@@ -2977,7 +2969,7 @@
       "openRouterId": "nvidia/nemotron-nano-9b-v2:free",
       "contextWindow": 128000,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "LiquidAI",
@@ -2986,7 +2978,7 @@
       "openRouterId": "liquid/lfm-2.5-1.2b-instruct:free",
       "contextWindow": 32768,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "LiquidAI",
@@ -2995,7 +2987,7 @@
       "openRouterId": "liquid/lfm-2.5-1.2b-thinking:free",
       "contextWindow": 32768,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "Venice",
@@ -3004,7 +2996,7 @@
       "openRouterId": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
       "contextWindow": 32768,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     }
   ],
   "channels": [
@@ -3090,7 +3082,7 @@
       "expires": "2026-05-31",
       "note": "Input/Output 均75%折扣",
       "source": "DeepSeek pricing",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "deal": "New User Free Quota",
@@ -3102,7 +3094,7 @@
       "expires": "开通后90天",
       "note": "各100万Token免费额度",
       "source": "manual",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "deal": "GLM-4.5 Air 免费",
@@ -3114,7 +3106,7 @@
       "expires": "长期",
       "note": "通过OpenRouter(Z.ai)免费使用",
       "source": "OpenRouter API",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "deal": "DeepSeek V4 Flash 免费",
@@ -3126,7 +3118,7 @@
       "expires": "长期",
       "note": "通过OpenRouter免费使用",
       "source": "OpenRouter API",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "deal": "GLM Coding Plan Lite",
@@ -3136,10 +3128,10 @@
       "original": "",
       "current": "¥49/月",
       "expires": "None",
-      "note": "入门级",
+      "note": "入门级；MCP 每月合计100次",
       "source": "subscriptionPlans",
-      "sourceLastUpdated": "2026-05-22",
-      "lastUpdated": "2026-05-25"
+      "sourceLastUpdated": "2026-05-27",
+      "lastUpdated": "2026-05-27"
     },
     {
       "deal": "Ark Coding Plan Pro",
@@ -3152,7 +3144,7 @@
       "note": "高级编程用户",
       "source": "subscriptionPlans",
       "sourceLastUpdated": "2026-05-22",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "deal": "Qwen3 Coder 免费",
@@ -3164,7 +3156,7 @@
       "expires": "长期",
       "note": "480B参数编码模型，1M上下文，通过OpenRouter",
       "source": "OpenRouter API",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "deal": "NVIDIA Nemotron 3 Super 免费",
@@ -3176,7 +3168,7 @@
       "expires": "长期",
       "note": "1M上下文，通过OpenRouter",
       "source": "OpenRouter API",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     }
   ]
 }

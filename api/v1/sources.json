@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "lastChecked": "2026-05-25",
+  "lastChecked": "2026-05-27",
   "generatedBy": "update-pricing.js",
   "sections": {
     "modelPricing": {
       "label": "模型 API 价格",
       "updateMode": "mixed",
       "cadence": "daily",
-      "lastChecked": "2026-05-25",
-      "lastUpdated": "2026-05-25",
+      "lastChecked": "2026-05-27",
+      "lastUpdated": "2026-05-27",
       "publishedFiles": [
         "pricing.json",
         "api/v1/models.json",
@@ -62,8 +62,8 @@
       "label": "免费模型",
       "updateMode": "automatic",
       "cadence": "daily",
-      "lastChecked": "2026-05-25",
-      "lastUpdated": "2026-05-25",
+      "lastChecked": "2026-05-27",
+      "lastUpdated": "2026-05-27",
       "publishedFiles": [
         "api/v1/free.json"
       ],
@@ -82,8 +82,8 @@
       "label": "当前促销 / 限时优惠",
       "updateMode": "derived",
       "cadence": "daily",
-      "lastChecked": "2026-05-25",
-      "lastUpdated": "2026-05-25",
+      "lastChecked": "2026-05-27",
+      "lastUpdated": "2026-05-27",
       "publishedFiles": [
         "api/v1/deals.json"
       ],
@@ -119,8 +119,8 @@
       "label": "Coding Plan / Token Plan / 订阅套餐",
       "updateMode": "agent_review",
       "cadence": "weekly-or-on-change",
-      "lastChecked": "2026-05-22",
-      "lastUpdated": "2026-05-22",
+      "lastChecked": "2026-05-27",
+      "lastUpdated": "2026-05-27",
       "publishedFiles": [
         "api/v1/plans.json",
         "api/v1/token-plans.json"
@@ -158,7 +158,7 @@
       "label": "其他平台 / 渠道",
       "updateMode": "manual",
       "cadence": "monthly-or-on-change",
-      "lastChecked": "2026-05-22",
+      "lastChecked": "2026-05-27",
       "lastUpdated": "2026-05-22",
       "publishedFiles": [
         "api/v1/channels.json"
@@ -177,5 +177,5 @@
       "channels"
     ]
   },
-  "pricingLastUpdated": "2026-05-25"
+  "pricingLastUpdated": "2026-05-27"
 }

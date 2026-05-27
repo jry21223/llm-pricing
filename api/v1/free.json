@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-25",
-  "total": 28,
+  "lastUpdated": "2026-05-27",
+  "total": 27,
   "models": [
     {
       "provider": "OpenRouter",
@@ -9,7 +9,7 @@
       "openRouterId": "openrouter/owl-alpha",
       "contextWindow": 1048756,
       "note": "完全免费，1M上下文",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "DeepSeek",
@@ -18,7 +18,7 @@
       "openRouterId": "deepseek/deepseek-v4-flash:free",
       "contextWindow": 1048576,
       "note": "完全免费，1M上下文",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "Google",
@@ -27,7 +27,7 @@
       "openRouterId": "google/lyria-3-clip-preview",
       "contextWindow": 1048576,
       "note": "完全免费，1M上下文",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "Google",
@@ -36,7 +36,7 @@
       "openRouterId": "google/lyria-3-pro-preview",
       "contextWindow": 1048576,
       "note": "完全免费，1M上下文",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "阿里云",
@@ -45,7 +45,7 @@
       "openRouterId": "qwen/qwen3-coder:free",
       "contextWindow": 1048576,
       "note": "完全免费，1M上下文",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "NVIDIA",
@@ -54,16 +54,7 @@
       "openRouterId": "nvidia/nemotron-3-super-120b-a12b:free",
       "contextWindow": 1000000,
       "note": "完全免费，1M上下文",
-      "lastUpdated": "2026-05-25"
-    },
-    {
-      "provider": "Arcee AI",
-      "model": "Trinity Large Thinking",
-      "source": "OpenRouter",
-      "openRouterId": "arcee-ai/trinity-large-thinking:free",
-      "contextWindow": 262144,
-      "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "Google",
@@ -72,7 +63,7 @@
       "openRouterId": "google/gemma-4-26b-a4b-it:free",
       "contextWindow": 262144,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "Google",
@@ -81,7 +72,16 @@
       "openRouterId": "google/gemma-4-31b-it:free",
       "contextWindow": 262144,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "provider": "Poolside",
+      "model": "Laguna M.1",
+      "source": "OpenRouter",
+      "openRouterId": "poolside/laguna-m.1:free",
+      "contextWindow": 262144,
+      "note": "完全免费",
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "阿里云",
@@ -90,7 +90,7 @@
       "openRouterId": "qwen/qwen3-next-80b-a3b-instruct:free",
       "contextWindow": 262144,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "NVIDIA",
@@ -99,7 +99,7 @@
       "openRouterId": "nvidia/nemotron-3-nano-30b-a3b:free",
       "contextWindow": 256000,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "NVIDIA",
@@ -108,7 +108,7 @@
       "openRouterId": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
       "contextWindow": 256000,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "MiniMax",
@@ -117,7 +117,7 @@
       "openRouterId": "minimax/minimax-m2.5:free",
       "contextWindow": 204800,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "OpenRouter",
@@ -126,7 +126,7 @@
       "openRouterId": "openrouter/free",
       "contextWindow": 200000,
       "note": "自动路由到免费模型池",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "Meta",
@@ -135,7 +135,7 @@
       "openRouterId": "meta-llama/llama-3.2-3b-instruct:free",
       "contextWindow": 131072,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "Meta",
@@ -144,7 +144,7 @@
       "openRouterId": "meta-llama/llama-3.3-70b-instruct:free",
       "contextWindow": 131072,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "Nous",
@@ -153,7 +153,7 @@
       "openRouterId": "nousresearch/hermes-3-llama-3.1-405b:free",
       "contextWindow": 131072,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "OpenAI",
@@ -162,7 +162,7 @@
       "openRouterId": "openai/gpt-oss-120b:free",
       "contextWindow": 131072,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "OpenAI",
@@ -171,16 +171,7 @@
       "openRouterId": "openai/gpt-oss-20b:free",
       "contextWindow": 131072,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
-    },
-    {
-      "provider": "Poolside",
-      "model": "Laguna M.1",
-      "source": "OpenRouter",
-      "openRouterId": "poolside/laguna-m.1:free",
-      "contextWindow": 131072,
-      "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "Poolside",
@@ -189,7 +180,7 @@
       "openRouterId": "poolside/laguna-xs.2:free",
       "contextWindow": 131072,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "智谱AI",
@@ -198,7 +189,7 @@
       "openRouterId": "z-ai/glm-4.5-air:free",
       "contextWindow": 131072,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "百度",
@@ -207,7 +198,7 @@
       "openRouterId": "baidu/cobuddy:free",
       "contextWindow": 131072,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "NVIDIA",
@@ -216,7 +207,7 @@
       "openRouterId": "nvidia/nemotron-nano-12b-v2-vl:free",
       "contextWindow": 128000,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "NVIDIA",
@@ -225,7 +216,7 @@
       "openRouterId": "nvidia/nemotron-nano-9b-v2:free",
       "contextWindow": 128000,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "LiquidAI",
@@ -234,7 +225,7 @@
       "openRouterId": "liquid/lfm-2.5-1.2b-instruct:free",
       "contextWindow": 32768,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "LiquidAI",
@@ -243,7 +234,7 @@
       "openRouterId": "liquid/lfm-2.5-1.2b-thinking:free",
       "contextWindow": 32768,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     },
     {
       "provider": "Venice",
@@ -252,7 +243,7 @@
       "openRouterId": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
       "contextWindow": 32768,
       "note": "完全免费",
-      "lastUpdated": "2026-05-25"
+      "lastUpdated": "2026-05-27"
     }
   ]
 }

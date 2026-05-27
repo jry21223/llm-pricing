@@ -1,7 +1,7 @@
 {
   "group": "小米",
   "color": "#f97316",
-  "lastUpdated": "2026-05-25",
+  "lastUpdated": "2026-05-27",
   "total": 6,
   "models": [
     {
@@ -17,18 +17,18 @@
     },
     {
       "name": "MiMo-V2.5-Pro",
-      "input": 1,
-      "cachedInput": 0.2,
-      "output": 3,
+      "input": 0.435,
+      "cachedInput": 0.004,
+      "output": 0.87,
       "contextWindow": 1048576,
       "currency": "USD",
       "source": "OpenRouter"
     },
     {
       "name": "MiMo-V2.5",
-      "input": 0.4,
-      "cachedInput": 0.08,
-      "output": 2,
+      "input": 0.14,
+      "cachedInput": 0.003,
+      "output": 0.28,
       "contextWindow": 1048576,
       "currency": "USD",
       "source": "OpenRouter"

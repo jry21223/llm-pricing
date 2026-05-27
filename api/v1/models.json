@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-25",
+  "lastUpdated": "2026-05-27",
   "total": 242,
   "groups": [
     {
@@ -741,9 +741,9 @@
         },
         {
           "name": "DeepSeek V3",
-          "input": 0.32,
-          "output": 0.89,
-          "contextWindow": 163840,
+          "input": 0.229,
+          "output": 0.914,
+          "contextWindow": 131072,
           "currency": "USD",
           "source": "OpenRouter"
         }
@@ -1004,8 +1004,9 @@
         },
         {
           "name": "Qwen3.7 Max",
-          "input": 2.5,
-          "output": 7.5,
+          "input": 1.25,
+          "cachedInput": 0.25,
+          "output": 3.75,
           "contextWindow": 1000000,
           "currency": "USD",
           "source": "OpenRouter"
@@ -1028,7 +1029,7 @@
         },
         {
           "name": "Qwen3.6 35B A3B",
-          "input": 0.15,
+          "input": 0.14,
           "output": 1,
           "contextWindow": 262144,
           "currency": "USD",
@@ -1044,7 +1045,7 @@
         },
         {
           "name": "Qwen3.6 27B",
-          "input": 0.3,
+          "input": 0.29,
           "output": 3.2,
           "contextWindow": 262144,
           "currency": "USD",
@@ -1888,18 +1889,18 @@
         },
         {
           "name": "MiMo-V2.5-Pro",
-          "input": 1,
-          "cachedInput": 0.2,
-          "output": 3,
+          "input": 0.435,
+          "cachedInput": 0.004,
+          "output": 0.87,
           "contextWindow": 1048576,
           "currency": "USD",
           "source": "OpenRouter"
         },
         {
           "name": "MiMo-V2.5",
-          "input": 0.4,
-          "cachedInput": 0.08,
-          "output": 2,
+          "input": 0.14,
+          "cachedInput": 0.003,
+          "output": 0.28,
           "contextWindow": 1048576,
           "currency": "USD",
           "source": "OpenRouter"
@@ -2036,8 +2037,7 @@
         {
           "name": "GLM-4.5 Air",
           "input": 0.13,
-          "cachedInput": 0.03,
-          "output": 0.85,
+          "output": 0.84,
           "contextWindow": 131072,
           "currency": "USD",
           "note": "高性价比",
@@ -2143,9 +2143,8 @@
         },
         {
           "name": "GLM 4.5 Air",
-          "input": 0.13,
-          "cachedInput": 0.025,
-          "output": 0.85,
+          "input": 0.125,
+          "output": 0.84,
           "contextWindow": 131072,
           "currency": "USD",
           "source": "OpenRouter"

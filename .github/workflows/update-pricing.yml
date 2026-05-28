@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   update-pricing:
@@ -28,11 +29,30 @@ jobs:
       - name: Update pricing data
         run: node update-pricing.js
 
-      - name: Commit and push if changed
+      - name: Create pull request and enable auto-merge
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+
           node api/generate.js
+
           git add pricing.json sources.json api/v1/
-          git diff --staged --quiet || git commit -m "auto: update pricing data $(date +%Y-%m-%d)"
-          git push
+          if git diff --staged --quiet; then
+            echo "No pricing changes detected."
+            exit 0
+          fi
+
+          branch="auto/pricing-update-$(date +%Y-%m-%d)-${GITHUB_RUN_ID}"
+          git switch -c "$branch"
+          git commit -m "auto: update pricing data $(date +%Y-%m-%d)"
+          git push --set-upstream origin "$branch"
+
+          pr_url="$(gh pr create \
+            --base main \
+            --head "$branch" \
+            --title "auto: update pricing data $(date +%Y-%m-%d)" \
+            --body "Automated daily pricing data refresh.")"
+
+          gh pr merge "$pr_url" --auto --squash --delete-branch

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-27",
+  "lastUpdated": "2026-05-28",
   "total": 13,
   "groups": [
     {
@@ -237,11 +237,11 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4o",
+          "name": "GPT-4o (2024-05-13)",
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4o (2024-05-13)",
+          "name": "GPT-4o",
           "source": "OpenRouter"
         },
         {
@@ -249,11 +249,11 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-3.5 Turbo (older v0613)",
+          "name": "GPT-4 Turbo Preview",
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4 Turbo Preview",
+          "name": "GPT-3.5 Turbo (older v0613)",
           "source": "OpenRouter"
         },
         {

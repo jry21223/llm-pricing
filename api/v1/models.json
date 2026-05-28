@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-27",
+  "lastUpdated": "2026-05-28",
   "total": 242,
   "groups": [
     {
@@ -225,7 +225,7 @@
         {
           "name": "GPT-5.1 Chat",
           "input": 1.25,
-          "cachedInput": 0.125,
+          "cachedInput": 0.13,
           "output": 10,
           "contextWindow": 128000,
           "currency": "USD",
@@ -234,7 +234,7 @@
         {
           "name": "GPT-5.1-Codex",
           "input": 1.25,
-          "cachedInput": 0.125,
+          "cachedInput": 0.13,
           "output": 10,
           "contextWindow": 400000,
           "currency": "USD",
@@ -243,7 +243,7 @@
         {
           "name": "GPT-5.1-Codex-Mini",
           "input": 0.25,
-          "cachedInput": 0.03,
+          "cachedInput": 0.025,
           "output": 2,
           "contextWindow": 400000,
           "currency": "USD",
@@ -521,17 +521,17 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4o",
-          "input": 2.5,
-          "output": 10,
+          "name": "GPT-4o (2024-05-13)",
+          "input": 5,
+          "output": 15,
           "contextWindow": 128000,
           "currency": "USD",
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4o (2024-05-13)",
-          "input": 5,
-          "output": 15,
+          "name": "GPT-4o",
+          "input": 2.5,
+          "output": 10,
           "contextWindow": 128000,
           "currency": "USD",
           "source": "OpenRouter"
@@ -545,18 +545,18 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-3.5 Turbo (older v0613)",
-          "input": 1,
-          "output": 2,
-          "contextWindow": 4095,
-          "currency": "USD",
-          "source": "OpenRouter"
-        },
-        {
           "name": "GPT-4 Turbo Preview",
           "input": 10,
           "output": 30,
           "contextWindow": 128000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-3.5 Turbo (older v0613)",
+          "input": 1,
+          "output": 2,
+          "contextWindow": 4095,
           "currency": "USD",
           "source": "OpenRouter"
         },

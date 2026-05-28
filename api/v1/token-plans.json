@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-27",
+  "lastUpdated": "2026-05-28",
   "total": 10,
   "plans": [
     {
@@ -12,7 +12,7 @@
       "limits": "25,000 Credits/坐席/月",
       "note": "支持团队管理",
       "category": "enterprise",
-      "lastUpdated": "2026-05-22"
+      "lastUpdated": "2026-05-28"
     },
     {
       "provider": "阿里云 (百炼)",
@@ -24,7 +24,7 @@
       "limits": "100,000 Credits/坐席/月",
       "note": "日常高频使用",
       "category": "enterprise",
-      "lastUpdated": "2026-05-22"
+      "lastUpdated": "2026-05-28"
     },
     {
       "provider": "阿里云 (百炼)",
@@ -36,7 +36,7 @@
       "limits": "250,000 Credits/坐席/月",
       "note": "核心开发者",
       "category": "enterprise",
-      "lastUpdated": "2026-05-22"
+      "lastUpdated": "2026-05-28"
     },
     {
       "provider": "MiniMax",

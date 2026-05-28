@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-27",
+  "lastUpdated": "2026-05-28",
   "total": 33,
   "plans": [
     {
@@ -156,7 +156,7 @@
       "limits": "25,000 Credits/坐席/月",
       "note": "支持团队管理",
       "category": "enterprise",
-      "lastUpdated": "2026-05-22"
+      "lastUpdated": "2026-05-28"
     },
     {
       "provider": "阿里云 (百炼)",
@@ -168,7 +168,7 @@
       "limits": "100,000 Credits/坐席/月",
       "note": "日常高频使用",
       "category": "enterprise",
-      "lastUpdated": "2026-05-22"
+      "lastUpdated": "2026-05-28"
     },
     {
       "provider": "阿里云 (百炼)",
@@ -180,7 +180,7 @@
       "limits": "250,000 Credits/坐席/月",
       "note": "核心开发者",
       "category": "enterprise",
-      "lastUpdated": "2026-05-22"
+      "lastUpdated": "2026-05-28"
     },
     {
       "provider": "智谱AI (GLM)",
@@ -188,11 +188,11 @@
       "price": 49,
       "currency": "CNY",
       "period": "月",
-      "models": "GLM-4.7, GLM-4.5 Air",
-      "limits": "基础使用",
+      "models": "GLM-5.1, GLM-5-Turbo, GLM-4.7, GLM-4.5-Air",
+      "limits": "每5小时约80次 prompts / 每周约400次 prompts；MCP每月合计100次",
       "note": "入门级",
       "category": "coding",
-      "lastUpdated": "2026-05-22"
+      "lastUpdated": "2026-05-28"
     },
     {
       "provider": "智谱AI (GLM)",
@@ -200,11 +200,11 @@
       "price": 149,
       "currency": "CNY",
       "period": "月",
-      "models": "GLM-5, GLM-5.1",
-      "limits": "高级使用",
+      "models": "GLM-5.1, GLM-5-Turbo, GLM-4.7, GLM-4.5-Air",
+      "limits": "每5小时约400次 prompts / 每周约2,000次 prompts；MCP每月合计1,000次",
       "note": "专业开发者",
       "category": "coding",
-      "lastUpdated": "2026-05-22"
+      "lastUpdated": "2026-05-28"
     },
     {
       "provider": "智谱AI (GLM)",
@@ -212,11 +212,11 @@
       "price": 469,
       "currency": "CNY",
       "period": "月",
-      "models": "GLM-5.1, 所有模型",
-      "limits": "无限使用",
+      "models": "GLM-5.1, GLM-5-Turbo, GLM-4.7, GLM-4.5-Air",
+      "limits": "每5小时约1,600次 prompts / 每周约8,000次 prompts；MCP每月合计4,000次",
       "note": "重度使用者",
       "category": "coding",
-      "lastUpdated": "2026-05-22"
+      "lastUpdated": "2026-05-28"
     },
     {
       "provider": "字节跳动 (豆包)",
@@ -224,11 +224,11 @@
       "price": 40,
       "currency": "CNY",
       "period": "月",
-      "models": "豆包系列",
-      "limits": "中等使用",
+      "models": "Doubao-Seed-Code, GLM-4.7, DeepSeek-V3.2, Kimi-K2.5 等",
+      "limits": "每5小时最多约1,200次请求 / 每周9,000次 / 每月18,000次请求",
       "note": "火山方舟编码套餐",
       "category": "coding",
-      "lastUpdated": "2026-05-22"
+      "lastUpdated": "2026-05-28"
     },
     {
       "provider": "字节跳动 (豆包)",
@@ -236,11 +236,11 @@
       "price": 200,
       "currency": "CNY",
       "period": "月",
-      "models": "豆包系列 Pro",
-      "limits": "高级使用",
+      "models": "Doubao-Seed-Code, GLM-4.7, DeepSeek-V3.2, Kimi-K2.5 等",
+      "limits": "每5小时最多约6,000次请求 / 每月最高90,000次请求",
       "note": "高级编程用户",
       "category": "coding",
-      "lastUpdated": "2026-05-22"
+      "lastUpdated": "2026-05-28"
     },
     {
       "provider": "MiniMax",

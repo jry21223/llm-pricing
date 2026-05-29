@@ -1,8 +1,8 @@
 {
   "group": "Anthropic",
   "color": "#d97706",
-  "lastUpdated": "2026-05-28",
-  "total": 17,
+  "lastUpdated": "2026-05-29",
+  "total": 19,
   "models": [
     {
       "name": "Claude Opus 4.7",
@@ -50,6 +50,24 @@
       "lastUpdated": "2026-05-22",
       "source": "OpenRouter",
       "note": "与官方同价"
+    },
+    {
+      "name": "Claude Opus 4.8 (Fast)",
+      "input": 10,
+      "cachedInput": 1,
+      "output": 50,
+      "contextWindow": 1000000,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Claude Opus 4.8",
+      "input": 5,
+      "cachedInput": 0.5,
+      "output": 25,
+      "contextWindow": 1000000,
+      "currency": "USD",
+      "source": "OpenRouter"
     },
     {
       "name": "Claude Opus 4.7 (Fast)",

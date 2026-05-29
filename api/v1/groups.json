@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-28",
+  "lastUpdated": "2026-05-29",
   "total": 13,
   "groups": [
     {
@@ -229,11 +229,11 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4o-mini (2024-07-18)",
+          "name": "GPT-4o-mini",
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4o-mini",
+          "name": "GPT-4o-mini (2024-07-18)",
           "source": "OpenRouter"
         },
         {
@@ -249,11 +249,11 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4 Turbo Preview",
+          "name": "GPT-3.5 Turbo (older v0613)",
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-3.5 Turbo (older v0613)",
+          "name": "GPT-4 Turbo Preview",
           "source": "OpenRouter"
         },
         {
@@ -286,7 +286,7 @@
       "provider": "DeepSeek",
       "group": "DeepSeek",
       "color": "#4f46e5",
-      "modelCount": 15,
+      "modelCount": 14,
       "models": [
         {
           "name": "deepseek-v4-flash",
@@ -302,10 +302,6 @@
         },
         {
           "name": "DeepSeek V4 Flash",
-          "source": "OpenRouter"
-        },
-        {
-          "name": "DeepSeek V3.2 Speciale",
           "source": "OpenRouter"
         },
         {
@@ -354,7 +350,7 @@
       "provider": "Anthropic",
       "group": "Anthropic",
       "color": "#d97706",
-      "modelCount": 17,
+      "modelCount": 19,
       "models": [
         {
           "name": "Claude Opus 4.7",
@@ -370,6 +366,14 @@
         },
         {
           "name": "Claude Opus 4.7",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude Opus 4.8 (Fast)",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude Opus 4.8",
           "source": "OpenRouter"
         },
         {
@@ -1025,7 +1029,7 @@
       "provider": "百度",
       "group": "百度",
       "color": "#2563eb",
-      "modelCount": 8,
+      "modelCount": 7,
       "models": [
         {
           "name": "CoBuddy (千帆)",
@@ -1034,10 +1038,6 @@
         {
           "name": "ERNIE 4.0",
           "source": "官方"
-        },
-        {
-          "name": "Qianfan-OCR-Fast",
-          "source": "OpenRouter"
         },
         {
           "name": "ERNIE 4.5 21B A3B Thinking",

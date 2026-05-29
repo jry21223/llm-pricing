@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-28",
+  "lastUpdated": "2026-05-29",
   "total": 242,
   "groups": [
     {
@@ -503,7 +503,7 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4o-mini (2024-07-18)",
+          "name": "GPT-4o-mini",
           "input": 0.15,
           "cachedInput": 0.075,
           "output": 0.6,
@@ -512,7 +512,7 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4o-mini",
+          "name": "GPT-4o-mini (2024-07-18)",
           "input": 0.15,
           "cachedInput": 0.075,
           "output": 0.6,
@@ -545,18 +545,18 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4 Turbo Preview",
-          "input": 10,
-          "output": 30,
-          "contextWindow": 128000,
-          "currency": "USD",
-          "source": "OpenRouter"
-        },
-        {
           "name": "GPT-3.5 Turbo (older v0613)",
           "input": 1,
           "output": 2,
           "contextWindow": 4095,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4 Turbo Preview",
+          "input": 10,
+          "output": 30,
+          "contextWindow": 128000,
           "currency": "USD",
           "source": "OpenRouter"
         },
@@ -650,15 +650,6 @@
           "cachedInput": 0.02,
           "output": 0.2,
           "contextWindow": 1048576,
-          "currency": "USD",
-          "source": "OpenRouter"
-        },
-        {
-          "name": "DeepSeek V3.2 Speciale",
-          "input": 0.287,
-          "cachedInput": 0.058,
-          "output": 0.431,
-          "contextWindow": 163840,
           "currency": "USD",
           "source": "OpenRouter"
         },
@@ -800,6 +791,24 @@
           "lastUpdated": "2026-05-22",
           "source": "OpenRouter",
           "note": "与官方同价"
+        },
+        {
+          "name": "Claude Opus 4.8 (Fast)",
+          "input": 10,
+          "cachedInput": 1,
+          "output": 50,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude Opus 4.8",
+          "input": 5,
+          "cachedInput": 0.5,
+          "output": 25,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "source": "OpenRouter"
         },
         {
           "name": "Claude Opus 4.7 (Fast)",
@@ -2037,7 +2046,8 @@
         {
           "name": "GLM-4.5 Air",
           "input": 0.13,
-          "output": 0.84,
+          "cachedInput": 0.06,
+          "output": 0.85,
           "contextWindow": 131072,
           "currency": "USD",
           "note": "高性价比",
@@ -2144,7 +2154,8 @@
         {
           "name": "GLM 4.5 Air",
           "input": 0.125,
-          "output": 0.84,
+          "cachedInput": 0.06,
+          "output": 0.85,
           "contextWindow": 131072,
           "currency": "USD",
           "source": "OpenRouter"
@@ -2185,14 +2196,6 @@
           "lastUpdated": "2026-05-22",
           "note": "待抓取（SPA页面）",
           "source": "官方"
-        },
-        {
-          "name": "Qianfan-OCR-Fast",
-          "input": 0.68,
-          "output": 2.81,
-          "contextWindow": 65536,
-          "currency": "USD",
-          "source": "OpenRouter"
         },
         {
           "name": "ERNIE 4.5 21B A3B Thinking",

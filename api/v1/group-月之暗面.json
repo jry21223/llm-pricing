@@ -1,7 +1,7 @@
 {
   "group": "月之暗面",
   "color": "#7c3aed",
-  "lastUpdated": "2026-05-28",
+  "lastUpdated": "2026-05-30",
   "total": 6,
   "models": [
     {
@@ -18,9 +18,9 @@
     },
     {
       "name": "Kimi K2.6",
-      "input": 0.73,
-      "cachedInput": 0.25,
-      "output": 3.49,
+      "input": 0.684,
+      "cachedInput": 0.144,
+      "output": 3.42,
       "contextWindow": 262144,
       "currency": "USD",
       "source": "OpenRouter"

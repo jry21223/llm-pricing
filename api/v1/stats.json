@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-28",
-  "totalModels": 240,
+  "lastUpdated": "2026-05-30",
+  "totalModels": 239,
   "cheapestInput": [
     {
       "name": "CoBuddy (千帆)",
@@ -15,7 +15,7 @@
     },
     {
       "name": "gpt-oss-20b",
-      "input": 0.03,
+      "input": 0.029,
       "output": 0.14,
       "contextWindow": 131072,
       "currency": "USD",

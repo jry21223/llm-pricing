@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "lastChecked": "2026-05-28",
+  "lastChecked": "2026-05-30",
   "generatedBy": "update-pricing.js",
   "sections": {
     "modelPricing": {
       "label": "模型 API 价格",
       "updateMode": "mixed",
       "cadence": "daily",
-      "lastChecked": "2026-05-28",
-      "lastUpdated": "2026-05-28",
+      "lastChecked": "2026-05-30",
+      "lastUpdated": "2026-05-30",
       "publishedFiles": [
         "pricing.json",
         "api/v1/models.json",
@@ -62,8 +62,8 @@
       "label": "免费模型",
       "updateMode": "automatic",
       "cadence": "daily",
-      "lastChecked": "2026-05-28",
-      "lastUpdated": "2026-05-28",
+      "lastChecked": "2026-05-30",
+      "lastUpdated": "2026-05-30",
       "publishedFiles": [
         "api/v1/free.json"
       ],
@@ -82,8 +82,8 @@
       "label": "当前促销 / 限时优惠",
       "updateMode": "derived",
       "cadence": "daily",
-      "lastChecked": "2026-05-28",
-      "lastUpdated": "2026-05-28",
+      "lastChecked": "2026-05-30",
+      "lastUpdated": "2026-05-30",
       "publishedFiles": [
         "api/v1/deals.json"
       ],
@@ -106,6 +106,14 @@
           "status": "active"
         },
         {
+          "id": "aliyun-token-plan",
+          "name": "阿里云百炼 Token Plan（团队版）概述",
+          "url": "https://help.aliyun.com/zh/model-studio/token-plan-overview",
+          "type": "web-review",
+          "updateMode": "agent_review",
+          "status": "active"
+        },
+        {
           "id": "subscription-plans",
           "name": "Subscription and coding plan base table",
           "url": "pricing.json#subscriptionPlans",
@@ -119,7 +127,7 @@
       "label": "Coding Plan / Token Plan / 订阅套餐",
       "updateMode": "agent_review",
       "cadence": "weekly-or-on-change",
-      "lastChecked": "2026-05-28",
+      "lastChecked": "2026-05-30",
       "lastUpdated": "2026-05-28",
       "publishedFiles": [
         "api/v1/plans.json",

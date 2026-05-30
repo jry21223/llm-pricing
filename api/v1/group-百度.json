@@ -1,8 +1,8 @@
 {
   "group": "百度",
   "color": "#2563eb",
-  "lastUpdated": "2026-05-28",
-  "total": 8,
+  "lastUpdated": "2026-05-30",
+  "total": 7,
   "models": [
     {
       "name": "CoBuddy (千帆)",
@@ -25,14 +25,6 @@
       "lastUpdated": "2026-05-22",
       "note": "待抓取（SPA页面）",
       "source": "官方"
-    },
-    {
-      "name": "Qianfan-OCR-Fast",
-      "input": 0.68,
-      "output": 2.81,
-      "contextWindow": 65536,
-      "currency": "USD",
-      "source": "OpenRouter"
     },
     {
       "name": "ERNIE 4.5 21B A3B Thinking",

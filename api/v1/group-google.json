@@ -1,7 +1,7 @@
 {
   "group": "Google",
   "color": "#4285f4",
-  "lastUpdated": "2026-05-28",
+  "lastUpdated": "2026-05-31",
   "total": 27,
   "models": [
     {
@@ -234,7 +234,7 @@
       "input": 0.1,
       "cachedInput": 0.025,
       "output": 0.4,
-      "contextWindow": 1000000,
+      "contextWindow": 1048576,
       "currency": "USD",
       "source": "OpenRouter"
     },

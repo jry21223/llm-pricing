@@ -1,8 +1,8 @@
 {
   "group": "OpenAI",
   "color": "#10a37f",
-  "lastUpdated": "2026-05-28",
-  "total": 68,
+  "lastUpdated": "2026-05-31",
+  "total": 67,
   "models": [
     {
       "name": "GPT-5.5",
@@ -309,14 +309,6 @@
       "source": "OpenRouter"
     },
     {
-      "name": "GPT-4o Audio",
-      "input": 2.5,
-      "output": 10,
-      "contextWindow": 128000,
-      "currency": "USD",
-      "source": "OpenRouter"
-    },
-    {
       "name": "GPT-5 Chat",
       "input": 1.25,
       "cachedInput": 0.125,
@@ -362,7 +354,7 @@
     },
     {
       "name": "gpt-oss-20b",
-      "input": 0.03,
+      "input": 0.029,
       "output": 0.14,
       "contextWindow": 131072,
       "currency": "USD",
@@ -518,17 +510,17 @@
       "source": "OpenRouter"
     },
     {
-      "name": "GPT-4o (2024-05-13)",
-      "input": 5,
-      "output": 15,
+      "name": "GPT-4o",
+      "input": 2.5,
+      "output": 10,
       "contextWindow": 128000,
       "currency": "USD",
       "source": "OpenRouter"
     },
     {
-      "name": "GPT-4o",
-      "input": 2.5,
-      "output": 10,
+      "name": "GPT-4o (2024-05-13)",
+      "input": 5,
+      "output": 15,
       "contextWindow": 128000,
       "currency": "USD",
       "source": "OpenRouter"
@@ -542,18 +534,18 @@
       "source": "OpenRouter"
     },
     {
-      "name": "GPT-4 Turbo Preview",
-      "input": 10,
-      "output": 30,
-      "contextWindow": 128000,
-      "currency": "USD",
-      "source": "OpenRouter"
-    },
-    {
       "name": "GPT-3.5 Turbo (older v0613)",
       "input": 1,
       "output": 2,
       "contextWindow": 4095,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-4 Turbo Preview",
+      "input": 10,
+      "output": 30,
+      "contextWindow": 128000,
       "currency": "USD",
       "source": "OpenRouter"
     },
@@ -590,18 +582,18 @@
       "source": "OpenRouter"
     },
     {
-      "name": "GPT-3.5 Turbo",
-      "input": 0.5,
-      "output": 1.5,
-      "contextWindow": 16385,
-      "currency": "USD",
-      "source": "OpenRouter"
-    },
-    {
       "name": "GPT-4",
       "input": 30,
       "output": 60,
       "contextWindow": 8191,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-3.5 Turbo",
+      "input": 0.5,
+      "output": 1.5,
+      "contextWindow": 16385,
       "currency": "USD",
       "source": "OpenRouter"
     }

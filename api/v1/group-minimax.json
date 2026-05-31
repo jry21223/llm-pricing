@@ -1,7 +1,7 @@
 {
   "group": "MiniMax",
   "color": "#0891b2",
-  "lastUpdated": "2026-05-28",
+  "lastUpdated": "2026-05-31",
   "total": 10,
   "models": [
     {
@@ -42,7 +42,7 @@
     },
     {
       "name": "MiniMax M2.7",
-      "input": 0.279,
+      "input": 0.26,
       "output": 1.2,
       "contextWindow": 204800,
       "currency": "USD",

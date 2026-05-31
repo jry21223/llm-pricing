@@ -1,8 +1,8 @@
 {
   "group": "DeepSeek",
   "color": "#4f46e5",
-  "lastUpdated": "2026-05-28",
-  "total": 15,
+  "lastUpdated": "2026-05-31",
+  "total": 14,
   "models": [
     {
       "name": "deepseek-v4-flash",
@@ -35,19 +35,10 @@
     },
     {
       "name": "DeepSeek V4 Flash",
-      "input": 0.1,
+      "input": 0.098,
       "cachedInput": 0.02,
-      "output": 0.2,
+      "output": 0.197,
       "contextWindow": 1048576,
-      "currency": "USD",
-      "source": "OpenRouter"
-    },
-    {
-      "name": "DeepSeek V3.2 Speciale",
-      "input": 0.287,
-      "cachedInput": 0.058,
-      "output": 0.431,
-      "contextWindow": 163840,
       "currency": "USD",
       "source": "OpenRouter"
     },

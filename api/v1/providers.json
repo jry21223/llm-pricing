@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-28",
+  "lastUpdated": "2026-05-31",
   "total": 28,
   "providers": [
     {
@@ -36,7 +36,7 @@
       "providerUrl": "https://openrouter.ai/pricing",
       "color": "#10a37f",
       "group": "OpenAI",
-      "modelCount": 63,
+      "modelCount": 62,
       "models": [
         {
           "name": "GPT Chat Latest",
@@ -151,10 +151,6 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4o Audio",
-          "source": "OpenRouter"
-        },
-        {
           "name": "GPT-5 Chat",
           "source": "OpenRouter"
         },
@@ -247,11 +243,11 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4o (2024-05-13)",
+          "name": "GPT-4o",
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4o",
+          "name": "GPT-4o (2024-05-13)",
           "source": "OpenRouter"
         },
         {
@@ -259,11 +255,11 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4 Turbo Preview",
+          "name": "GPT-3.5 Turbo (older v0613)",
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-3.5 Turbo (older v0613)",
+          "name": "GPT-4 Turbo Preview",
           "source": "OpenRouter"
         },
         {
@@ -283,11 +279,11 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-3.5 Turbo",
+          "name": "GPT-4",
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4",
+          "name": "GPT-3.5 Turbo",
           "source": "OpenRouter"
         }
       ]
@@ -314,7 +310,7 @@
       "providerUrl": "https://openrouter.ai/pricing",
       "color": "#4f46e5",
       "group": "DeepSeek",
-      "modelCount": 13,
+      "modelCount": 12,
       "models": [
         {
           "name": "DeepSeek V4 Pro",
@@ -322,10 +318,6 @@
         },
         {
           "name": "DeepSeek V4 Flash",
-          "source": "OpenRouter"
-        },
-        {
-          "name": "DeepSeek V3.2 Speciale",
           "source": "OpenRouter"
         },
         {
@@ -971,8 +963,16 @@
       "providerUrl": "https://openrouter.ai/pricing",
       "color": "#d97706",
       "group": "Anthropic",
-      "modelCount": 13,
+      "modelCount": 15,
       "models": [
+        {
+          "name": "Claude Opus 4.8 (Fast)",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude Opus 4.8",
+          "source": "OpenRouter"
+        },
         {
           "name": "Claude Opus 4.7 (Fast)",
           "source": "OpenRouter"
@@ -1061,20 +1061,8 @@
       "providerUrl": "https://openrouter.ai/pricing",
       "color": "#2563eb",
       "group": "百度",
-      "modelCount": 6,
+      "modelCount": 3,
       "models": [
-        {
-          "name": "Qianfan-OCR-Fast",
-          "source": "OpenRouter"
-        },
-        {
-          "name": "ERNIE 4.5 21B A3B Thinking",
-          "source": "OpenRouter"
-        },
-        {
-          "name": "ERNIE 4.5 21B A3B",
-          "source": "OpenRouter"
-        },
         {
           "name": "ERNIE 4.5 VL 28B A3B",
           "source": "OpenRouter"

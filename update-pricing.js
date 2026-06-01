@@ -143,10 +143,20 @@ async function scrapeDeepSeek() {
   const flashMiss = extract('$0.14');
   const flashOut = extract('$0.28');
   const proFull = extract('$1.74');
+  const proCurrentInput = extract('$0.435');
+  const proCurrentOutput = extract('$0.87');
 
   return [
     { name: 'deepseek-v4-flash', input: flashMiss || 0.14, cachedInput: flashHit || 0.0028, output: flashOut || 0.28, contextWindow: 1000000, currency: 'USD' },
-    { name: 'deepseek-v4-pro', input: proFull || 1.74, cachedInput: 0.0145, output: 3.48, contextWindow: 1000000, currency: 'USD' },
+    {
+      name: 'deepseek-v4-pro',
+      input: proCurrentInput || (proFull ? proFull * 0.25 : 0.435),
+      cachedInput: 0.003625,
+      output: proCurrentOutput || 0.87,
+      contextWindow: 1000000,
+      currency: 'USD',
+      note: '2026-05-31 15:59 UTC后由折扣价调整为正式价格',
+    },
   ];
 }
 
@@ -589,7 +599,9 @@ async function main() {
         // Preserve existing notes/non-price fields
         for (const newModel of result) {
           const existing = provider.models.find(m => m.name === newModel.name);
-          if (existing && existing.note) newModel.note = existing.note;
+          if (existing && existing.note && !(provider.provider === 'DeepSeek' && newModel.name === 'deepseek-v4-pro')) {
+            newModel.note = existing.note;
+          }
           if (existing && existing.source) newModel.source = existing.source;
         }
         provider.models = result;

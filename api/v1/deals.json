@@ -1,19 +1,7 @@
 {
-  "lastUpdated": "2026-05-28",
-  "total": 8,
+  "lastUpdated": "2026-06-01",
+  "total": 6,
   "deals": [
-    {
-      "deal": "DeepSeek V4 Pro 75%折扣",
-      "vendor": "DeepSeek",
-      "type": "discount",
-      "discount": "75%",
-      "original": "$1.74/$3.48",
-      "current": "$0.435/$0.87",
-      "expires": "2026-05-31",
-      "note": "Input/Output 均75%折扣",
-      "source": "DeepSeek pricing",
-      "lastUpdated": "2026-05-28"
-    },
     {
       "deal": "New User Free Quota",
       "vendor": "阿里云百炼",
@@ -24,7 +12,7 @@
       "expires": "开通后90天",
       "note": "各100万Token免费额度",
       "source": "manual",
-      "lastUpdated": "2026-05-28"
+      "lastUpdated": "2026-06-01"
     },
     {
       "deal": "GLM-4.5 Air 免费",
@@ -36,19 +24,7 @@
       "expires": "长期",
       "note": "通过OpenRouter(Z.ai)免费使用",
       "source": "OpenRouter API",
-      "lastUpdated": "2026-05-28"
-    },
-    {
-      "deal": "DeepSeek V4 Flash 免费",
-      "vendor": "DeepSeek",
-      "type": "free",
-      "discount": "100%",
-      "original": "",
-      "current": "完全免费",
-      "expires": "长期",
-      "note": "通过OpenRouter免费使用",
-      "source": "OpenRouter API",
-      "lastUpdated": "2026-05-28"
+      "lastUpdated": "2026-06-01"
     },
     {
       "deal": "GLM Coding Plan Lite",
@@ -61,7 +37,7 @@
       "note": "入门级",
       "source": "subscriptionPlans",
       "sourceLastUpdated": "2026-05-28",
-      "lastUpdated": "2026-05-28"
+      "lastUpdated": "2026-06-01"
     },
     {
       "deal": "Ark Coding Plan Pro",
@@ -74,7 +50,7 @@
       "note": "高级编程用户",
       "source": "subscriptionPlans",
       "sourceLastUpdated": "2026-05-28",
-      "lastUpdated": "2026-05-28"
+      "lastUpdated": "2026-06-01"
     },
     {
       "deal": "Qwen3 Coder 免费",
@@ -86,7 +62,7 @@
       "expires": "长期",
       "note": "480B参数编码模型，1M上下文，通过OpenRouter",
       "source": "OpenRouter API",
-      "lastUpdated": "2026-05-28"
+      "lastUpdated": "2026-06-01"
     },
     {
       "deal": "NVIDIA Nemotron 3 Super 免费",
@@ -98,7 +74,7 @@
       "expires": "长期",
       "note": "1M上下文，通过OpenRouter",
       "source": "OpenRouter API",
-      "lastUpdated": "2026-05-28"
+      "lastUpdated": "2026-06-01"
     }
   ]
 }

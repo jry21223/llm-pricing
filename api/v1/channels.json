@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-28",
+  "lastUpdated": "2026-06-01",
   "total": 10,
   "channels": [
     {
@@ -42,7 +42,7 @@
       "url": "https://api-docs.deepseek.com",
       "type": "官方API",
       "features": "价格最低，缓存命中仅$0.0028/M",
-      "pricing": "Flash $0.14/$0.28, 75%折扣中"
+      "pricing": "Flash $0.14/$0.28; Pro $0.435/$0.87"
     },
     {
       "name": "OpenClaw Coding Plan",

@@ -1,7 +1,7 @@
 {
   "group": "阿里云",
   "color": "#ff6a00",
-  "lastUpdated": "2026-05-28",
+  "lastUpdated": "2026-06-01",
   "total": 53,
   "models": [
     {
@@ -148,7 +148,8 @@
     },
     {
       "name": "Qwen3.5-35B-A3B",
-      "input": 0.139,
+      "input": 0.14,
+      "cachedInput": 0.05,
       "output": 1,
       "contextWindow": 262144,
       "currency": "USD",
@@ -354,8 +355,9 @@
     },
     {
       "name": "Qwen3 235B A22B Thinking 2507",
-      "input": 0.15,
-      "output": 1.495,
+      "input": 0.1,
+      "cachedInput": 0.1,
+      "output": 0.1,
       "contextWindow": 262144,
       "currency": "USD",
       "source": "OpenRouter"

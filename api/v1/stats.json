@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-28",
-  "totalModels": 240,
+  "lastUpdated": "2026-06-01",
+  "totalModels": 235,
   "cheapestInput": [
     {
       "name": "CoBuddy (千帆)",
@@ -15,7 +15,7 @@
     },
     {
       "name": "gpt-oss-20b",
-      "input": 0.03,
+      "input": 0.029,
       "output": 0.14,
       "contextWindow": 131072,
       "currency": "USD",
@@ -67,6 +67,15 @@
       "source": "OpenRouter"
     },
     {
+      "name": "Qwen3 235B A22B Thinking 2507",
+      "input": 0.1,
+      "cachedInput": 0.1,
+      "output": 0.1,
+      "contextWindow": 262144,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
       "name": "Qwen3 235B A22B Instruct 2507",
       "input": 0.071,
       "output": 0.1,
@@ -81,14 +90,6 @@
       "contextWindow": 131072,
       "currency": "USD",
       "source": "OpenRouter"
-    },
-    {
-      "name": "GLM 4 32B ",
-      "input": 0.1,
-      "output": 0.1,
-      "contextWindow": 128000,
-      "currency": "USD",
-      "source": "官方"
     }
   ],
   "largestContext": [

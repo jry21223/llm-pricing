@@ -1,7 +1,7 @@
 {
   "group": "智谱AI",
   "color": "#1d4ed8",
-  "lastUpdated": "2026-05-28",
+  "lastUpdated": "2026-06-01",
   "total": 24,
   "models": [
     {
@@ -102,7 +102,8 @@
     {
       "name": "GLM-4.5 Air",
       "input": 0.13,
-      "output": 0.84,
+      "cachedInput": 0.06,
+      "output": 0.85,
       "contextWindow": 131072,
       "currency": "USD",
       "note": "高性价比",
@@ -209,7 +210,8 @@
     {
       "name": "GLM 4.5 Air",
       "input": 0.125,
-      "output": 0.84,
+      "cachedInput": 0.06,
+      "output": 0.85,
       "contextWindow": 131072,
       "currency": "USD",
       "source": "OpenRouter"

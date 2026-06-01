@@ -1,8 +1,8 @@
 {
   "group": "DeepSeek",
   "color": "#4f46e5",
-  "lastUpdated": "2026-05-28",
-  "total": 15,
+  "lastUpdated": "2026-06-01",
+  "total": 14,
   "models": [
     {
       "name": "deepseek-v4-flash",
@@ -16,12 +16,12 @@
     },
     {
       "name": "deepseek-v4-pro",
-      "input": 1.74,
-      "cachedInput": 0.0145,
-      "output": 3.48,
+      "input": 0.435,
+      "cachedInput": 0.003625,
+      "output": 0.87,
       "contextWindow": 1000000,
       "currency": "USD",
-      "note": "原价，当前75%折扣：input=$0.435, output=$0.87（至2026-05-31）",
+      "note": "2026-05-31 15:59 UTC后由折扣价调整为正式价格",
       "source": "官方"
     },
     {
@@ -35,19 +35,10 @@
     },
     {
       "name": "DeepSeek V4 Flash",
-      "input": 0.1,
+      "input": 0.098,
       "cachedInput": 0.02,
-      "output": 0.2,
+      "output": 0.197,
       "contextWindow": 1048576,
-      "currency": "USD",
-      "source": "OpenRouter"
-    },
-    {
-      "name": "DeepSeek V3.2 Speciale",
-      "input": 0.287,
-      "cachedInput": 0.058,
-      "output": 0.431,
-      "contextWindow": 163840,
       "currency": "USD",
       "source": "OpenRouter"
     },

@@ -1,8 +1,8 @@
 {
   "group": "百度",
   "color": "#2563eb",
-  "lastUpdated": "2026-06-01",
-  "total": 5,
+  "lastUpdated": "2026-06-02",
+  "total": 4,
   "models": [
     {
       "name": "CoBuddy (千帆)",
@@ -38,14 +38,6 @@
       "name": "ERNIE 4.5 VL 424B A47B ",
       "input": 0.42,
       "output": 1.25,
-      "contextWindow": 131072,
-      "currency": "USD",
-      "source": "OpenRouter"
-    },
-    {
-      "name": "ERNIE 4.5 300B A47B ",
-      "input": 0.28,
-      "output": 1.1,
       "contextWindow": 131072,
       "currency": "USD",
       "source": "OpenRouter"

@@ -1,7 +1,7 @@
 {
   "group": "DeepSeek",
   "color": "#4f46e5",
-  "lastUpdated": "2026-06-01",
+  "lastUpdated": "2026-06-02",
   "total": 14,
   "models": [
     {
@@ -44,9 +44,8 @@
     },
     {
       "name": "DeepSeek V3.2",
-      "input": 0.252,
-      "cachedInput": 0.025,
-      "output": 0.378,
+      "input": 0.229,
+      "output": 0.343,
       "contextWindow": 131072,
       "currency": "USD",
       "source": "OpenRouter"
@@ -121,8 +120,8 @@
     },
     {
       "name": "DeepSeek V3",
-      "input": 0.229,
-      "output": 0.914,
+      "input": 0.2,
+      "output": 0.8,
       "contextWindow": 131072,
       "currency": "USD",
       "source": "OpenRouter"

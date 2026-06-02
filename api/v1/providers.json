@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-01",
+  "lastUpdated": "2026-06-02",
   "total": 28,
   "providers": [
     {
@@ -235,11 +235,11 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4o-mini (2024-07-18)",
+          "name": "GPT-4o-mini",
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4o-mini",
+          "name": "GPT-4o-mini (2024-07-18)",
           "source": "OpenRouter"
         },
         {
@@ -255,11 +255,11 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-3.5 Turbo (older v0613)",
+          "name": "GPT-4 Turbo Preview",
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4 Turbo Preview",
+          "name": "GPT-3.5 Turbo (older v0613)",
           "source": "OpenRouter"
         },
         {
@@ -275,7 +275,7 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4 (older v0314)",
+          "name": "GPT-3.5 Turbo",
           "source": "OpenRouter"
         },
         {
@@ -283,7 +283,7 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-3.5 Turbo",
+          "name": "GPT-4 (older v0314)",
           "source": "OpenRouter"
         }
       ]
@@ -858,7 +858,7 @@
       "providerUrl": "https://openrouter.ai/pricing",
       "color": "#4285f4",
       "group": "Google",
-      "modelCount": 24,
+      "modelCount": 22,
       "models": [
         {
           "name": "Gemini 3.5 Flash",
@@ -942,14 +942,6 @@
         },
         {
           "name": "Gemma 3 27B",
-          "source": "OpenRouter"
-        },
-        {
-          "name": "Gemini 2.0 Flash Lite",
-          "source": "OpenRouter"
-        },
-        {
-          "name": "Gemini 2.0 Flash",
           "source": "OpenRouter"
         },
         {
@@ -1053,7 +1045,7 @@
       "providerUrl": "https://openrouter.ai/pricing",
       "color": "#2563eb",
       "group": "百度",
-      "modelCount": 3,
+      "modelCount": 2,
       "models": [
         {
           "name": "ERNIE 4.5 VL 28B A3B",
@@ -1061,10 +1053,6 @@
         },
         {
           "name": "ERNIE 4.5 VL 424B A47B ",
-          "source": "OpenRouter"
-        },
-        {
-          "name": "ERNIE 4.5 300B A47B ",
           "source": "OpenRouter"
         }
       ]
@@ -1160,8 +1148,12 @@
       "providerUrl": "https://openrouter.ai/pricing",
       "color": "#0891b2",
       "group": "MiniMax",
-      "modelCount": 7,
+      "modelCount": 8,
       "models": [
+        {
+          "name": "MiniMax M3",
+          "source": "OpenRouter"
+        },
         {
           "name": "MiniMax M2.7",
           "source": "OpenRouter"

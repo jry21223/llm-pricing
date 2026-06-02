@@ -1,7 +1,7 @@
 {
   "group": "阿里云",
   "color": "#ff6a00",
-  "lastUpdated": "2026-06-01",
+  "lastUpdated": "2026-06-02",
   "total": 53,
   "models": [
     {
@@ -347,9 +347,9 @@
     },
     {
       "name": "Qwen3 30B A3B Instruct 2507",
-      "input": 0.09,
-      "output": 0.3,
-      "contextWindow": 262144,
+      "input": 0.043,
+      "output": 0.172,
+      "contextWindow": 131072,
       "currency": "USD",
       "source": "OpenRouter"
     },

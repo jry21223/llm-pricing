@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-01",
-  "total": 237,
+  "lastUpdated": "2026-06-02",
+  "total": 235,
   "groups": [
     {
       "provider": "OpenAI",
@@ -495,7 +495,7 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4o-mini (2024-07-18)",
+          "name": "GPT-4o-mini",
           "input": 0.15,
           "cachedInput": 0.075,
           "output": 0.6,
@@ -504,7 +504,7 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4o-mini",
+          "name": "GPT-4o-mini (2024-07-18)",
           "input": 0.15,
           "cachedInput": 0.075,
           "output": 0.6,
@@ -537,18 +537,18 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-3.5 Turbo (older v0613)",
-          "input": 1,
-          "output": 2,
-          "contextWindow": 4095,
-          "currency": "USD",
-          "source": "OpenRouter"
-        },
-        {
           "name": "GPT-4 Turbo Preview",
           "input": 10,
           "output": 30,
           "contextWindow": 128000,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-3.5 Turbo (older v0613)",
+          "input": 1,
+          "output": 2,
+          "contextWindow": 4095,
           "currency": "USD",
           "source": "OpenRouter"
         },
@@ -577,10 +577,10 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4 (older v0314)",
-          "input": 30,
-          "output": 60,
-          "contextWindow": 8191,
+          "name": "GPT-3.5 Turbo",
+          "input": 0.5,
+          "output": 1.5,
+          "contextWindow": 16385,
           "currency": "USD",
           "source": "OpenRouter"
         },
@@ -593,10 +593,10 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-3.5 Turbo",
-          "input": 0.5,
-          "output": 1.5,
-          "contextWindow": 16385,
+          "name": "GPT-4 (older v0314)",
+          "input": 30,
+          "output": 60,
+          "contextWindow": 8191,
           "currency": "USD",
           "source": "OpenRouter"
         }
@@ -647,9 +647,8 @@
         },
         {
           "name": "DeepSeek V3.2",
-          "input": 0.252,
-          "cachedInput": 0.025,
-          "output": 0.378,
+          "input": 0.229,
+          "output": 0.343,
           "contextWindow": 131072,
           "currency": "USD",
           "source": "OpenRouter"
@@ -724,8 +723,8 @@
         },
         {
           "name": "DeepSeek V3",
-          "input": 0.229,
-          "output": 0.914,
+          "input": 0.2,
+          "output": 0.8,
           "contextWindow": 131072,
           "currency": "USD",
           "source": "OpenRouter"
@@ -1269,9 +1268,9 @@
         },
         {
           "name": "Qwen3 30B A3B Instruct 2507",
-          "input": 0.09,
-          "output": 0.3,
-          "contextWindow": 262144,
+          "input": 0.043,
+          "output": 0.172,
+          "contextWindow": 131072,
           "currency": "USD",
           "source": "OpenRouter"
         },
@@ -1607,23 +1606,6 @@
           "source": "OpenRouter"
         },
         {
-          "name": "Gemini 2.0 Flash Lite",
-          "input": 0.075,
-          "output": 0.3,
-          "contextWindow": 1048576,
-          "currency": "USD",
-          "source": "OpenRouter"
-        },
-        {
-          "name": "Gemini 2.0 Flash",
-          "input": 0.1,
-          "cachedInput": 0.025,
-          "output": 0.4,
-          "contextWindow": 1048576,
-          "currency": "USD",
-          "source": "OpenRouter"
-        },
-        {
           "name": "Gemma 2 27B",
           "input": 0.65,
           "output": 0.65,
@@ -1814,8 +1796,17 @@
           "source": "官方"
         },
         {
+          "name": "MiniMax M3",
+          "input": 0.3,
+          "cachedInput": 0.06,
+          "output": 1.2,
+          "contextWindow": 1048576,
+          "currency": "USD",
+          "source": "OpenRouter"
+        },
+        {
           "name": "MiniMax M2.7",
-          "input": 0.26,
+          "input": 0.279,
           "output": 1.2,
           "contextWindow": 204800,
           "currency": "USD",
@@ -1957,7 +1948,7 @@
           "name": "GLM-5",
           "input": 0.6,
           "cachedInput": 0.12,
-          "output": 1.92,
+          "output": 2.08,
           "contextWindow": 202752,
           "currency": "USD",
           "note": "开源 SOTA Agent 基座",
@@ -2068,7 +2059,7 @@
           "name": "GLM 5",
           "input": 0.6,
           "cachedInput": 0.12,
-          "output": 1.92,
+          "output": 2.08,
           "contextWindow": 202752,
           "currency": "USD",
           "source": "OpenRouter"
@@ -2185,14 +2176,6 @@
           "name": "ERNIE 4.5 VL 424B A47B ",
           "input": 0.42,
           "output": 1.25,
-          "contextWindow": 131072,
-          "currency": "USD",
-          "source": "OpenRouter"
-        },
-        {
-          "name": "ERNIE 4.5 300B A47B ",
-          "input": 0.28,
-          "output": 1.1,
           "contextWindow": 131072,
           "currency": "USD",
           "source": "OpenRouter"

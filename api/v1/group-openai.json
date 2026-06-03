@@ -1,7 +1,7 @@
 {
   "group": "OpenAI",
   "color": "#10a37f",
-  "lastUpdated": "2026-06-02",
+  "lastUpdated": "2026-06-03",
   "total": 67,
   "models": [
     {
@@ -492,15 +492,6 @@
       "source": "OpenRouter"
     },
     {
-      "name": "GPT-4o-mini",
-      "input": 0.15,
-      "cachedInput": 0.075,
-      "output": 0.6,
-      "contextWindow": 128000,
-      "currency": "USD",
-      "source": "OpenRouter"
-    },
-    {
       "name": "GPT-4o-mini (2024-07-18)",
       "input": 0.15,
       "cachedInput": 0.075,
@@ -510,9 +501,10 @@
       "source": "OpenRouter"
     },
     {
-      "name": "GPT-4o",
-      "input": 2.5,
-      "output": 10,
+      "name": "GPT-4o-mini",
+      "input": 0.15,
+      "cachedInput": 0.075,
+      "output": 0.6,
       "contextWindow": 128000,
       "currency": "USD",
       "source": "OpenRouter"
@@ -526,15 +518,15 @@
       "source": "OpenRouter"
     },
     {
-      "name": "GPT-4 Turbo",
-      "input": 10,
-      "output": 30,
+      "name": "GPT-4o",
+      "input": 2.5,
+      "output": 10,
       "contextWindow": 128000,
       "currency": "USD",
       "source": "OpenRouter"
     },
     {
-      "name": "GPT-4 Turbo Preview",
+      "name": "GPT-4 Turbo",
       "input": 10,
       "output": 30,
       "contextWindow": 128000,
@@ -546,6 +538,14 @@
       "input": 1,
       "output": 2,
       "contextWindow": 4095,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "GPT-4 Turbo Preview",
+      "input": 10,
+      "output": 30,
+      "contextWindow": 128000,
       "currency": "USD",
       "source": "OpenRouter"
     },
@@ -574,10 +574,10 @@
       "source": "OpenRouter"
     },
     {
-      "name": "GPT-3.5 Turbo",
-      "input": 0.5,
-      "output": 1.5,
-      "contextWindow": 16385,
+      "name": "GPT-4 (older v0314)",
+      "input": 30,
+      "output": 60,
+      "contextWindow": 8191,
       "currency": "USD",
       "source": "OpenRouter"
     },
@@ -590,10 +590,10 @@
       "source": "OpenRouter"
     },
     {
-      "name": "GPT-4 (older v0314)",
-      "input": 30,
-      "output": 60,
-      "contextWindow": 8191,
+      "name": "GPT-3.5 Turbo",
+      "input": 0.5,
+      "output": 1.5,
+      "contextWindow": 16385,
       "currency": "USD",
       "source": "OpenRouter"
     }

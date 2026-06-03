@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-02",
+  "lastUpdated": "2026-06-03",
   "total": 13,
   "groups": [
     {
@@ -225,15 +225,11 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4o-mini",
-          "source": "OpenRouter"
-        },
-        {
           "name": "GPT-4o-mini (2024-07-18)",
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4o",
+          "name": "GPT-4o-mini",
           "source": "OpenRouter"
         },
         {
@@ -241,15 +237,19 @@
           "source": "OpenRouter"
         },
         {
+          "name": "GPT-4o",
+          "source": "OpenRouter"
+        },
+        {
           "name": "GPT-4 Turbo",
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4 Turbo Preview",
+          "name": "GPT-3.5 Turbo (older v0613)",
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-3.5 Turbo (older v0613)",
+          "name": "GPT-4 Turbo Preview",
           "source": "OpenRouter"
         },
         {
@@ -265,7 +265,7 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-3.5 Turbo",
+          "name": "GPT-4 (older v0314)",
           "source": "OpenRouter"
         },
         {
@@ -273,7 +273,7 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4 (older v0314)",
+          "name": "GPT-3.5 Turbo",
           "source": "OpenRouter"
         }
       ]

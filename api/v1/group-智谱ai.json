@@ -1,7 +1,7 @@
 {
   "group": "智谱AI",
   "color": "#1d4ed8",
-  "lastUpdated": "2026-06-02",
+  "lastUpdated": "2026-06-04",
   "total": 24,
   "models": [
     {
@@ -37,7 +37,7 @@
       "name": "GLM-5",
       "input": 0.6,
       "cachedInput": 0.12,
-      "output": 2.08,
+      "output": 1.92,
       "contextWindow": 202752,
       "currency": "USD",
       "note": "开源 SOTA Agent 基座",
@@ -148,7 +148,7 @@
       "name": "GLM 5",
       "input": 0.6,
       "cachedInput": 0.12,
-      "output": 2.08,
+      "output": 1.92,
       "contextWindow": 202752,
       "currency": "USD",
       "source": "OpenRouter"

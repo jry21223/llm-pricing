@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-02",
+  "lastUpdated": "2026-06-05",
   "total": 28,
   "providers": [
     {
@@ -36,7 +36,7 @@
       "providerUrl": "https://openrouter.ai/pricing",
       "color": "#10a37f",
       "group": "OpenAI",
-      "modelCount": 62,
+      "modelCount": 61,
       "models": [
         {
           "name": "GPT Chat Latest",
@@ -235,19 +235,19 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4o-mini",
-          "source": "OpenRouter"
-        },
-        {
           "name": "GPT-4o-mini (2024-07-18)",
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4o",
+          "name": "GPT-4o-mini",
           "source": "OpenRouter"
         },
         {
           "name": "GPT-4o (2024-05-13)",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "GPT-4o",
           "source": "OpenRouter"
         },
         {
@@ -275,15 +275,11 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-3.5 Turbo",
-          "source": "OpenRouter"
-        },
-        {
           "name": "GPT-4",
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4 (older v0314)",
+          "name": "GPT-3.5 Turbo",
           "source": "OpenRouter"
         }
       ]
@@ -640,8 +636,12 @@
       "providerUrl": "https://openrouter.ai/pricing",
       "color": "#ff6a00",
       "group": "阿里云",
-      "modelCount": 46,
+      "modelCount": 47,
       "models": [
+        {
+          "name": "Qwen3.7 Plus",
+          "source": "OpenRouter"
+        },
         {
           "name": "Qwen3.7 Max",
           "source": "OpenRouter"

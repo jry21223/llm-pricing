@@ -10,6 +10,9 @@ permissions:
   contents: write
   pull-requests: write
 
+env:
+  DAILY_PR_TITLE_PREFIX: "auto: update pricing data"
+
 jobs:
   update-pricing:
     runs-on: ubuntu-latest
@@ -52,7 +55,37 @@ jobs:
           pr_url="$(gh pr create \
             --base main \
             --head "$branch" \
-            --title "auto: update pricing data $(date +%Y-%m-%d)" \
+            --title "${DAILY_PR_TITLE_PREFIX} $(date +%Y-%m-%d)" \
             --body "Automated daily pricing data refresh.")"
 
           gh pr merge "$pr_url" --auto --squash --delete-branch
+
+  process-open-prs:
+    needs: update-pricing
+    if: ${{ success() || failure() }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Enable auto-merge for open daily pricing update PRs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          prs="$(gh pr list \
+            --base main \
+            --state open \
+            --search "author:github-actions[bot] \"${DAILY_PR_TITLE_PREFIX}\" in:title" \
+            --json number,title,isDraft \
+            --jq '.[] | select(.isDraft == false) | .number')"
+
+          if [ -z "$prs" ]; then
+            echo "No open daily update PRs found."
+            exit 0
+          fi
+
+          while IFS= read -r pr; do
+            [ -z "$pr" ] && continue
+            echo "Processing PR #$pr"
+            gh pr merge "$pr" --auto --squash --delete-branch || echo "Could not enable auto-merge for PR #$pr."
+          done <<< "$prs"

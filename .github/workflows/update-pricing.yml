@@ -62,22 +62,22 @@ jobs:
 
   process-open-prs:
     needs: update-pricing
-    if: ${{ success() || failure() }}
+    if: '!cancelled()'
     runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write
     steps:
-      - name: Enable auto-merge for open daily pricing update PRs
+      - name: Process open daily pricing update PRs
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          search_query="author:github-actions[bot] \"${DAILY_PR_TITLE_PREFIX}\" in:title"
           prs="$(gh pr list \
             --base main \
             --state open \
-            --search "author:github-actions[bot] \"${DAILY_PR_TITLE_PREFIX}\" in:title" \
-            --json number,title,isDraft \
-            --jq '.[] | select(.isDraft == false) | .number')"
+            --search "$search_query" \
+            --json number,isDraft | jq -r '.[] | select(.isDraft | not) | .number')"
 
           if [ -z "$prs" ]; then
             echo "No open daily update PRs found."

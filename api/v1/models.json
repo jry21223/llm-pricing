@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-06",
-  "total": 235,
+  "lastUpdated": "2026-06-07",
+  "total": 233,
   "groups": [
     {
       "provider": "OpenAI",
@@ -553,14 +553,6 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4 Turbo (older v1106)",
-          "input": 10,
-          "output": 30,
-          "contextWindow": 128000,
-          "currency": "USD",
-          "source": "OpenRouter"
-        },
-        {
           "name": "GPT-3.5 Turbo Instruct",
           "input": 1.5,
           "output": 2,
@@ -1046,8 +1038,8 @@
         },
         {
           "name": "Qwen3.6 27B",
-          "input": 0.29,
-          "output": 3.2,
+          "input": 0.289,
+          "output": 2.4,
           "contextWindow": 262144,
           "currency": "USD",
           "source": "OpenRouter"
@@ -2165,14 +2157,6 @@
           "lastUpdated": "2026-05-22",
           "note": "待抓取（SPA页面）",
           "source": "官方"
-        },
-        {
-          "name": "ERNIE 4.5 VL 28B A3B",
-          "input": 0.14,
-          "output": 0.56,
-          "contextWindow": 131072,
-          "currency": "USD",
-          "source": "OpenRouter"
         },
         {
           "name": "ERNIE 4.5 VL 424B A47B ",

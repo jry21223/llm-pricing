@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-06",
+  "lastUpdated": "2026-06-08",
   "total": 6,
   "deals": [
     {
@@ -12,7 +12,7 @@
       "expires": "开通后90天",
       "note": "各100万Token免费额度",
       "source": "manual",
-      "lastUpdated": "2026-06-06"
+      "lastUpdated": "2026-06-08"
     },
     {
       "deal": "GLM-4.5 Air 免费",
@@ -24,7 +24,7 @@
       "expires": "长期",
       "note": "通过OpenRouter(Z.ai)免费使用",
       "source": "OpenRouter API",
-      "lastUpdated": "2026-06-06"
+      "lastUpdated": "2026-06-08"
     },
     {
       "deal": "GLM Coding Plan Lite",
@@ -37,7 +37,7 @@
       "note": "入门级",
       "source": "subscriptionPlans",
       "sourceLastUpdated": "2026-05-28",
-      "lastUpdated": "2026-06-06"
+      "lastUpdated": "2026-06-08"
     },
     {
       "deal": "Ark Coding Plan Pro",
@@ -50,7 +50,7 @@
       "note": "高级编程用户",
       "source": "subscriptionPlans",
       "sourceLastUpdated": "2026-06-06",
-      "lastUpdated": "2026-06-06"
+      "lastUpdated": "2026-06-08"
     },
     {
       "deal": "Qwen3 Coder 免费",
@@ -62,7 +62,7 @@
       "expires": "长期",
       "note": "480B参数编码模型，1M上下文，通过OpenRouter",
       "source": "OpenRouter API",
-      "lastUpdated": "2026-06-06"
+      "lastUpdated": "2026-06-08"
     },
     {
       "deal": "NVIDIA Nemotron 3 Super 免费",
@@ -74,7 +74,7 @@
       "expires": "长期",
       "note": "1M上下文，通过OpenRouter",
       "source": "OpenRouter API",
-      "lastUpdated": "2026-06-06"
+      "lastUpdated": "2026-06-08"
     }
   ]
 }

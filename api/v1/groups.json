@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-06",
+  "lastUpdated": "2026-06-08",
   "total": 13,
   "groups": [
     {
       "provider": "OpenAI",
       "group": "OpenAI",
       "color": "#10a37f",
-      "modelCount": 66,
+      "modelCount": 65,
       "models": [
         {
           "name": "GPT-5.5",
@@ -250,10 +250,6 @@
         },
         {
           "name": "GPT-3.5 Turbo (older v0613)",
-          "source": "OpenRouter"
-        },
-        {
-          "name": "GPT-4 Turbo (older v1106)",
           "source": "OpenRouter"
         },
         {
@@ -1013,7 +1009,7 @@
       "provider": "百度",
       "group": "百度",
       "color": "#2563eb",
-      "modelCount": 4,
+      "modelCount": 3,
       "models": [
         {
           "name": "CoBuddy (千帆)",
@@ -1022,10 +1018,6 @@
         {
           "name": "ERNIE 4.0",
           "source": "官方"
-        },
-        {
-          "name": "ERNIE 4.5 VL 28B A3B",
-          "source": "OpenRouter"
         },
         {
           "name": "ERNIE 4.5 VL 424B A47B ",

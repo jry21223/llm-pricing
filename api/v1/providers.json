@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-06",
+  "lastUpdated": "2026-06-09",
   "total": 28,
   "providers": [
     {
@@ -36,7 +36,7 @@
       "providerUrl": "https://openrouter.ai/pricing",
       "color": "#10a37f",
       "group": "OpenAI",
-      "modelCount": 61,
+      "modelCount": 60,
       "models": [
         {
           "name": "GPT Chat Latest",
@@ -260,10 +260,6 @@
         },
         {
           "name": "GPT-3.5 Turbo (older v0613)",
-          "source": "OpenRouter"
-        },
-        {
-          "name": "GPT-4 Turbo (older v1106)",
           "source": "OpenRouter"
         },
         {
@@ -1045,12 +1041,8 @@
       "providerUrl": "https://openrouter.ai/pricing",
       "color": "#2563eb",
       "group": "百度",
-      "modelCount": 2,
+      "modelCount": 1,
       "models": [
-        {
-          "name": "ERNIE 4.5 VL 28B A3B",
-          "source": "OpenRouter"
-        },
         {
           "name": "ERNIE 4.5 VL 424B A47B ",
           "source": "OpenRouter"

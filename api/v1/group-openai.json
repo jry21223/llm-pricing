@@ -1,8 +1,8 @@
 {
   "group": "OpenAI",
   "color": "#10a37f",
-  "lastUpdated": "2026-06-06",
-  "total": 66,
+  "lastUpdated": "2026-06-09",
+  "total": 65,
   "models": [
     {
       "name": "GPT-5.5",
@@ -546,14 +546,6 @@
       "input": 1,
       "output": 2,
       "contextWindow": 4095,
-      "currency": "USD",
-      "source": "OpenRouter"
-    },
-    {
-      "name": "GPT-4 Turbo (older v1106)",
-      "input": 10,
-      "output": 30,
-      "contextWindow": 128000,
       "currency": "USD",
       "source": "OpenRouter"
     },

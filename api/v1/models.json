@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-06",
-  "total": 235,
+  "lastUpdated": "2026-06-10",
+  "total": 230,
   "groups": [
     {
       "provider": "OpenAI",
@@ -553,14 +553,6 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4 Turbo (older v1106)",
-          "input": 10,
-          "output": 30,
-          "contextWindow": 128000,
-          "currency": "USD",
-          "source": "OpenRouter"
-        },
-        {
           "name": "GPT-3.5 Turbo Instruct",
           "input": 1.5,
           "output": 2,
@@ -774,6 +766,15 @@
           "lastUpdated": "2026-05-22",
           "source": "OpenRouter",
           "note": "与官方同价"
+        },
+        {
+          "name": "Claude Fable 5",
+          "input": 10,
+          "cachedInput": 1,
+          "output": 50,
+          "contextWindow": 1000000,
+          "currency": "USD",
+          "source": "OpenRouter"
         },
         {
           "name": "Claude Opus 4.8 (Fast)",
@@ -1046,8 +1047,8 @@
         },
         {
           "name": "Qwen3.6 27B",
-          "input": 0.29,
-          "output": 3.2,
+          "input": 0.289,
+          "output": 2.4,
           "contextWindow": 262144,
           "currency": "USD",
           "source": "OpenRouter"
@@ -1062,7 +1063,7 @@
         },
         {
           "name": "Qwen3.5-9B",
-          "input": 0.04,
+          "input": 0.1,
           "output": 0.15,
           "contextWindow": 262144,
           "currency": "USD",
@@ -1294,7 +1295,7 @@
         },
         {
           "name": "Qwen3 235B A22B Instruct 2507",
-          "input": 0.071,
+          "input": 0.09,
           "output": 0.1,
           "contextWindow": 262144,
           "currency": "USD",
@@ -1302,8 +1303,8 @@
         },
         {
           "name": "Qwen3 30B A3B",
-          "input": 0.09,
-          "output": 0.45,
+          "input": 0.12,
+          "output": 0.5,
           "contextWindow": 131072,
           "currency": "USD",
           "source": "OpenRouter"
@@ -1585,16 +1586,16 @@
         },
         {
           "name": "Gemma 3 4B",
-          "input": 0.04,
-          "output": 0.08,
+          "input": 0.05,
+          "output": 0.1,
           "contextWindow": 131072,
           "currency": "USD",
           "source": "OpenRouter"
         },
         {
           "name": "Gemma 3 12B",
-          "input": 0.04,
-          "output": 0.13,
+          "input": 0.05,
+          "output": 0.15,
           "contextWindow": 131072,
           "currency": "USD",
           "source": "OpenRouter"
@@ -1714,9 +1715,9 @@
         },
         {
           "name": "Kimi K2.6",
-          "input": 0.684,
-          "cachedInput": 0.144,
-          "output": 3.42,
+          "input": 0.68,
+          "cachedInput": 0.34,
+          "output": 3.41,
           "contextWindow": 262144,
           "currency": "USD",
           "source": "OpenRouter"
@@ -1808,8 +1809,9 @@
         },
         {
           "name": "MiniMax M2.7",
-          "input": 0.279,
-          "output": 1.2,
+          "input": 0.27,
+          "cachedInput": 0.054,
+          "output": 1.08,
           "contextWindow": 204800,
           "currency": "USD",
           "source": "OpenRouter"
@@ -1817,7 +1819,8 @@
         {
           "name": "MiniMax M2.5",
           "input": 0.15,
-          "output": 1.15,
+          "cachedInput": 0.05,
+          "output": 0.9,
           "contextWindow": 204800,
           "currency": "USD",
           "source": "OpenRouter"
@@ -1928,20 +1931,11 @@
           "source": "官方"
         },
         {
-          "name": "GLM-5V Turbo",
-          "input": 1.2,
-          "cachedInput": 0.24,
-          "output": 4,
-          "contextWindow": 202752,
-          "currency": "USD",
-          "source": "官方"
-        },
-        {
           "name": "GLM-5 Turbo",
           "input": 1.2,
           "cachedInput": 0.24,
           "output": 4,
-          "contextWindow": 202752,
+          "contextWindow": 262144,
           "currency": "USD",
           "note": "增强版基座",
           "source": "官方"
@@ -1979,7 +1973,7 @@
         {
           "name": "GLM 4.6V",
           "input": 0.3,
-          "cachedInput": 0.05,
+          "cachedInput": 0.06,
           "output": 0.9,
           "contextWindow": 131072,
           "currency": "USD",
@@ -2023,14 +2017,6 @@
           "source": "官方"
         },
         {
-          "name": "GLM 4 32B ",
-          "input": 0.1,
-          "output": 0.1,
-          "contextWindow": 128000,
-          "currency": "USD",
-          "source": "官方"
-        },
-        {
           "name": "GLM 5.1",
           "input": 0.98,
           "cachedInput": 0.182,
@@ -2040,20 +2026,11 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GLM 5V Turbo",
-          "input": 1.2,
-          "cachedInput": 0.24,
-          "output": 4,
-          "contextWindow": 202752,
-          "currency": "USD",
-          "source": "OpenRouter"
-        },
-        {
           "name": "GLM 5 Turbo",
           "input": 1.2,
           "cachedInput": 0.24,
           "output": 4,
-          "contextWindow": 202752,
+          "contextWindow": 262144,
           "currency": "USD",
           "source": "OpenRouter"
         },
@@ -2087,7 +2064,7 @@
         {
           "name": "GLM 4.6V",
           "input": 0.3,
-          "cachedInput": 0.05,
+          "cachedInput": 0.055,
           "output": 0.9,
           "contextWindow": 131072,
           "currency": "USD",
@@ -2128,14 +2105,6 @@
           "contextWindow": 131072,
           "currency": "USD",
           "source": "OpenRouter"
-        },
-        {
-          "name": "GLM 4 32B ",
-          "input": 0.1,
-          "output": 0.1,
-          "contextWindow": 128000,
-          "currency": "USD",
-          "source": "OpenRouter"
         }
       ]
     },
@@ -2165,14 +2134,6 @@
           "lastUpdated": "2026-05-22",
           "note": "待抓取（SPA页面）",
           "source": "官方"
-        },
-        {
-          "name": "ERNIE 4.5 VL 28B A3B",
-          "input": 0.14,
-          "output": 0.56,
-          "contextWindow": 131072,
-          "currency": "USD",
-          "source": "OpenRouter"
         },
         {
           "name": "ERNIE 4.5 VL 424B A47B ",

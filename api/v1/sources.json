@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "lastChecked": "2026-06-06",
+  "lastChecked": "2026-06-11",
   "generatedBy": "update-pricing.js",
   "sections": {
     "modelPricing": {
       "label": "模型 API 价格",
       "updateMode": "mixed",
       "cadence": "daily",
-      "lastChecked": "2026-06-06",
-      "lastUpdated": "2026-06-06",
+      "lastChecked": "2026-06-11",
+      "lastUpdated": "2026-06-11",
       "publishedFiles": [
         "pricing.json",
         "api/v1/models.json",
@@ -62,8 +62,8 @@
       "label": "免费模型",
       "updateMode": "automatic",
       "cadence": "daily",
-      "lastChecked": "2026-06-06",
-      "lastUpdated": "2026-06-06",
+      "lastChecked": "2026-06-11",
+      "lastUpdated": "2026-06-11",
       "publishedFiles": [
         "api/v1/free.json"
       ],
@@ -82,8 +82,8 @@
       "label": "当前促销 / 限时优惠",
       "updateMode": "derived",
       "cadence": "daily",
-      "lastChecked": "2026-06-06",
-      "lastUpdated": "2026-06-06",
+      "lastChecked": "2026-06-11",
+      "lastUpdated": "2026-06-11",
       "publishedFiles": [
         "api/v1/deals.json"
       ],
@@ -177,5 +177,5 @@
       "channels"
     ]
   },
-  "pricingLastUpdated": "2026-06-06"
+  "pricingLastUpdated": "2026-06-11"
 }

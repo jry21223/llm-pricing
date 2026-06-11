@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-06",
+  "lastUpdated": "2026-06-11",
   "total": 28,
   "providers": [
     {
@@ -36,7 +36,7 @@
       "providerUrl": "https://openrouter.ai/pricing",
       "color": "#10a37f",
       "group": "OpenAI",
-      "modelCount": 61,
+      "modelCount": 60,
       "models": [
         {
           "name": "GPT Chat Latest",
@@ -260,10 +260,6 @@
         },
         {
           "name": "GPT-3.5 Turbo (older v0613)",
-          "source": "OpenRouter"
-        },
-        {
-          "name": "GPT-4 Turbo (older v1106)",
           "source": "OpenRouter"
         },
         {
@@ -558,14 +554,10 @@
       "providerUrl": "https://open.bigmodel.cn/pricing",
       "color": "#1d4ed8",
       "group": "智谱AI",
-      "modelCount": 12,
+      "modelCount": 10,
       "models": [
         {
           "name": "GLM-5.1",
-          "source": "官方"
-        },
-        {
-          "name": "GLM-5V Turbo",
           "source": "官方"
         },
         {
@@ -602,10 +594,6 @@
         },
         {
           "name": "GLM-4.5 Air",
-          "source": "官方"
-        },
-        {
-          "name": "GLM 4 32B ",
           "source": "官方"
         }
       ]
@@ -955,8 +943,12 @@
       "providerUrl": "https://openrouter.ai/pricing",
       "color": "#d97706",
       "group": "Anthropic",
-      "modelCount": 15,
+      "modelCount": 16,
       "models": [
+        {
+          "name": "Claude Fable 5",
+          "source": "OpenRouter"
+        },
         {
           "name": "Claude Opus 4.8 (Fast)",
           "source": "OpenRouter"
@@ -1045,12 +1037,8 @@
       "providerUrl": "https://openrouter.ai/pricing",
       "color": "#2563eb",
       "group": "百度",
-      "modelCount": 2,
+      "modelCount": 1,
       "models": [
-        {
-          "name": "ERNIE 4.5 VL 28B A3B",
-          "source": "OpenRouter"
-        },
         {
           "name": "ERNIE 4.5 VL 424B A47B ",
           "source": "OpenRouter"
@@ -1091,14 +1079,10 @@
       "providerUrl": "https://openrouter.ai/pricing",
       "color": "#1d4ed8",
       "group": "智谱AI",
-      "modelCount": 12,
+      "modelCount": 10,
       "models": [
         {
           "name": "GLM 5.1",
-          "source": "OpenRouter"
-        },
-        {
-          "name": "GLM 5V Turbo",
           "source": "OpenRouter"
         },
         {
@@ -1135,10 +1119,6 @@
         },
         {
           "name": "GLM 4.5 Air",
-          "source": "OpenRouter"
-        },
-        {
-          "name": "GLM 4 32B ",
           "source": "OpenRouter"
         }
       ]

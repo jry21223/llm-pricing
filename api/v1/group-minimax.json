@@ -1,7 +1,7 @@
 {
   "group": "MiniMax",
   "color": "#0891b2",
-  "lastUpdated": "2026-06-06",
+  "lastUpdated": "2026-06-11",
   "total": 11,
   "models": [
     {
@@ -51,8 +51,9 @@
     },
     {
       "name": "MiniMax M2.7",
-      "input": 0.279,
-      "output": 1.2,
+      "input": 0.27,
+      "cachedInput": 0.054,
+      "output": 1.08,
       "contextWindow": 204800,
       "currency": "USD",
       "source": "OpenRouter"
@@ -60,7 +61,8 @@
     {
       "name": "MiniMax M2.5",
       "input": 0.15,
-      "output": 1.15,
+      "cachedInput": 0.05,
+      "output": 0.9,
       "contextWindow": 204800,
       "currency": "USD",
       "source": "OpenRouter"

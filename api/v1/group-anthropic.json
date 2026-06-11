@@ -1,8 +1,8 @@
 {
   "group": "Anthropic",
   "color": "#d97706",
-  "lastUpdated": "2026-06-06",
-  "total": 19,
+  "lastUpdated": "2026-06-11",
+  "total": 20,
   "models": [
     {
       "name": "Claude Opus 4.7",
@@ -50,6 +50,15 @@
       "lastUpdated": "2026-05-22",
       "source": "OpenRouter",
       "note": "与官方同价"
+    },
+    {
+      "name": "Claude Fable 5",
+      "input": 10,
+      "cachedInput": 1,
+      "output": 50,
+      "contextWindow": 1000000,
+      "currency": "USD",
+      "source": "OpenRouter"
     },
     {
       "name": "Claude Opus 4.8 (Fast)",

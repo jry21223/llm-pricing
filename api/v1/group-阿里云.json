@@ -1,7 +1,7 @@
 {
   "group": "阿里云",
   "color": "#ff6a00",
-  "lastUpdated": "2026-06-06",
+  "lastUpdated": "2026-06-12",
   "total": 54,
   "models": [
     {
@@ -83,9 +83,9 @@
     },
     {
       "name": "Qwen3.7 Plus",
-      "input": 0.4,
-      "cachedInput": 0.08,
-      "output": 1.6,
+      "input": 0.32,
+      "cachedInput": 0.064,
+      "output": 1.28,
       "contextWindow": 1000000,
       "currency": "USD",
       "source": "OpenRouter"
@@ -117,7 +117,8 @@
     },
     {
       "name": "Qwen3.6 35B A3B",
-      "input": 0.14,
+      "input": 0.15,
+      "cachedInput": 0.05,
       "output": 1,
       "contextWindow": 262144,
       "currency": "USD",
@@ -133,8 +134,8 @@
     },
     {
       "name": "Qwen3.6 27B",
-      "input": 0.29,
-      "output": 3.2,
+      "input": 0.287,
+      "output": 3.1,
       "contextWindow": 262144,
       "currency": "USD",
       "source": "OpenRouter"
@@ -149,7 +150,7 @@
     },
     {
       "name": "Qwen3.5-9B",
-      "input": 0.04,
+      "input": 0.1,
       "output": 0.15,
       "contextWindow": 262144,
       "currency": "USD",
@@ -381,7 +382,7 @@
     },
     {
       "name": "Qwen3 235B A22B Instruct 2507",
-      "input": 0.071,
+      "input": 0.09,
       "output": 0.1,
       "contextWindow": 262144,
       "currency": "USD",
@@ -389,8 +390,8 @@
     },
     {
       "name": "Qwen3 30B A3B",
-      "input": 0.09,
-      "output": 0.45,
+      "input": 0.12,
+      "output": 0.5,
       "contextWindow": 131072,
       "currency": "USD",
       "source": "OpenRouter"
@@ -430,8 +431,9 @@
     },
     {
       "name": "Qwen2.5 VL 72B Instruct",
-      "input": 0.25,
-      "output": 0.75,
+      "input": 0.8,
+      "cachedInput": 0.4,
+      "output": 1,
       "contextWindow": 131072,
       "currency": "USD",
       "source": "OpenRouter"

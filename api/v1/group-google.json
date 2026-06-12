@@ -1,7 +1,7 @@
 {
   "group": "Google",
   "color": "#4285f4",
-  "lastUpdated": "2026-06-06",
+  "lastUpdated": "2026-06-12",
   "total": 25,
   "models": [
     {
@@ -69,7 +69,7 @@
       "name": "Gemma 4 31B",
       "input": 0.12,
       "cachedInput": 0.09,
-      "output": 0.36,
+      "output": 0.35,
       "contextWindow": 262144,
       "currency": "USD",
       "source": "OpenRouter"
@@ -200,16 +200,16 @@
     },
     {
       "name": "Gemma 3 4B",
-      "input": 0.04,
-      "output": 0.08,
+      "input": 0.05,
+      "output": 0.1,
       "contextWindow": 131072,
       "currency": "USD",
       "source": "OpenRouter"
     },
     {
       "name": "Gemma 3 12B",
-      "input": 0.04,
-      "output": 0.13,
+      "input": 0.05,
+      "output": 0.15,
       "contextWindow": 131072,
       "currency": "USD",
       "source": "OpenRouter"

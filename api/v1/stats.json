@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-06",
-  "totalModels": 233,
+  "lastUpdated": "2026-06-13",
+  "totalModels": 229,
   "cheapestInput": [
     {
       "name": "CoBuddy (千帆)",
@@ -30,17 +30,17 @@
       "source": "OpenRouter"
     },
     {
-      "name": "Qwen3.5-9B",
+      "name": "Qwen2.5 7B Instruct",
       "input": 0.04,
-      "output": 0.15,
-      "contextWindow": 262144,
+      "output": 0.1,
+      "contextWindow": 131072,
       "currency": "USD",
       "source": "OpenRouter"
     },
     {
-      "name": "Qwen2.5 7B Instruct",
-      "input": 0.04,
-      "output": 0.1,
+      "name": "Qwen3 30B A3B Instruct 2507",
+      "input": 0.048,
+      "output": 0.193,
       "contextWindow": 131072,
       "currency": "USD",
       "source": "OpenRouter"
@@ -59,14 +59,6 @@
       "note": "免费！百度编码助手模型，通过OpenRouter调用"
     },
     {
-      "name": "Gemma 3 4B",
-      "input": 0.04,
-      "output": 0.08,
-      "contextWindow": 131072,
-      "currency": "USD",
-      "source": "OpenRouter"
-    },
-    {
       "name": "Qwen3 235B A22B Thinking 2507",
       "input": 0.1,
       "cachedInput": 0.1,
@@ -77,7 +69,7 @@
     },
     {
       "name": "Qwen3 235B A22B Instruct 2507",
-      "input": 0.071,
+      "input": 0.09,
       "output": 0.1,
       "contextWindow": 262144,
       "currency": "USD",
@@ -86,6 +78,14 @@
     {
       "name": "Qwen2.5 7B Instruct",
       "input": 0.04,
+      "output": 0.1,
+      "contextWindow": 131072,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
+      "name": "Gemma 3 4B",
+      "input": 0.05,
       "output": 0.1,
       "contextWindow": 131072,
       "currency": "USD",

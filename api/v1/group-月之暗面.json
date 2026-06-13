@@ -1,8 +1,8 @@
 {
   "group": "月之暗面",
   "color": "#7c3aed",
-  "lastUpdated": "2026-06-06",
-  "total": 6,
+  "lastUpdated": "2026-06-13",
+  "total": 7,
   "models": [
     {
       "name": "kimi-k2.6",
@@ -17,19 +17,27 @@
       "source": "官方"
     },
     {
+      "name": "Kimi K2.7 Code",
+      "input": 0.95,
+      "cachedInput": 0.19,
+      "output": 4,
+      "contextWindow": 262144,
+      "currency": "USD",
+      "source": "OpenRouter"
+    },
+    {
       "name": "Kimi K2.6",
-      "input": 0.684,
-      "cachedInput": 0.144,
-      "output": 3.42,
+      "input": 0.68,
+      "cachedInput": 0.34,
+      "output": 3.41,
       "contextWindow": 262144,
       "currency": "USD",
       "source": "OpenRouter"
     },
     {
       "name": "Kimi K2.5",
-      "input": 0.4,
-      "cachedInput": 0.09,
-      "output": 1.9,
+      "input": 0.375,
+      "output": 2.025,
       "contextWindow": 262144,
       "currency": "USD",
       "source": "OpenRouter"

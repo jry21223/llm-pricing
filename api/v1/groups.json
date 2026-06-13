@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-06",
+  "lastUpdated": "2026-06-13",
   "total": 13,
   "groups": [
     {
       "provider": "OpenAI",
       "group": "OpenAI",
       "color": "#10a37f",
-      "modelCount": 66,
+      "modelCount": 65,
       "models": [
         {
           "name": "GPT-5.5",
@@ -253,10 +253,6 @@
           "source": "OpenRouter"
         },
         {
-          "name": "GPT-4 Turbo (older v1106)",
-          "source": "OpenRouter"
-        },
-        {
           "name": "GPT-3.5 Turbo Instruct",
           "source": "OpenRouter"
         },
@@ -342,7 +338,7 @@
       "provider": "Anthropic",
       "group": "Anthropic",
       "color": "#d97706",
-      "modelCount": 19,
+      "modelCount": 20,
       "models": [
         {
           "name": "Claude Opus 4.7",
@@ -358,6 +354,10 @@
         },
         {
           "name": "Claude Opus 4.7",
+          "source": "OpenRouter"
+        },
+        {
+          "name": "Claude Fable 5",
           "source": "OpenRouter"
         },
         {
@@ -794,11 +794,15 @@
       "provider": "月之暗面",
       "group": "月之暗面",
       "color": "#7c3aed",
-      "modelCount": 6,
+      "modelCount": 7,
       "models": [
         {
           "name": "kimi-k2.6",
           "source": "官方"
+        },
+        {
+          "name": "Kimi K2.7 Code",
+          "source": "OpenRouter"
         },
         {
           "name": "Kimi K2.6",
@@ -909,14 +913,10 @@
       "provider": "智谱AI",
       "group": "智谱AI",
       "color": "#1d4ed8",
-      "modelCount": 24,
+      "modelCount": 20,
       "models": [
         {
           "name": "GLM-5.1",
-          "source": "官方"
-        },
-        {
-          "name": "GLM-5V Turbo",
           "source": "官方"
         },
         {
@@ -956,15 +956,7 @@
           "source": "官方"
         },
         {
-          "name": "GLM 4 32B ",
-          "source": "官方"
-        },
-        {
           "name": "GLM 5.1",
-          "source": "OpenRouter"
-        },
-        {
-          "name": "GLM 5V Turbo",
           "source": "OpenRouter"
         },
         {
@@ -1002,10 +994,6 @@
         {
           "name": "GLM 4.5 Air",
           "source": "OpenRouter"
-        },
-        {
-          "name": "GLM 4 32B ",
-          "source": "OpenRouter"
         }
       ]
     },
@@ -1013,7 +1001,7 @@
       "provider": "百度",
       "group": "百度",
       "color": "#2563eb",
-      "modelCount": 4,
+      "modelCount": 3,
       "models": [
         {
           "name": "CoBuddy (千帆)",
@@ -1022,10 +1010,6 @@
         {
           "name": "ERNIE 4.0",
           "source": "官方"
-        },
-        {
-          "name": "ERNIE 4.5 VL 28B A3B",
-          "source": "OpenRouter"
         },
         {
           "name": "ERNIE 4.5 VL 424B A47B ",

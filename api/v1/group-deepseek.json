@@ -1,7 +1,7 @@
 {
   "group": "DeepSeek",
   "color": "#4f46e5",
-  "lastUpdated": "2026-06-06",
+  "lastUpdated": "2026-06-14",
   "total": 14,
   "models": [
     {
@@ -35,9 +35,9 @@
     },
     {
       "name": "DeepSeek V4 Flash",
-      "input": 0.098,
+      "input": 0.09,
       "cachedInput": 0.02,
-      "output": 0.197,
+      "output": 0.18,
       "contextWindow": 1048576,
       "currency": "USD",
       "source": "OpenRouter"
@@ -104,9 +104,9 @@
     },
     {
       "name": "R1 Distill Llama 70B",
-      "input": 0.7,
+      "input": 0.8,
       "output": 0.8,
-      "contextWindow": 131072,
+      "contextWindow": 128000,
       "currency": "USD",
       "source": "OpenRouter"
     },
